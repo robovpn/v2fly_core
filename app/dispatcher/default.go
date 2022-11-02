@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 	"time"
-	"v2fly_core/app/dispatcher/speed/"
+	"v2fly_core/app/dispatcher/speed"
 
 	"v2ray.com/core"
 	"v2ray.com/core/common"
