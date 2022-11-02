@@ -21,7 +21,7 @@ import (
 	"v2ray.com/core/features/outbound"
 	"v2ray.com/core/features/policy"
 	"v2ray.com/core/features/routing"
-	routing_session "v2ray.com/core/features/routing/session"
+	routing_session "v2fly_core/features/routing/session"
 	"v2ray.com/core/features/stats"
 	"v2ray.com/core/transport"
 	"v2ray.com/core/transport/pipe"
