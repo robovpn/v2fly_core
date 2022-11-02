@@ -3,8 +3,8 @@ package policy
 import (
 	"context"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/features/policy"
+	"v2fly_core/common"
+	"v2fly_core/features/policy"
 )
 
 // Instance is an instance of Policy manager.

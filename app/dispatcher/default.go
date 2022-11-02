@@ -2,7 +2,7 @@
 
 package dispatcher
 
-//go:generate go run v2ray.com/core/common/errors/errorgen
+//go:generate go run v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -11,20 +11,20 @@ import (
 	"time"
 	"v2fly_core/app/dispatcher/speed"
 
-	"v2ray.com/core"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/common/log"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol"
-	"v2ray.com/core/common/session"
-	"v2ray.com/core/features/outbound"
-	"v2ray.com/core/features/policy"
-	"v2ray.com/core/features/routing"
+	"v2fly_core"
+	"v2fly_core/common"
+	"v2fly_core/common/buf"
+	"v2fly_core/common/log"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol"
+	"v2fly_core/common/session"
+	"v2fly_core/features/outbound"
+	"v2fly_core/features/policy"
+	"v2fly_core/features/routing"
 	routing_session "v2fly_core/features/routing/session"
-	"v2ray.com/core/features/stats"
-	"v2ray.com/core/transport"
-	"v2ray.com/core/transport/pipe"
+	"v2fly_core/features/stats"
+	"v2fly_core/transport"
+	"v2fly_core/transport/pipe"
 )
 
 var (

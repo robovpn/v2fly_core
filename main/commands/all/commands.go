@@ -6,7 +6,7 @@ import (
 	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
-//go:generate go run v2ray.com/core/common/errors/errorgen
+//go:generate go run v2fly_core/common/errors/errorgen
 
 func init() {
 	base.RootCommand.Commands = append(

@@ -1,14 +1,14 @@
 package command
 
-//go:generate go run v2ray.com/core/common/errors/errorgen
+//go:generate go run v2fly_core/common/errors/errorgen
 
 import (
 	"os"
 
 	"github.com/golang/protobuf/proto"
-	"v2ray.com/core/common"
-	"v2ray.com/core/infra/conf/serial"
-	"v2ray.com/core/infra/control"
+	"v2fly_core/common"
+	"v2fly_core/infra/conf/serial"
+	"v2fly_core/infra/control"
 )
 
 type ConfigCommand struct{}

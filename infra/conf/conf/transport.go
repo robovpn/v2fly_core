@@ -1,9 +1,9 @@
 package conf
 
 import (
-	"v2ray.com/core/common/serial"
-	"v2ray.com/core/transport"
-	"v2ray.com/core/transport/internet"
+	"v2fly_core/common/serial"
+	"v2fly_core/transport"
+	"v2fly_core/transport/internet"
 )
 
 type TransportConfig struct {

@@ -8,12 +8,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol"
-	"v2ray.com/core/common/serial"
-	"v2ray.com/core/proxy/vless"
-	"v2ray.com/core/proxy/vless/inbound"
-	"v2ray.com/core/proxy/vless/outbound"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol"
+	"v2fly_core/common/serial"
+	"v2fly_core/proxy/vless"
+	"v2fly_core/proxy/vless/inbound"
+	"v2fly_core/proxy/vless/outbound"
 )
 
 type VLessInboundFallback struct {
