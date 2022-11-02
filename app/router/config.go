@@ -7,7 +7,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/golang/protobuf/jsonpb"
+	"google.golang.org/protobuf/jsonpb"
 
 	"github.com/robovpn/v2fly_core/app/router/routercommon"
 	"github.com/robovpn/v2fly_core/common/net"

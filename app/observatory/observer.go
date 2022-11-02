@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
 	"github.com/robovpn/v2fly_core/common"

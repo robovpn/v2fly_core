@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
 	"github.com/robovpn/v2fly_core"
 	"github.com/robovpn/v2fly_core/app/dispatcher"

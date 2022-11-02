@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/jsonpb"
+	"google.golang.org/protobuf/proto"
 	protov2 "google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/common/protoext"

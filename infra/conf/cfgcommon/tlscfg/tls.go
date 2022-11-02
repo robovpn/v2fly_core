@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/common/platform/filesystem"
 	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"

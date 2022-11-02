@@ -1,7 +1,7 @@
 package v4
 
 import (
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
 	"github.com/robovpn/v2fly_core/proxy/dokodemo"

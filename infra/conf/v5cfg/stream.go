@@ -3,7 +3,7 @@ package v5cfg
 import (
 	"context"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/common/serial"
 	"github.com/robovpn/v2fly_core/transport/internet"

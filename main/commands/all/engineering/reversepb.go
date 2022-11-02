@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
 	"github.com/robovpn/v2fly_core/infra/conf/jsonpb"

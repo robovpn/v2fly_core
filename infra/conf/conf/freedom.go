@@ -4,7 +4,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 	v2net "github.com/robovpn/v2fly_core/common/net"
 	"github.com/robovpn/v2fly_core/common/protocol"
 	"github.com/robovpn/v2fly_core/proxy/freedom"
