@@ -3,8 +3,8 @@ package policy
 import (
 	"context"
 
-	"v2fly_core/common"
-	"v2fly_core/features/policy"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/features/policy"
 )
 
 // Instance is an instance of Policy manager.

@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"v2fly_core/common/net"
-	"v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
 type StringList []string

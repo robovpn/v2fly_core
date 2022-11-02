@@ -3,8 +3,8 @@ package conf_test
 import (
 	"testing"
 
-	"v2fly_core/app/reverse"
-	"v2fly_core/infra/conf"
+	"github.com/robovpn/v2fly_core/app/reverse"
+	"github.com/robovpn/v2fly_core/infra/conf"
 )
 
 func TestReverseConfig(t *testing.T) {

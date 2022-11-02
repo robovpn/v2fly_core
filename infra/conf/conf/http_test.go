@@ -3,8 +3,8 @@ package conf_test
 import (
 	"testing"
 
-	. "v2fly_core/infra/conf"
-	"v2fly_core/proxy/http"
+	. "github.com/robovpn/v2fly_core/infra/conf"
+	"github.com/robovpn/v2fly_core/proxy/http"
 )
 
 func TestHTTPServerConfig(t *testing.T) {

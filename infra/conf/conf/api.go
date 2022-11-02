@@ -3,11 +3,11 @@ package conf
 import (
 	"strings"
 
-	"v2fly_core/app/commander"
-	loggerservice "v2fly_core/app/log/command"
-	handlerservice "v2fly_core/app/proxyman/command"
-	statsservice "v2fly_core/app/stats/command"
-	"v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/app/commander"
+	loggerservice "github.com/robovpn/v2fly_core/app/log/command"
+	handlerservice "github.com/robovpn/v2fly_core/app/proxyman/command"
+	statsservice "github.com/robovpn/v2fly_core/app/stats/command"
+	"github.com/robovpn/v2fly_core/common/serial"
 )
 
 type APIConfig struct {

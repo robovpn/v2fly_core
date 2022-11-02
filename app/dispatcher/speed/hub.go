@@ -3,7 +3,7 @@ package speed
 import (
 	"golang.org/x/time/rate"
 	"sync"
-	"v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
 type BucketHub struct {

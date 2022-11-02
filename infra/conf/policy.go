@@ -1,9 +1,9 @@
 package conf
 
 import (
-	"v2fly_core/app/policy"
-	"v2fly_core/common"
-	"v2fly_core/common/bytes"
+	"github.com/robovpn/v2fly_core/app/policy"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/bytes"
 )
 
 type Policy struct {

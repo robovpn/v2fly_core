@@ -3,10 +3,10 @@ package conf_test
 import (
 	"testing"
 
-	"v2fly_core/common/protocol"
-	"v2fly_core/common/serial"
-	. "v2fly_core/infra/conf"
-	"v2fly_core/proxy/mtproto"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/serial"
+	. "github.com/robovpn/v2fly_core/infra/conf"
+	"github.com/robovpn/v2fly_core/proxy/mtproto"
 )
 
 func TestMTProtoServerConfig(t *testing.T) {

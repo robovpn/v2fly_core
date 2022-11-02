@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"io"
 
-	"v2fly_core"
-	"v2fly_core/common/errors"
-	"v2fly_core/infra/conf"
-	json_reader "v2fly_core/infra/conf/json"
+	"github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/infra/conf"
+	json_reader "github.com/robovpn/v2fly_core/infra/conf/json"
 )
 
 type offset struct {
