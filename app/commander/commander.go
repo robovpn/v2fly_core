@@ -1,6 +1,6 @@
 package commander
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,12 +9,12 @@ import (
 
 	"google.golang.org/grpc"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/signal/done"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/v5cfg"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/v2fly_core/infra/conf/v5cfg"
 )
 
 // Commander is a V2Ray feature that provides gRPC methods to external clients.

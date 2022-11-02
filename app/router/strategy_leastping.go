@@ -6,11 +6,11 @@ package router
 import (
 	"context"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/observatory"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/features"
-	"github.com/v2fly/v2ray-core/v5/features/extension"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/observatory"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/v2fly_core/features/extension"
 )
 
 type LeastPingStrategy struct {

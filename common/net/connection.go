@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/signal/done"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/signal/done"
 )
 
 type ConnectionOption func(*connection)

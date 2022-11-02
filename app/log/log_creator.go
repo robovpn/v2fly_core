@@ -1,8 +1,8 @@
 package log
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/log"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/log"
 )
 
 type HandlerCreatorOptions struct {

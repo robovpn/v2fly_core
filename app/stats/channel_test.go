@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/v2fly/v2ray-core/v5/app/stats"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/features/stats"
+	. "github.com/robovpn/v2fly_core/app/stats"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/features/stats"
 )
 
 func TestStatsChannel(t *testing.T) {

@@ -8,11 +8,11 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/memconservative"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/standard"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/infra/conf/geodata"
+	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/memconservative"
+	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/standard"
 )
 
 func init() {

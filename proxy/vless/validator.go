@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/uuid"
 )
 
 // Validator stores valid VLESS users.

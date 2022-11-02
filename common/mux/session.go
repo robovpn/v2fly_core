@@ -3,9 +3,9 @@ package mux
 import (
 	"sync"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
 type SessionManager struct {

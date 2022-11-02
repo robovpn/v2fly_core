@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/infra/conf/serial"
+	"github.com/robovpn/v2fly_core/infra/conf/serial"
 )
 
 func TestLoaderError(t *testing.T) {

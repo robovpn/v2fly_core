@@ -6,10 +6,10 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/taggedfeatures"
-	"github.com/v2fly/v2ray-core/v5/features"
-	"github.com/v2fly/v2ray-core/v5/features/extension"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/taggedfeatures"
+	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/v2fly_core/features/extension"
 )
 
 type Observer struct {

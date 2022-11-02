@@ -3,8 +3,8 @@ package reverse_test
 import (
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/app/reverse"
-	"github.com/v2fly/v2ray-core/v5/common"
+	"github.com/robovpn/v2fly_core/app/reverse"
+	"github.com/robovpn/v2fly_core/common"
 )
 
 func TestStaticPickerEmpty(t *testing.T) {

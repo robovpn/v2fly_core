@@ -1,6 +1,6 @@
 package dns
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -8,13 +8,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/v2fly/v2ray-core/v5/app/dns"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	rule2 "github.com/v2fly/v2ray-core/v5/infra/conf/rule"
+	"github.com/robovpn/v2fly_core/app/dns"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/geodata"
+	rule2 "github.com/robovpn/v2fly_core/infra/conf/rule"
 )
 
 type NameServerConfig struct {

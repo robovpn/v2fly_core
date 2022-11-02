@@ -10,10 +10,10 @@ import (
 	"github.com/lucas-clemente/quic-go/quicvarint"
 	"golang.org/x/crypto/hkdf"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	ptls "github.com/v2fly/v2ray-core/v5/common/protocol/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/errors"
+	ptls "github.com/robovpn/v2fly_core/common/protocol/tls"
 )
 
 type SniffHeader struct {

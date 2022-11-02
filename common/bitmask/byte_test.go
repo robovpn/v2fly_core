@@ -3,7 +3,7 @@ package bitmask_test
 import (
 	"testing"
 
-	. "github.com/v2fly/v2ray-core/v5/common/bitmask"
+	. "github.com/robovpn/v2fly_core/common/bitmask"
 )
 
 func TestBitmaskByte(t *testing.T) {

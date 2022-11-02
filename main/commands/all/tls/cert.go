@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/protocol/tls/cert"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	"github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 // cmdCert is the tls cert command

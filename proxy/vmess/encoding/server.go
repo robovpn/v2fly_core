@@ -14,16 +14,16 @@ import (
 
 	"golang.org/x/crypto/chacha20poly1305"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/bitmask"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/crypto"
-	"github.com/v2fly/v2ray-core/v5/common/drain"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess"
-	vmessaead "github.com/v2fly/v2ray-core/v5/proxy/vmess/aead"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/bitmask"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/crypto"
+	"github.com/robovpn/v2fly_core/common/drain"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/v2fly_core/proxy/vmess"
+	vmessaead "github.com/robovpn/v2fly_core/proxy/vmess/aead"
 )
 
 type sessionID struct {

@@ -1,13 +1,13 @@
 package transientstorageimpl
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"strings"
 	"sync"
 
-	"github.com/v2fly/v2ray-core/v5/features/extension/storage"
+	"github.com/robovpn/v2fly_core/features/extension/storage"
 )
 
 func NewScopedTransientStorageImpl() storage.ScopedTransientStorage {

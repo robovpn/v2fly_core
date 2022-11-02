@@ -6,8 +6,8 @@ package router
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/features/extension"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
+	"github.com/robovpn/v2fly_core/features/extension"
+	"github.com/robovpn/v2fly_core/features/outbound"
 )
 
 type BalancingStrategy interface {

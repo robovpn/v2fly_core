@@ -1,16 +1,16 @@
 package command
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
 	grpc "google.golang.org/grpc"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/log"
-	"github.com/v2fly/v2ray-core/v5/common"
-	cmlog "github.com/v2fly/v2ray-core/v5/common/log"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/log"
+	"github.com/robovpn/v2fly_core/common"
+	cmlog "github.com/robovpn/v2fly_core/common/log"
 )
 
 // LoggerServer is the implemention of LoggerService

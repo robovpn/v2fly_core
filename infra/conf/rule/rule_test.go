@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/standard"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/rule"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/geodata"
+	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/standard"
+	"github.com/robovpn/v2fly_core/infra/conf/rule"
 )
 
 func init() {

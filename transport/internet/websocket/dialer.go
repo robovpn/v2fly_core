@@ -10,13 +10,13 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/features/extension"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/tls"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/extension"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 // Dial dials a WebSocket connection to the given destination.

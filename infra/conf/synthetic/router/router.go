@@ -1,6 +1,6 @@
 package router
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,12 +9,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	rule2 "github.com/v2fly/v2ray-core/v5/infra/conf/rule"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/geodata"
+	rule2 "github.com/robovpn/v2fly_core/infra/conf/rule"
 )
 
 type RouterRulesConfig struct { // nolint: revive

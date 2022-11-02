@@ -1,8 +1,8 @@
 package dns
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/features"
 )
 
 type FakeDNSEngine interface {

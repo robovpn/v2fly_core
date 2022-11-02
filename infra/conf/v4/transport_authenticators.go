@@ -5,14 +5,14 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/http"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/noop"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/srtp"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/tls"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/utp"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/wechat"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/wireguard"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/http"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/noop"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/srtp"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/tls"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/utp"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/wechat"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
 )
 
 type NoOpAuthenticator struct{}

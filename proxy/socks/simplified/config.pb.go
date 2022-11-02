@@ -1,9 +1,9 @@
 package simplified
 
 import (
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	packetaddr "github.com/v2fly/v2ray-core/v5/common/net/packetaddr"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	net "github.com/robovpn/v2fly_core/common/net"
+	packetaddr "github.com/robovpn/v2fly_core/common/net/packetaddr"
+	_ "github.com/robovpn/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

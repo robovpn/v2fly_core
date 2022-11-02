@@ -6,9 +6,9 @@ package dns
 import (
 	"context"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/features/dns"
 )
 
 type FakeDNSServer struct {

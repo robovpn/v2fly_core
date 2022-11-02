@@ -11,14 +11,14 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/test/bufconn"
 
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	. "github.com/v2fly/v2ray-core/v5/app/router/command"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/app/stats"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
-	"github.com/v2fly/v2ray-core/v5/testing/mocks"
+	"github.com/robovpn/v2fly_core/app/router"
+	. "github.com/robovpn/v2fly_core/app/router/command"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/app/stats"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/testing/mocks"
 )
 
 func TestServiceSubscribeRoutingStats(t *testing.T) {

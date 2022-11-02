@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/app/browserforwarder"
+	"github.com/robovpn/v2fly_core/app/browserforwarder"
 )
 
 type BrowserForwarderConfig struct {

@@ -6,14 +6,14 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	. "github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	routing_session "github.com/v2fly/v2ray-core/v5/features/routing/session"
-	"github.com/v2fly/v2ray-core/v5/testing/mocks"
+	. "github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/outbound"
+	routing_session "github.com/robovpn/v2fly_core/features/routing/session"
+	"github.com/robovpn/v2fly_core/testing/mocks"
 )
 
 type mockOutboundManager struct {

@@ -3,11 +3,11 @@ package udp
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/net/packetaddr"
-	"github.com/v2fly/v2ray-core/v5/common/protocol/udp"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/net/packetaddr"
+	"github.com/robovpn/v2fly_core/common/protocol/udp"
+	"github.com/robovpn/v2fly_core/features/routing"
 )
 
 type PacketAddrDispatcher struct {

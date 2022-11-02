@@ -3,7 +3,7 @@ package extension
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/features"
+	"github.com/robovpn/v2fly_core/features"
 )
 
 type PersistentStorageEngine interface {

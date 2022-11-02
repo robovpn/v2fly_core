@@ -1,8 +1,8 @@
 package tcp
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 const protocolName = "tcp"
