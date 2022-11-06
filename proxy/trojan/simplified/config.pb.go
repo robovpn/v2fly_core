@@ -1,8 +1,8 @@
 package simplified
 
 import (
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	net "../v2fly_core/common/net"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -177,12 +177,12 @@ func file_proxy_trojan_simplified_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_trojan_simplified_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proxy_trojan_simplified_config_proto_goTypes = []interface{}{
-	(*ServerConfig)(nil),   // 0: v2ray.core.proxy.trojan.simplified.ServerConfig
-	(*ClientConfig)(nil),   // 1: v2ray.core.proxy.trojan.simplified.ClientConfig
-	(*net.IPOrDomain)(nil), // 2: v2ray.core.common.net.IPOrDomain
+	(*ServerConfig)(nil),   // 0: v2fly.core.proxy.trojan.simplified.ServerConfig
+	(*ClientConfig)(nil),   // 1: v2fly.core.proxy.trojan.simplified.ClientConfig
+	(*net.IPOrDomain)(nil), // 2: v2fly.core.common.net.IPOrDomain
 }
 var file_proxy_trojan_simplified_config_proto_depIdxs = []int32{
-	2, // 0: v2ray.core.proxy.trojan.simplified.ClientConfig.address:type_name -> v2ray.core.common.net.IPOrDomain
+	2, // 0: v2fly.core.proxy.trojan.simplified.ClientConfig.address:type_name -> v2fly.core.common.net.IPOrDomain
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

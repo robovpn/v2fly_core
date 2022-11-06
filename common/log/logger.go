@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/signal/done"
-	"github.com/v2fly/v2ray-core/v5/common/signal/semaphore"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/common/signal/done"
+	"../v2fly_core/common/signal/semaphore"
 )
 
 // Writer is the interface for writing logs.

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package v2ray.core.proxy.http;
-option csharp_namespace = "V2Ray.Core.Proxy.Http";
-option go_package = "github.com/v2fly/v2ray-core/v5/proxy/http";
-option java_package = "com.v2ray.core.proxy.http";
+package v2fly.core.proxy.http;
+option csharp_namespace = "v2fly.Core.Proxy.Http";
+option go_package = "../v2fly_core/proxy/http";
+option java_package = "com.v2fly.core.proxy.http";
 option java_multiple_files = true;
 
 import "common/protocol/server_spec.proto";
@@ -24,5 +24,5 @@ message ServerConfig {
 // ClientConfig is the protobuf config for HTTP proxy client.
 message ClientConfig {
   // Sever is a list of HTTP server addresses.
-  repeated v2ray.core.common.protocol.ServerEndpoint server = 1;
+  repeated v2fly.core.common.protocol.ServerEndpoint server = 1;
 }

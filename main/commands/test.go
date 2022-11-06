@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"../v2fly_core/main/commands/base"
 )
 
 // CmdTest tests config files
@@ -12,20 +12,20 @@ var CmdTest = &base.Command{
 	UsageLine:   "{{.Exec}} test [-format=json] [-c config.json] [-d dir]",
 	Short:       "test config files",
 	Long: `
-Test config files, without launching V2Ray server.
+Test config files, without launching v2fly server.
 
 {{.Exec}} will also use the config directory specified by environment 
-variable "v2ray.location.confdir". If no config found, it tries 
+variable "v2fly.location.confdir". If no config found, it tries
 to load config from one of below:
 
 	1. The default "config.json" in the current directory
-	2. The config file from ENV "v2ray.location.config"
+	2. The config file from ENV "v2fly.location.config"
 	3. The stdin if all failed above
 
 Arguments:
 
 	-c, -config <file>
-		Config file for V2Ray. Multiple assign is accepted.
+		Config file for v2fly. Multiple assign is accepted.
 
 	-d, -confdir <dir>
 		A directory with config files. Multiple assign is accepted.
@@ -51,7 +51,7 @@ func executeTest(cmd *base.Command, args []string) {
 	cmd.Flag.Parse(args)
 	printVersion()
 	configFiles = getConfigFilePath()
-	_, err := startV2Ray()
+	_, err := startv2fly()
 	if err != nil {
 		base.Fatalf("Test failed: %s", err)
 	}

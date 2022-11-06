@@ -1,7 +1,7 @@
 package command
 
 import (
-	observatory "github.com/v2fly/v2ray-core/v5/app/observatory"
+	observatory "../v2fly_core/app/observatory"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -203,15 +203,15 @@ func file_app_observatory_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_observatory_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_app_observatory_command_command_proto_goTypes = []interface{}{
-	(*GetOutboundStatusRequest)(nil),      // 0: v2ray.core.app.observatory.command.GetOutboundStatusRequest
-	(*GetOutboundStatusResponse)(nil),     // 1: v2ray.core.app.observatory.command.GetOutboundStatusResponse
-	(*Config)(nil),                        // 2: v2ray.core.app.observatory.command.Config
-	(*observatory.ObservationResult)(nil), // 3: v2ray.core.app.observatory.ObservationResult
+	(*GetOutboundStatusRequest)(nil),      // 0: v2fly.core.app.observatory.command.GetOutboundStatusRequest
+	(*GetOutboundStatusResponse)(nil),     // 1: v2fly.core.app.observatory.command.GetOutboundStatusResponse
+	(*Config)(nil),                        // 2: v2fly.core.app.observatory.command.Config
+	(*observatory.ObservationResult)(nil), // 3: v2fly.core.app.observatory.ObservationResult
 }
 var file_app_observatory_command_command_proto_depIdxs = []int32{
-	3, // 0: v2ray.core.app.observatory.command.GetOutboundStatusResponse.status:type_name -> v2ray.core.app.observatory.ObservationResult
-	0, // 1: v2ray.core.app.observatory.command.ObservatoryService.GetOutboundStatus:input_type -> v2ray.core.app.observatory.command.GetOutboundStatusRequest
-	1, // 2: v2ray.core.app.observatory.command.ObservatoryService.GetOutboundStatus:output_type -> v2ray.core.app.observatory.command.GetOutboundStatusResponse
+	3, // 0: v2fly.core.app.observatory.command.GetOutboundStatusResponse.status:type_name -> v2fly.core.app.observatory.ObservationResult
+	0, // 1: v2fly.core.app.observatory.command.ObservatoryService.GetOutboundStatus:input_type -> v2fly.core.app.observatory.command.GetOutboundStatusRequest
+	1, // 2: v2fly.core.app.observatory.command.ObservatoryService.GetOutboundStatus:output_type -> v2fly.core.app.observatory.command.GetOutboundStatusResponse
 	2, // [2:3] is the sub-list for method output_type
 	1, // [1:2] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

@@ -5,8 +5,8 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
+	"../v2fly_core/common"
+	"../v2fly_core/common/errors"
 )
 
 var byteGroups = []int{8, 4, 4, 4, 12}

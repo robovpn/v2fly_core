@@ -3,8 +3,8 @@ package udp
 import (
 	gonet "net"
 
-	"github.com/v2fly/v2ray-core/v5/common/signal"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"../v2fly_core/common/signal"
+	"../v2fly_core/transport/internet"
 )
 
 type dataHandler func(content []byte, address gonet.Addr)

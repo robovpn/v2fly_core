@@ -1,7 +1,7 @@
 package all
 
 import (
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"../v2fly_core/main/commands/base"
 )
 
 var docMerge = &base.Command{

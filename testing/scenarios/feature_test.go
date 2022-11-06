@@ -11,30 +11,30 @@ import (
 	xproxy "golang.org/x/net/proxy"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/log"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	_ "github.com/v2fly/v2ray-core/v5/app/proxyman/inbound"
-	_ "github.com/v2fly/v2ray-core/v5/app/proxyman/outbound"
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/common"
-	clog "github.com/v2fly/v2ray-core/v5/common/log"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
-	"github.com/v2fly/v2ray-core/v5/proxy/blackhole"
-	"github.com/v2fly/v2ray-core/v5/proxy/dokodemo"
-	"github.com/v2fly/v2ray-core/v5/proxy/freedom"
-	v2http "github.com/v2fly/v2ray-core/v5/proxy/http"
-	"github.com/v2fly/v2ray-core/v5/proxy/socks"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess/inbound"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess/outbound"
-	"github.com/v2fly/v2ray-core/v5/testing/servers/tcp"
-	"github.com/v2fly/v2ray-core/v5/testing/servers/udp"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	core "../v2fly_core"
+	"../v2fly_core/app/dispatcher"
+	"../v2fly_core/app/log"
+	"../v2fly_core/app/proxyman"
+	_ "../v2fly_core/app/proxyman/inbound"
+	_ "../v2fly_core/app/proxyman/outbound"
+	"../v2fly_core/app/router"
+	"../v2fly_core/common"
+	clog "../v2fly_core/common/log"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/common/uuid"
+	"../v2fly_core/proxy/blackhole"
+	"../v2fly_core/proxy/dokodemo"
+	"../v2fly_core/proxy/freedom"
+	v2http "../v2fly_core/proxy/http"
+	"../v2fly_core/proxy/socks"
+	"../v2fly_core/proxy/vmess"
+	"../v2fly_core/proxy/vmess/inbound"
+	"../v2fly_core/proxy/vmess/outbound"
+	"../v2fly_core/testing/servers/tcp"
+	"../v2fly_core/testing/servers/udp"
+	"../v2fly_core/transport/internet"
 )
 
 func TestPassiveConnection(t *testing.T) {
@@ -647,7 +647,7 @@ func TestDomainSniffing(t *testing.T) {
 	}
 }
 
-func TestDialV2Ray(t *testing.T) {
+func TestDialv2fly(t *testing.T) {
 	tcpServer := tcp.Server{
 		MsgProcessor: xor,
 	}

@@ -1,19 +1,19 @@
 package router
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
-	routing_dns "github.com/v2fly/v2ray-core/v5/features/routing/dns"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/features/dns"
+	"../v2fly_core/features/outbound"
+	"../v2fly_core/features/routing"
+	routing_dns "../v2fly_core/features/routing/dns"
+	"../v2fly_core/infra/conf/cfgcommon"
+	"../v2fly_core/infra/conf/geodata"
 )
 
 // Router is an implementation of routing.Router.
@@ -154,7 +154,7 @@ func init() {
 	common.Must(common.RegisterConfig((*SimplifiedConfig)(nil), func(ctx context.Context, config interface{}) (interface{}, error) {
 		ctx = cfgcommon.NewConfigureLoadingContext(ctx)
 
-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
+		geoloadername := platform.NewEnvFlag("v2fly.conf.geoloader").GetValue(func() string {
 			return "standard"
 		})
 

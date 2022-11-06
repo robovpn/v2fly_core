@@ -31,7 +31,7 @@ func NewInstanceManagementServiceClient(cc grpc.ClientConnInterface) InstanceMan
 
 func (c *instanceManagementServiceClient) ListInstance(ctx context.Context, in *ListInstanceReq, opts ...grpc.CallOption) (*ListInstanceResp, error) {
 	out := new(ListInstanceResp)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.instman.command.InstanceManagementService/ListInstance", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.instman.command.InstanceManagementService/ListInstance", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -40,7 +40,7 @@ func (c *instanceManagementServiceClient) ListInstance(ctx context.Context, in *
 
 func (c *instanceManagementServiceClient) AddInstance(ctx context.Context, in *AddInstanceReq, opts ...grpc.CallOption) (*AddInstanceResp, error) {
 	out := new(AddInstanceResp)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.instman.command.InstanceManagementService/AddInstance", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.instman.command.InstanceManagementService/AddInstance", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -49,7 +49,7 @@ func (c *instanceManagementServiceClient) AddInstance(ctx context.Context, in *A
 
 func (c *instanceManagementServiceClient) StartInstance(ctx context.Context, in *StartInstanceReq, opts ...grpc.CallOption) (*StartInstanceResp, error) {
 	out := new(StartInstanceResp)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.instman.command.InstanceManagementService/StartInstance", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.instman.command.InstanceManagementService/StartInstance", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -103,7 +103,7 @@ func _InstanceManagementService_ListInstance_Handler(srv interface{}, ctx contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.instman.command.InstanceManagementService/ListInstance",
+		FullMethod: "/v2fly.core.app.instman.command.InstanceManagementService/ListInstance",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(InstanceManagementServiceServer).ListInstance(ctx, req.(*ListInstanceReq))
@@ -121,7 +121,7 @@ func _InstanceManagementService_AddInstance_Handler(srv interface{}, ctx context
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.instman.command.InstanceManagementService/AddInstance",
+		FullMethod: "/v2fly.core.app.instman.command.InstanceManagementService/AddInstance",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(InstanceManagementServiceServer).AddInstance(ctx, req.(*AddInstanceReq))
@@ -139,7 +139,7 @@ func _InstanceManagementService_StartInstance_Handler(srv interface{}, ctx conte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.instman.command.InstanceManagementService/StartInstance",
+		FullMethod: "/v2fly.core.app.instman.command.InstanceManagementService/StartInstance",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(InstanceManagementServiceServer).StartInstance(ctx, req.(*StartInstanceReq))
@@ -151,7 +151,7 @@ func _InstanceManagementService_StartInstance_Handler(srv interface{}, ctx conte
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var InstanceManagementService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v2ray.core.app.instman.command.InstanceManagementService",
+	ServiceName: "v2fly.core.app.instman.command.InstanceManagementService",
 	HandlerType: (*InstanceManagementServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

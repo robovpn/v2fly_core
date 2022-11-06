@@ -31,7 +31,7 @@ func NewRoutingServiceClient(cc grpc.ClientConnInterface) RoutingServiceClient {
 }
 
 func (c *routingServiceClient) SubscribeRoutingStats(ctx context.Context, in *SubscribeRoutingStatsRequest, opts ...grpc.CallOption) (RoutingService_SubscribeRoutingStatsClient, error) {
-	stream, err := c.cc.NewStream(ctx, &RoutingService_ServiceDesc.Streams[0], "/v2ray.core.app.router.command.RoutingService/SubscribeRoutingStats", opts...)
+	stream, err := c.cc.NewStream(ctx, &RoutingService_ServiceDesc.Streams[0], "/v2fly.core.app.router.command.RoutingService/SubscribeRoutingStats", opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -64,7 +64,7 @@ func (x *routingServiceSubscribeRoutingStatsClient) Recv() (*RoutingContext, err
 
 func (c *routingServiceClient) TestRoute(ctx context.Context, in *TestRouteRequest, opts ...grpc.CallOption) (*RoutingContext, error) {
 	out := new(RoutingContext)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.router.command.RoutingService/TestRoute", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.router.command.RoutingService/TestRoute", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -73,7 +73,7 @@ func (c *routingServiceClient) TestRoute(ctx context.Context, in *TestRouteReque
 
 func (c *routingServiceClient) GetBalancerInfo(ctx context.Context, in *GetBalancerInfoRequest, opts ...grpc.CallOption) (*GetBalancerInfoResponse, error) {
 	out := new(GetBalancerInfoResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.router.command.RoutingService/GetBalancerInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.router.command.RoutingService/GetBalancerInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -82,7 +82,7 @@ func (c *routingServiceClient) GetBalancerInfo(ctx context.Context, in *GetBalan
 
 func (c *routingServiceClient) OverrideBalancerTarget(ctx context.Context, in *OverrideBalancerTargetRequest, opts ...grpc.CallOption) (*OverrideBalancerTargetResponse, error) {
 	out := new(OverrideBalancerTargetResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.router.command.RoutingService/OverrideBalancerTarget", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.router.command.RoutingService/OverrideBalancerTarget", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -160,7 +160,7 @@ func _RoutingService_TestRoute_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.router.command.RoutingService/TestRoute",
+		FullMethod: "/v2fly.core.app.router.command.RoutingService/TestRoute",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(RoutingServiceServer).TestRoute(ctx, req.(*TestRouteRequest))
@@ -178,7 +178,7 @@ func _RoutingService_GetBalancerInfo_Handler(srv interface{}, ctx context.Contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.router.command.RoutingService/GetBalancerInfo",
+		FullMethod: "/v2fly.core.app.router.command.RoutingService/GetBalancerInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(RoutingServiceServer).GetBalancerInfo(ctx, req.(*GetBalancerInfoRequest))
@@ -196,7 +196,7 @@ func _RoutingService_OverrideBalancerTarget_Handler(srv interface{}, ctx context
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.router.command.RoutingService/OverrideBalancerTarget",
+		FullMethod: "/v2fly.core.app.router.command.RoutingService/OverrideBalancerTarget",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(RoutingServiceServer).OverrideBalancerTarget(ctx, req.(*OverrideBalancerTargetRequest))
@@ -208,7 +208,7 @@ func _RoutingService_OverrideBalancerTarget_Handler(srv interface{}, ctx context
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RoutingService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v2ray.core.app.router.command.RoutingService",
+	ServiceName: "v2fly.core.app.router.command.RoutingService",
 	HandlerType: (*RoutingServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -651,30 +651,30 @@ func file_app_policy_config_proto_rawDescGZIP() []byte {
 
 var file_app_policy_config_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_app_policy_config_proto_goTypes = []interface{}{
-	(*Second)(nil),             // 0: v2ray.core.app.policy.Second
-	(*Policy)(nil),             // 1: v2ray.core.app.policy.Policy
-	(*SystemPolicy)(nil),       // 2: v2ray.core.app.policy.SystemPolicy
-	(*Config)(nil),             // 3: v2ray.core.app.policy.Config
-	(*Policy_Timeout)(nil),     // 4: v2ray.core.app.policy.Policy.Timeout
-	(*Policy_Stats)(nil),       // 5: v2ray.core.app.policy.Policy.Stats
-	(*Policy_Buffer)(nil),      // 6: v2ray.core.app.policy.Policy.Buffer
-	(*Policy_Speed)(nil),       // 7: v2ray.core.app.policy.Policy.Speed
-	(*SystemPolicy_Stats)(nil), // 8: v2ray.core.app.policy.SystemPolicy.Stats
-	nil,                        // 9: v2ray.core.app.policy.Config.LevelEntry
+	(*Second)(nil),             // 0: v2fly.core.app.policy.Second
+	(*Policy)(nil),             // 1: v2fly.core.app.policy.Policy
+	(*SystemPolicy)(nil),       // 2: v2fly.core.app.policy.SystemPolicy
+	(*Config)(nil),             // 3: v2fly.core.app.policy.Config
+	(*Policy_Timeout)(nil),     // 4: v2fly.core.app.policy.Policy.Timeout
+	(*Policy_Stats)(nil),       // 5: v2fly.core.app.policy.Policy.Stats
+	(*Policy_Buffer)(nil),      // 6: v2fly.core.app.policy.Policy.Buffer
+	(*Policy_Speed)(nil),       // 7: v2fly.core.app.policy.Policy.Speed
+	(*SystemPolicy_Stats)(nil), // 8: v2fly.core.app.policy.SystemPolicy.Stats
+	nil,                        // 9: v2fly.core.app.policy.Config.LevelEntry
 }
 var file_app_policy_config_proto_depIdxs = []int32{
-	4,  // 0: v2ray.core.app.policy.Policy.timeout:type_name -> v2ray.core.app.policy.Policy.Timeout
-	5,  // 1: v2ray.core.app.policy.Policy.stats:type_name -> v2ray.core.app.policy.Policy.Stats
-	6,  // 2: v2ray.core.app.policy.Policy.buffer:type_name -> v2ray.core.app.policy.Policy.Buffer
-	7,  // 3: v2ray.core.app.policy.Policy.speed:type_name -> v2ray.core.app.policy.Policy.Speed
-	8,  // 4: v2ray.core.app.policy.SystemPolicy.stats:type_name -> v2ray.core.app.policy.SystemPolicy.Stats
-	9,  // 5: v2ray.core.app.policy.Config.level:type_name -> v2ray.core.app.policy.Config.LevelEntry
-	2,  // 6: v2ray.core.app.policy.Config.system:type_name -> v2ray.core.app.policy.SystemPolicy
-	0,  // 7: v2ray.core.app.policy.Policy.Timeout.handshake:type_name -> v2ray.core.app.policy.Second
-	0,  // 8: v2ray.core.app.policy.Policy.Timeout.connection_idle:type_name -> v2ray.core.app.policy.Second
-	0,  // 9: v2ray.core.app.policy.Policy.Timeout.uplink_only:type_name -> v2ray.core.app.policy.Second
-	0,  // 10: v2ray.core.app.policy.Policy.Timeout.downlink_only:type_name -> v2ray.core.app.policy.Second
-	1,  // 11: v2ray.core.app.policy.Config.LevelEntry.value:type_name -> v2ray.core.app.policy.Policy
+	4,  // 0: v2fly.core.app.policy.Policy.timeout:type_name -> v2fly.core.app.policy.Policy.Timeout
+	5,  // 1: v2fly.core.app.policy.Policy.stats:type_name -> v2fly.core.app.policy.Policy.Stats
+	6,  // 2: v2fly.core.app.policy.Policy.buffer:type_name -> v2fly.core.app.policy.Policy.Buffer
+	7,  // 3: v2fly.core.app.policy.Policy.speed:type_name -> v2fly.core.app.policy.Policy.Speed
+	8,  // 4: v2fly.core.app.policy.SystemPolicy.stats:type_name -> v2fly.core.app.policy.SystemPolicy.Stats
+	9,  // 5: v2fly.core.app.policy.Config.level:type_name -> v2fly.core.app.policy.Config.LevelEntry
+	2,  // 6: v2fly.core.app.policy.Config.system:type_name -> v2fly.core.app.policy.SystemPolicy
+	0,  // 7: v2fly.core.app.policy.Policy.Timeout.handshake:type_name -> v2fly.core.app.policy.Second
+	0,  // 8: v2fly.core.app.policy.Policy.Timeout.connection_idle:type_name -> v2fly.core.app.policy.Second
+	0,  // 9: v2fly.core.app.policy.Policy.Timeout.uplink_only:type_name -> v2fly.core.app.policy.Second
+	0,  // 10: v2fly.core.app.policy.Policy.Timeout.downlink_only:type_name -> v2fly.core.app.policy.Second
+	1,  // 11: v2fly.core.app.policy.Config.LevelEntry.value:type_name -> v2fly.core.app.policy.Policy
 	12, // [12:12] is the sub-list for method output_type
 	12, // [12:12] is the sub-list for method input_type
 	12, // [12:12] is the sub-list for extension type_name

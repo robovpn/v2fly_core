@@ -1,2 +1,2 @@
-// Package app contains feature implementations of V2Ray. The features may be enabled during runtime.
+// Package app contains feature implementations of v2fly. The features may be enabled during runtime.
 package app

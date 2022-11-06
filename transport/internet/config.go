@@ -5,10 +5,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/protoext"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"../v2fly_core/common"
+	"../v2fly_core/common/protoext"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/features"
 )
 
 type ConfigCreator func() interface{}

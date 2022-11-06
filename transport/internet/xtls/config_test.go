@@ -7,9 +7,9 @@ import (
 
 	xtls "github.com/xtls/go"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/protocol/tls/cert"
-	. "v2ray.com/core/transport/internet/xtls"
+	"v2fly_core/common"
+	"v2fly_core/common/protocol/tls/cert"
+	. "v2fly_core/transport/internet/xtls"
 )
 
 func TestCertificateIssuing(t *testing.T) {
@@ -23,12 +23,12 @@ func TestCertificateIssuing(t *testing.T) {
 	}
 
 	xtlsConfig := c.GetXTLSConfig()
-	v2rayCert, err := xtlsConfig.GetCertificate(&xtls.ClientHelloInfo{
+	v2flyCert, err := xtlsConfig.GetCertificate(&xtls.ClientHelloInfo{
 		ServerName: "www.v2fly.org",
 	})
 	common.Must(err)
 
-	x509Cert, err := x509.ParseCertificate(v2rayCert.Certificate[0])
+	x509Cert, err := x509.ParseCertificate(v2flyCert.Certificate[0])
 	common.Must(err)
 	if !x509Cert.NotAfter.After(time.Now()) {
 		t.Error("NotAfter: ", x509Cert.NotAfter)
@@ -52,12 +52,12 @@ func TestExpiredCertificate(t *testing.T) {
 	}
 
 	xtlsConfig := c.GetXTLSConfig()
-	v2rayCert, err := xtlsConfig.GetCertificate(&xtls.ClientHelloInfo{
+	v2flyCert, err := xtlsConfig.GetCertificate(&xtls.ClientHelloInfo{
 		ServerName: "www.v2fly.org",
 	})
 	common.Must(err)
 
-	x509Cert, err := x509.ParseCertificate(v2rayCert.Certificate[0])
+	x509Cert, err := x509.ParseCertificate(v2flyCert.Certificate[0])
 	common.Must(err)
 	if !x509Cert.NotAfter.After(time.Now()) {
 		t.Error("NotAfter: ", x509Cert.NotAfter)

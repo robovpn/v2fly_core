@@ -10,10 +10,10 @@ import (
 	gonet "net"
 	"sync"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/cache"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
+	"../v2fly_core/common"
+	"../v2fly_core/common/cache"
+	"../v2fly_core/common/net"
+	"../v2fly_core/features/dns"
 )
 
 type Holder struct {

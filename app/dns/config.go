@@ -4,9 +4,9 @@
 package dns
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/strmatcher"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/strmatcher"
+	"../v2fly_core/common/uuid"
 )
 
 var typeMap = map[DomainMatchingType]strmatcher.Type{
@@ -62,5 +62,5 @@ func toNetIP(addrs []net.Address) ([]net.IP, error) {
 
 func generateRandomTag() string {
 	id := uuid.New()
-	return "v2ray.system." + id.String()
+	return "v2fly.system." + id.String()
 }

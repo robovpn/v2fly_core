@@ -3,18 +3,18 @@ package v2binding
 import (
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/commander"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/instman"
-	"github.com/v2fly/v2ray-core/v5/app/instman/command"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	_ "github.com/v2fly/v2ray-core/v5/main/distro/all"
-	"github.com/v2fly/v2ray-core/v5/proxy/blackhole"
-	"github.com/v2fly/v2ray-core/v5/proxy/dokodemo"
+	core "../v2fly_core"
+	"../v2fly_core/app/commander"
+	"../v2fly_core/app/dispatcher"
+	"../v2fly_core/app/instman"
+	"../v2fly_core/app/instman/command"
+	"../v2fly_core/app/proxyman"
+	"../v2fly_core/app/router"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/serial"
+	_ "../v2fly_core/main/distro/all"
+	"../v2fly_core/proxy/blackhole"
+	"../v2fly_core/proxy/dokodemo"
 )
 
 type bindingInstance struct {

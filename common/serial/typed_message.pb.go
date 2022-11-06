@@ -116,7 +116,7 @@ func file_common_serial_typed_message_proto_rawDescGZIP() []byte {
 
 var file_common_serial_typed_message_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_serial_typed_message_proto_goTypes = []interface{}{
-	(*TypedMessage)(nil), // 0: v2ray.core.common.serial.TypedMessage
+	(*TypedMessage)(nil), // 0: v2fly.core.common.serial.TypedMessage
 }
 var file_common_serial_typed_message_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

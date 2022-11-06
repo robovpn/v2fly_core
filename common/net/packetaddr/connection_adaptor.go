@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
-	"github.com/v2fly/v2ray-core/v5/transport"
+	"../v2fly_core/common"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/errors"
+	"../v2fly_core/common/net"
+	"../v2fly_core/features/routing"
+	"../v2fly_core/transport"
 )
 
 var (

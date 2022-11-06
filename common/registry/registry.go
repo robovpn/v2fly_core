@@ -11,9 +11,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	protov2 "google.golang.org/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common/protoext"
-	"github.com/v2fly/v2ray-core/v5/common/protofilter"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
+	"../v2fly_core/common/protoext"
+	"../v2fly_core/common/protofilter"
+	"../v2fly_core/common/serial"
 )
 
 type implementationRegistry struct {

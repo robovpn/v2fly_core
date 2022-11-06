@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
+	"v2fly_core/common"
+	"v2fly_core/common/buf"
 )
 
 type FetchCommand struct{}

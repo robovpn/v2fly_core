@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/signal"
-	"github.com/v2fly/v2ray-core/v5/common/signal/done"
+	"../v2fly_core/common"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/signal"
+	"../v2fly_core/common/signal/done"
 )
 
 type state byte

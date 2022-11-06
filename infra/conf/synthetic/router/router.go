@@ -1,6 +1,6 @@
 package router
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,12 +9,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	rule2 "github.com/v2fly/v2ray-core/v5/infra/conf/rule"
+	"../v2fly_core/app/router"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/infra/conf/cfgcommon"
+	"../v2fly_core/infra/conf/geodata"
+	rule2 "../v2fly_core/infra/conf/rule"
 )
 
 type RouterRulesConfig struct { // nolint: revive
@@ -125,7 +125,7 @@ func (c *RouterConfig) Build() (*router.Config, error) {
 	if c.cfgctx == nil {
 		c.cfgctx = cfgcommon.NewConfigureLoadingContext(context.Background())
 
-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
+		geoloadername := platform.NewEnvFlag("v2fly.conf.geoloader").GetValue(func() string {
 			return "standard"
 		})
 

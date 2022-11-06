@@ -4,8 +4,8 @@
 package vless
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/uuid"
 )
 
 // AsAccount implements protocol.Account.AsAccount().

@@ -182,7 +182,7 @@ var file_common_protoext_extensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		ExtendedType:  (*descriptorpb.MessageOptions)(nil),
 		ExtensionType: (*MessageOpt)(nil),
 		Field:         50000,
-		Name:          "v2ray.core.common.protoext.message_opt",
+		Name:          "v2fly.core.common.protoext.message_opt",
 		Tag:           "bytes,50000,opt,name=message_opt",
 		Filename:      "common/protoext/extensions.proto",
 	},
@@ -190,7 +190,7 @@ var file_common_protoext_extensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*FieldOpt)(nil),
 		Field:         50000,
-		Name:          "v2ray.core.common.protoext.field_opt",
+		Name:          "v2fly.core.common.protoext.field_opt",
 		Tag:           "bytes,50000,opt,name=field_opt",
 		Filename:      "common/protoext/extensions.proto",
 	},
@@ -198,13 +198,13 @@ var file_common_protoext_extensions_proto_extTypes = []protoimpl.ExtensionInfo{
 
 // Extension fields to descriptorpb.MessageOptions.
 var (
-	// optional v2ray.core.common.protoext.MessageOpt message_opt = 50000;
+	// optional v2fly.core.common.protoext.MessageOpt message_opt = 50000;
 	E_MessageOpt = &file_common_protoext_extensions_proto_extTypes[0]
 )
 
 // Extension fields to descriptorpb.FieldOptions.
 var (
-	// optional v2ray.core.common.protoext.FieldOpt field_opt = 50000;
+	// optional v2fly.core.common.protoext.FieldOpt field_opt = 50000;
 	E_FieldOpt = &file_common_protoext_extensions_proto_extTypes[1]
 )
 
@@ -283,16 +283,16 @@ func file_common_protoext_extensions_proto_rawDescGZIP() []byte {
 
 var file_common_protoext_extensions_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_common_protoext_extensions_proto_goTypes = []interface{}{
-	(*MessageOpt)(nil),                  // 0: v2ray.core.common.protoext.MessageOpt
-	(*FieldOpt)(nil),                    // 1: v2ray.core.common.protoext.FieldOpt
+	(*MessageOpt)(nil),                  // 0: v2fly.core.common.protoext.MessageOpt
+	(*FieldOpt)(nil),                    // 1: v2fly.core.common.protoext.FieldOpt
 	(*descriptorpb.MessageOptions)(nil), // 2: google.protobuf.MessageOptions
 	(*descriptorpb.FieldOptions)(nil),   // 3: google.protobuf.FieldOptions
 }
 var file_common_protoext_extensions_proto_depIdxs = []int32{
-	2, // 0: v2ray.core.common.protoext.message_opt:extendee -> google.protobuf.MessageOptions
-	3, // 1: v2ray.core.common.protoext.field_opt:extendee -> google.protobuf.FieldOptions
-	0, // 2: v2ray.core.common.protoext.message_opt:type_name -> v2ray.core.common.protoext.MessageOpt
-	1, // 3: v2ray.core.common.protoext.field_opt:type_name -> v2ray.core.common.protoext.FieldOpt
+	2, // 0: v2fly.core.common.protoext.message_opt:extendee -> google.protobuf.MessageOptions
+	3, // 1: v2fly.core.common.protoext.field_opt:extendee -> google.protobuf.FieldOptions
+	0, // 2: v2fly.core.common.protoext.message_opt:type_name -> v2fly.core.common.protoext.MessageOpt
+	1, // 3: v2fly.core.common.protoext.field_opt:type_name -> v2fly.core.common.protoext.FieldOpt
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	2, // [2:4] is the sub-list for extension type_name

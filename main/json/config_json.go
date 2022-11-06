@@ -1,15 +1,15 @@
 package json
 
-//go:generate go run v2ray.com/core/common/errors/errorgen
+//go:generate go run v2fly_core/common/errors/errorgen
 
 import (
 	"io"
 	"os"
 
-	"v2ray.com/core"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/cmdarg"
-	"v2ray.com/core/main/confloader"
+	"v2fly_core"
+	"v2fly_core/common"
+	"v2fly_core/common/cmdarg"
+	"v2fly_core/main/confloader"
 )
 
 func init() {

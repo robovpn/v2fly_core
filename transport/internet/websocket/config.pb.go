@@ -1,7 +1,7 @@
 package websocket
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -220,11 +220,11 @@ func file_transport_internet_websocket_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_websocket_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_transport_internet_websocket_config_proto_goTypes = []interface{}{
-	(*Header)(nil), // 0: v2ray.core.transport.internet.websocket.Header
-	(*Config)(nil), // 1: v2ray.core.transport.internet.websocket.Config
+	(*Header)(nil), // 0: v2fly.core.transport.internet.websocket.Header
+	(*Config)(nil), // 1: v2fly.core.transport.internet.websocket.Config
 }
 var file_transport_internet_websocket_config_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.transport.internet.websocket.Config.header:type_name -> v2ray.core.transport.internet.websocket.Header
+	0, // 0: v2fly.core.transport.internet.websocket.Config.header:type_name -> v2fly.core.transport.internet.websocket.Header
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

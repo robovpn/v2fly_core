@@ -6,10 +6,10 @@ import (
 	"go.starlark.net/starlark"
 	"go.starlark.net/syntax"
 
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/strmatcher"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
+	"../v2fly_core/app/router/routercommon"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/strmatcher"
+	"../v2fly_core/features/routing"
 )
 
 type Condition interface {

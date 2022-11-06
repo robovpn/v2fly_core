@@ -9,9 +9,9 @@ import (
 
 	xtls "github.com/xtls/go"
 
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol/tls/cert"
-	"v2ray.com/core/transport/internet"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol/tls/cert"
+	"v2fly_core/transport/internet"
 )
 
 var (

@@ -1,6 +1,6 @@
 package environment
 
-import "github.com/v2fly/v2ray-core/v5/common/log"
+import "../v2fly_core/common/log"
 
 type ConnectionCapabilitySet interface {
 	ConnectionLogCapabilitySet

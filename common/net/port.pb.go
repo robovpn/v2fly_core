@@ -156,11 +156,11 @@ func file_common_net_port_proto_rawDescGZIP() []byte {
 
 var file_common_net_port_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_common_net_port_proto_goTypes = []interface{}{
-	(*PortRange)(nil), // 0: v2ray.core.common.net.PortRange
-	(*PortList)(nil),  // 1: v2ray.core.common.net.PortList
+	(*PortRange)(nil), // 0: v2fly.core.common.net.PortRange
+	(*PortList)(nil),  // 1: v2fly.core.common.net.PortList
 }
 var file_common_net_port_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.common.net.PortList.range:type_name -> v2ray.core.common.net.PortRange
+	0, // 0: v2fly.core.common.net.PortList.range:type_name -> v2fly.core.common.net.PortRange
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

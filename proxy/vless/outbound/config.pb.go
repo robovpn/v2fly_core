@@ -1,9 +1,9 @@
 package outbound
 
 import (
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	protocol "github.com/v2fly/v2ray-core/v5/common/protocol"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	net "../v2fly_core/common/net"
+	protocol "../v2fly_core/common/protocol"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -179,14 +179,14 @@ func file_proxy_vless_outbound_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_vless_outbound_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proxy_vless_outbound_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                  // 0: v2ray.core.proxy.vless.outbound.Config
-	(*SimplifiedConfig)(nil),        // 1: v2ray.core.proxy.vless.outbound.SimplifiedConfig
-	(*protocol.ServerEndpoint)(nil), // 2: v2ray.core.common.protocol.ServerEndpoint
-	(*net.IPOrDomain)(nil),          // 3: v2ray.core.common.net.IPOrDomain
+	(*Config)(nil),                  // 0: v2fly.core.proxy.vless.outbound.Config
+	(*SimplifiedConfig)(nil),        // 1: v2fly.core.proxy.vless.outbound.SimplifiedConfig
+	(*protocol.ServerEndpoint)(nil), // 2: v2fly.core.common.protocol.ServerEndpoint
+	(*net.IPOrDomain)(nil),          // 3: v2fly.core.common.net.IPOrDomain
 }
 var file_proxy_vless_outbound_config_proto_depIdxs = []int32{
-	2, // 0: v2ray.core.proxy.vless.outbound.Config.vnext:type_name -> v2ray.core.common.protocol.ServerEndpoint
-	3, // 1: v2ray.core.proxy.vless.outbound.SimplifiedConfig.address:type_name -> v2ray.core.common.net.IPOrDomain
+	2, // 0: v2fly.core.proxy.vless.outbound.Config.vnext:type_name -> v2fly.core.common.protocol.ServerEndpoint
+	3, // 1: v2fly.core.proxy.vless.outbound.SimplifiedConfig.address:type_name -> v2fly.core.common.net.IPOrDomain
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

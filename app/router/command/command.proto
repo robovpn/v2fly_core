@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-package v2ray.core.app.router.command;
-option csharp_namespace = "V2Ray.Core.App.Router.Command";
-option go_package = "github.com/v2fly/v2ray-core/v5/app/router/command";
-option java_package = "com.v2ray.core.app.router.command";
+package v2fly.core.app.router.command;
+option csharp_namespace = "v2fly.Core.App.Router.Command";
+option go_package = "../v2fly_core/app/router/command";
+option java_package = "com.v2fly.core.app.router.command";
 option java_multiple_files = true;
 
 import "common/protoext/extensions.proto";
 import "common/net/network.proto";
 
 // RoutingContext is the context with information relative to routing process.
-// It conforms to the structure of v2ray.core.features.routing.Context and
-// v2ray.core.features.routing.Route.
+// It conforms to the structure of v2fly.core.features.routing.Context and
+// v2fly.core.features.routing.Route.
 message RoutingContext {
   string InboundTag = 1;
-  v2ray.core.common.net.Network Network = 2;
+  v2fly.core.common.net.Network Network = 2;
   repeated bytes SourceIPs = 3;
   repeated bytes TargetIPs = 4;
   uint32 SourcePort = 5;
@@ -28,7 +28,7 @@ message RoutingContext {
 }
 
 // SubscribeRoutingStatsRequest subscribes to routing statistics channel if
-// opened by v2ray-core.
+// opened by v2fly-core.
 // * FieldSelectors selects a subset of fields in routing statistics to return.
 // Valid selectors:
 //  - inbound: Selects connection's inbound tag.
@@ -99,6 +99,6 @@ service RoutingService {
 }
 
 message Config {
-  option (v2ray.core.common.protoext.message_opt).type = "grpcservice";
-  option (v2ray.core.common.protoext.message_opt).short_name = "router";
+  option (v2fly.core.common.protoext.message_opt).type = "grpcservice";
+  option (v2fly.core.common.protoext.message_opt).short_name = "router";
 }

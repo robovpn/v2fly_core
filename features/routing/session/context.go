@@ -3,9 +3,9 @@ package session
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/session"
+	"../v2fly_core/features/routing"
 )
 
 // Context is an implementation of routing.Context, which is a wrapper of context.context with session info.

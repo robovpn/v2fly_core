@@ -11,9 +11,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
 
-	logService "v2ray.com/core/app/log/command"
-	statsService "v2ray.com/core/app/stats/command"
-	"v2ray.com/core/common"
+	logService "v2fly_core/app/log/command"
+	statsService "v2fly_core/app/stats/command"
+	"v2fly_core/common"
 )
 
 type APICommand struct{}
@@ -24,10 +24,10 @@ func (c *APICommand) Name() string {
 
 func (c *APICommand) Description() Description {
 	return Description{
-		Short: "Call V2Ray API",
+		Short: "Call v2fly API",
 		Usage: []string{
 			"v2ctl api [--server=127.0.0.1:8080] Service.Method Request",
-			"Call an API in an V2Ray process.",
+			"Call an API in an v2fly process.",
 			"The following methods are currently supported:",
 			"\tLoggerService.RestartLogger",
 			"\tStatsService.GetStats",

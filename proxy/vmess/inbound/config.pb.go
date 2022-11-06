@@ -1,8 +1,8 @@
 package inbound
 
 import (
-	protocol "github.com/v2fly/v2ray-core/v5/common/protocol"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	protocol "../v2fly_core/common/protocol"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -299,16 +299,16 @@ func file_proxy_vmess_inbound_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_vmess_inbound_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_vmess_inbound_config_proto_goTypes = []interface{}{
-	(*DetourConfig)(nil),     // 0: v2ray.core.proxy.vmess.inbound.DetourConfig
-	(*DefaultConfig)(nil),    // 1: v2ray.core.proxy.vmess.inbound.DefaultConfig
-	(*Config)(nil),           // 2: v2ray.core.proxy.vmess.inbound.Config
-	(*SimplifiedConfig)(nil), // 3: v2ray.core.proxy.vmess.inbound.SimplifiedConfig
-	(*protocol.User)(nil),    // 4: v2ray.core.common.protocol.User
+	(*DetourConfig)(nil),     // 0: v2fly.core.proxy.vmess.inbound.DetourConfig
+	(*DefaultConfig)(nil),    // 1: v2fly.core.proxy.vmess.inbound.DefaultConfig
+	(*Config)(nil),           // 2: v2fly.core.proxy.vmess.inbound.Config
+	(*SimplifiedConfig)(nil), // 3: v2fly.core.proxy.vmess.inbound.SimplifiedConfig
+	(*protocol.User)(nil),    // 4: v2fly.core.common.protocol.User
 }
 var file_proxy_vmess_inbound_config_proto_depIdxs = []int32{
-	4, // 0: v2ray.core.proxy.vmess.inbound.Config.user:type_name -> v2ray.core.common.protocol.User
-	1, // 1: v2ray.core.proxy.vmess.inbound.Config.default:type_name -> v2ray.core.proxy.vmess.inbound.DefaultConfig
-	0, // 2: v2ray.core.proxy.vmess.inbound.Config.detour:type_name -> v2ray.core.proxy.vmess.inbound.DetourConfig
+	4, // 0: v2fly.core.proxy.vmess.inbound.Config.user:type_name -> v2fly.core.common.protocol.User
+	1, // 1: v2fly.core.proxy.vmess.inbound.Config.default:type_name -> v2fly.core.proxy.vmess.inbound.DefaultConfig
+	0, // 2: v2fly.core.proxy.vmess.inbound.Config.detour:type_name -> v2fly.core.proxy.vmess.inbound.DetourConfig
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

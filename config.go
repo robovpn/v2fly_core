@@ -11,9 +11,9 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/cmdarg"
+	"../v2fly_core/common"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/cmdarg"
 )
 
 const (
@@ -31,14 +31,14 @@ const (
 	FormatProtobufShort = "pb"
 )
 
-// ConfigFormat is a configurable format of V2Ray config file.
+// ConfigFormat is a configurable format of v2fly config file.
 type ConfigFormat struct {
 	Name      []string
 	Extension []string
 	Loader    ConfigLoader
 }
 
-// ConfigLoader is a utility to load V2Ray config from external source.
+// ConfigLoader is a utility to load v2fly config from external source.
 type ConfigLoader func(input interface{}) (*Config, error)
 
 var (

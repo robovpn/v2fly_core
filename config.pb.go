@@ -7,7 +7,7 @@
 package core
 
 import (
-	transport "github.com/v2fly/v2ray-core/v5/transport"
+	transport "../v2fly_core/transport"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -22,7 +22,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// Config is the master config of V2Ray. V2Ray takes this config as input and
+// Config is the master config of v2fly. v2fly takes this config as input and
 // functions accordingly.
 type Config struct {
 	state         protoimpl.MessageState
@@ -34,7 +34,7 @@ type Config struct {
 	// Outbound handler configurations. Must have at least one item. The first
 	// item is used as default for routing.
 	Outbound []*OutboundHandlerConfig `protobuf:"bytes,2,rep,name=outbound,proto3" json:"outbound,omitempty"`
-	// App is for configurations of all features in V2Ray. A feature must
+	// App is for configurations of all features in v2fly. A feature must
 	// implement the Feature interface, and its config type must be registered
 	// through common.RegisterConfig.
 	App []*anypb.Any `protobuf:"bytes,4,rep,name=app,proto3" json:"app,omitempty"`
@@ -45,7 +45,7 @@ type Config struct {
 	// Deprecated: Do not use.
 	Transport *transport.Config `protobuf:"bytes,5,opt,name=transport,proto3" json:"transport,omitempty"`
 	// Configuration for extensions. The config may not work if corresponding
-	// extension is not loaded into V2Ray. V2Ray will ignore such config during
+	// extension is not loaded into v2fly. v2fly will ignore such config during
 	// initialization.
 	Extension []*anypb.Any `protobuf:"bytes,6,rep,name=extension,proto3" json:"extension,omitempty"`
 }
@@ -343,22 +343,22 @@ func file_config_proto_rawDescGZIP() []byte {
 
 var file_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                // 0: v2ray.core.Config
-	(*InboundHandlerConfig)(nil),  // 1: v2ray.core.InboundHandlerConfig
-	(*OutboundHandlerConfig)(nil), // 2: v2ray.core.OutboundHandlerConfig
+	(*Config)(nil),                // 0: v2fly.core.Config
+	(*InboundHandlerConfig)(nil),  // 1: v2fly.core.InboundHandlerConfig
+	(*OutboundHandlerConfig)(nil), // 2: v2fly.core.OutboundHandlerConfig
 	(*anypb.Any)(nil),             // 3: google.protobuf.Any
-	(*transport.Config)(nil),      // 4: v2ray.core.transport.Config
+	(*transport.Config)(nil),      // 4: v2fly.core.transport.Config
 }
 var file_config_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.Config.inbound:type_name -> v2ray.core.InboundHandlerConfig
-	2, // 1: v2ray.core.Config.outbound:type_name -> v2ray.core.OutboundHandlerConfig
-	3, // 2: v2ray.core.Config.app:type_name -> google.protobuf.Any
-	4, // 3: v2ray.core.Config.transport:type_name -> v2ray.core.transport.Config
-	3, // 4: v2ray.core.Config.extension:type_name -> google.protobuf.Any
-	3, // 5: v2ray.core.InboundHandlerConfig.receiver_settings:type_name -> google.protobuf.Any
-	3, // 6: v2ray.core.InboundHandlerConfig.proxy_settings:type_name -> google.protobuf.Any
-	3, // 7: v2ray.core.OutboundHandlerConfig.sender_settings:type_name -> google.protobuf.Any
-	3, // 8: v2ray.core.OutboundHandlerConfig.proxy_settings:type_name -> google.protobuf.Any
+	1, // 0: v2fly.core.Config.inbound:type_name -> v2fly.core.InboundHandlerConfig
+	2, // 1: v2fly.core.Config.outbound:type_name -> v2fly.core.OutboundHandlerConfig
+	3, // 2: v2fly.core.Config.app:type_name -> google.protobuf.Any
+	4, // 3: v2fly.core.Config.transport:type_name -> v2fly.core.transport.Config
+	3, // 4: v2fly.core.Config.extension:type_name -> google.protobuf.Any
+	3, // 5: v2fly.core.InboundHandlerConfig.receiver_settings:type_name -> google.protobuf.Any
+	3, // 6: v2fly.core.InboundHandlerConfig.proxy_settings:type_name -> google.protobuf.Any
+	3, // 7: v2fly.core.OutboundHandlerConfig.sender_settings:type_name -> google.protobuf.Any
+	3, // 8: v2fly.core.OutboundHandlerConfig.proxy_settings:type_name -> google.protobuf.Any
 	9, // [9:9] is the sub-list for method output_type
 	9, // [9:9] is the sub-list for method input_type
 	9, // [9:9] is the sub-list for extension type_name

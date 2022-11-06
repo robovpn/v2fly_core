@@ -3,9 +3,9 @@ package simplified
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/proxy/socks"
+	"../v2fly_core/common"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/proxy/socks"
 )
 
 func init() {

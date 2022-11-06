@@ -1,8 +1,8 @@
 package inbound
 
 import (
-	protocol "github.com/v2fly/v2ray-core/v5/common/protocol"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	protocol "../v2fly_core/common/protocol"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -265,14 +265,14 @@ func file_proxy_vless_inbound_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_vless_inbound_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_proxy_vless_inbound_config_proto_goTypes = []interface{}{
-	(*Fallback)(nil),         // 0: v2ray.core.proxy.vless.inbound.Fallback
-	(*Config)(nil),           // 1: v2ray.core.proxy.vless.inbound.Config
-	(*SimplifiedConfig)(nil), // 2: v2ray.core.proxy.vless.inbound.SimplifiedConfig
-	(*protocol.User)(nil),    // 3: v2ray.core.common.protocol.User
+	(*Fallback)(nil),         // 0: v2fly.core.proxy.vless.inbound.Fallback
+	(*Config)(nil),           // 1: v2fly.core.proxy.vless.inbound.Config
+	(*SimplifiedConfig)(nil), // 2: v2fly.core.proxy.vless.inbound.SimplifiedConfig
+	(*protocol.User)(nil),    // 3: v2fly.core.common.protocol.User
 }
 var file_proxy_vless_inbound_config_proto_depIdxs = []int32{
-	3, // 0: v2ray.core.proxy.vless.inbound.Config.clients:type_name -> v2ray.core.common.protocol.User
-	0, // 1: v2ray.core.proxy.vless.inbound.Config.fallbacks:type_name -> v2ray.core.proxy.vless.inbound.Fallback
+	3, // 0: v2fly.core.proxy.vless.inbound.Config.clients:type_name -> v2fly.core.common.protocol.User
+	0, // 1: v2fly.core.proxy.vless.inbound.Config.fallbacks:type_name -> v2fly.core.proxy.vless.inbound.Fallback
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

@@ -1,16 +1,16 @@
 package reverse
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/common/errors"
+	"../v2fly_core/common/net"
+	"../v2fly_core/features/outbound"
+	"../v2fly_core/features/routing"
 )
 
 const (

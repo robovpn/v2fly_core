@@ -7,15 +7,15 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/mux"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/transport"
-	"github.com/v2fly/v2ray-core/v5/transport/pipe"
+	"../v2fly_core/common"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/mux"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/session"
+	"../v2fly_core/common/task"
+	"../v2fly_core/features/outbound"
+	"../v2fly_core/transport"
+	"../v2fly_core/transport/pipe"
 )
 
 type Portal struct {

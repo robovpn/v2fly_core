@@ -5,10 +5,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/v2fly/v2ray-core/v5/app/dns"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
+	. "../v2fly_core/app/dns"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/features/dns"
 )
 
 func TestStaticHosts(t *testing.T) {
@@ -36,7 +36,7 @@ func TestStaticHosts(t *testing.T) {
 		},
 		{
 			Type:   DomainMatchingType_Subdomain,
-			Domain: "v2ray.cn",
+			Domain: "v2fly.cn",
 			Ip: [][]byte{
 				{2, 2, 2, 2},
 			},
@@ -94,7 +94,7 @@ func TestStaticHosts(t *testing.T) {
 	}
 
 	{
-		ips := hosts.Lookup("www.v2ray.cn", dns.IPOption{
+		ips := hosts.Lookup("www.v2fly.cn", dns.IPOption{
 			IPv4Enable: true,
 			IPv6Enable: true,
 		})

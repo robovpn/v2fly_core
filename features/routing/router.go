@@ -1,13 +1,13 @@
 package routing
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"../v2fly_core/common"
+	"../v2fly_core/features"
 )
 
 // Router is a feature to choose an outbound tag for the given request.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 type Router interface {
 	features.Feature
 
@@ -17,7 +17,7 @@ type Router interface {
 
 // Route is the routing result of Router feature.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 type Route interface {
 	// A Route is also a routing context.
 	Context
@@ -31,7 +31,7 @@ type Route interface {
 
 // RouterType return the type of Router interface. Can be used to implement common.HasType.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 func RouterType() interface{} {
 	return (*Router)(nil)
 }

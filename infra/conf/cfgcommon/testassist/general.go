@@ -6,8 +6,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
+	"../v2fly_core/common"
+	"../v2fly_core/infra/conf/cfgcommon"
 )
 
 func LoadJSON(creator func() cfgcommon.Buildable) func(string) (proto.Message, error) {

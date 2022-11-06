@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	statsService "github.com/v2fly/v2ray-core/v5/app/stats/command"
-	"github.com/v2fly/v2ray-core/v5/common/units"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	statsService "../v2fly_core/app/stats/command"
+	"../v2fly_core/common/units"
+	"../v2fly_core/main/commands/base"
 )
 
 var cmdStats = &base.Command{
@@ -17,7 +17,7 @@ var cmdStats = &base.Command{
 	UsageLine:   "{{.Exec}} api stats [--server=127.0.0.1:8080] [pattern]...",
 	Short:       "query statistics",
 	Long: `
-Query statistics from V2Ray.
+Query statistics from v2fly.
 
 > Make sure you have "StatsService" set in "config.api.services" 
 of server config.

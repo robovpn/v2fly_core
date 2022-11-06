@@ -10,16 +10,16 @@ import (
 	"time"
 
 	"golang.org/x/net/dns/dnsmessage"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol/dns"
-	udp_proto "v2ray.com/core/common/protocol/udp"
-	"v2ray.com/core/common/session"
-	"v2ray.com/core/common/signal/pubsub"
-	"v2ray.com/core/common/task"
-	dns_feature "v2ray.com/core/features/dns"
-	"v2ray.com/core/features/routing"
-	"v2ray.com/core/transport/internet/udp"
+	"v2fly_core/common"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol/dns"
+	udp_proto "v2fly_core/common/protocol/udp"
+	"v2fly_core/common/session"
+	"v2fly_core/common/signal/pubsub"
+	"v2fly_core/common/task"
+	dns_feature "v2fly_core/features/dns"
+	"v2fly_core/features/routing"
+	"v2fly_core/transport/internet/udp"
 )
 
 type ClassicNameServer struct {

@@ -101,7 +101,7 @@ Download %s v%s or later from https://github.com/protocolbuffers/protobuf/releas
 func getProjectProtocVersion(url string) (string, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return "", fmt.Errorf("can not get the version of protobuf used in V2Ray project")
+		return "", fmt.Errorf("can not get the version of protobuf used in v2fly project")
 	}
 	defer resp.Body.Close()
 	body, err := io.ReadAll(resp.Body)
@@ -164,7 +164,7 @@ func main() {
 		suffix = ".exe"
 	}
 
-	targetedVersion, err := getProjectProtocVersion("https://raw.githubusercontent.com/v2fly/v2ray-core/HEAD/config.pb.go")
+	targetedVersion, err := getProjectProtocVersion("https://raw.githubusercontent.com/v2fly/v2fly-core/HEAD/config.pb.go")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -191,7 +191,7 @@ func main() {
 You are using an old protobuf version, please update to v%s or later.
 Download it from https://github.com/protocolbuffers/protobuf/releases
 
-    * Protobuf version used in V2Ray project: v%s
+    * Protobuf version used in v2fly project: v%s
     * Protobuf version you have installed: v%s
 
 `, targetedVersion, targetedVersion, installedVersion)

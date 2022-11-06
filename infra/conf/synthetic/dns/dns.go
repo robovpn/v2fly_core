@@ -1,6 +1,6 @@
 package dns
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -8,13 +8,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/v2fly/v2ray-core/v5/app/dns"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	rule2 "github.com/v2fly/v2ray-core/v5/infra/conf/rule"
+	"../v2fly_core/app/dns"
+	"../v2fly_core/app/router/routercommon"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/infra/conf/cfgcommon"
+	"../v2fly_core/infra/conf/geodata"
+	rule2 "../v2fly_core/infra/conf/rule"
 )
 
 type NameServerConfig struct {
@@ -207,7 +207,7 @@ func (c *DNSConfig) Build() (*dns.Config, error) {
 	if c.cfgctx == nil {
 		c.cfgctx = cfgcommon.NewConfigureLoadingContext(context.Background())
 
-		geoloadername := platform.NewEnvFlag("v2ray.conf.geoloader").GetValue(func() string {
+		geoloadername := platform.NewEnvFlag("v2fly.conf.geoloader").GetValue(func() string {
 			return "standard"
 		})
 

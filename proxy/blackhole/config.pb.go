@@ -1,7 +1,7 @@
 package blackhole
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -220,14 +220,14 @@ func file_proxy_blackhole_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_blackhole_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_blackhole_config_proto_goTypes = []interface{}{
-	(*NoneResponse)(nil),     // 0: v2ray.core.proxy.blackhole.NoneResponse
-	(*HTTPResponse)(nil),     // 1: v2ray.core.proxy.blackhole.HTTPResponse
-	(*Config)(nil),           // 2: v2ray.core.proxy.blackhole.Config
-	(*SimplifiedConfig)(nil), // 3: v2ray.core.proxy.blackhole.SimplifiedConfig
+	(*NoneResponse)(nil),     // 0: v2fly.core.proxy.blackhole.NoneResponse
+	(*HTTPResponse)(nil),     // 1: v2fly.core.proxy.blackhole.HTTPResponse
+	(*Config)(nil),           // 2: v2fly.core.proxy.blackhole.Config
+	(*SimplifiedConfig)(nil), // 3: v2fly.core.proxy.blackhole.SimplifiedConfig
 	(*anypb.Any)(nil),        // 4: google.protobuf.Any
 }
 var file_proxy_blackhole_config_proto_depIdxs = []int32{
-	4, // 0: v2ray.core.proxy.blackhole.Config.response:type_name -> google.protobuf.Any
+	4, // 0: v2fly.core.proxy.blackhole.Config.response:type_name -> google.protobuf.Any
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

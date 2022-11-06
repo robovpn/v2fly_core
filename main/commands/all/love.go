@@ -7,9 +7,9 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"../v2fly_core/common"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/main/commands/base"
 )
 
 var cmdLove = &base.Command{

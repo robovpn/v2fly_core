@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/task"
+	"../v2fly_core/common"
+	"../v2fly_core/common/task"
 )
 
 func TestGenerate(t *testing.T) {
@@ -21,8 +21,8 @@ func TestGenerate(t *testing.T) {
 }
 
 func generate(domainNames []string, isCA bool, jsonOutput bool, fileOutput string) error {
-	commonName := "V2Ray Root CA"
-	organization := "V2Ray Inc"
+	commonName := "v2fly Root CA"
+	organization := "v2fly Inc"
 
 	expire := time.Hour * 3
 

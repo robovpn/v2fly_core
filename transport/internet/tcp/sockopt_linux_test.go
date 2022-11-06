@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/testing/servers/tcp"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	. "github.com/v2fly/v2ray-core/v5/transport/internet/tcp"
+	"../v2fly_core/common"
+	"../v2fly_core/testing/servers/tcp"
+	"../v2fly_core/transport/internet"
+	. "../v2fly_core/transport/internet/tcp"
 )
 
 func TestGetOriginalDestination(t *testing.T) {

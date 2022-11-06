@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	commlog "v2ray.com/core/common/log"
-	// _ "v2ray.com/core/infra/conf/command"
-	"v2ray.com/core/infra/control"
+	commlog "v2fly_core/common/log"
+	// _ "v2fly_core/infra/conf/command"
+	"v2fly_core/infra/control"
 )
 
 func getCommandName() string {

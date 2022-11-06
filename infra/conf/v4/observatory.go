@@ -6,13 +6,13 @@ import (
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/v2fly/v2ray-core/v5/app/observatory"
-	"github.com/v2fly/v2ray-core/v5/app/observatory/burst"
-	"github.com/v2fly/v2ray-core/v5/app/observatory/multiobservatory"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/taggedfeatures"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/duration"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/router"
+	"../v2fly_core/app/observatory"
+	"../v2fly_core/app/observatory/burst"
+	"../v2fly_core/app/observatory/multiobservatory"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/common/taggedfeatures"
+	"../v2fly_core/infra/conf/cfgcommon/duration"
+	"../v2fly_core/infra/conf/synthetic/router"
 )
 
 type ObservatoryConfig struct {

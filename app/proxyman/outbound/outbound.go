@@ -1,17 +1,17 @@
 package outbound
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"strings"
 	"sync"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
+	core "../v2fly_core"
+	"../v2fly_core/app/proxyman"
+	"../v2fly_core/common"
+	"../v2fly_core/common/errors"
+	"../v2fly_core/features/outbound"
 )
 
 // Manager is to manage all outbound handlers.

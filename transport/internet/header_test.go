@@ -3,13 +3,13 @@ package internet_test
 import (
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	. "github.com/v2fly/v2ray-core/v5/transport/internet"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/noop"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/srtp"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/utp"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/wechat"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/headers/wireguard"
+	"../v2fly_core/common"
+	. "../v2fly_core/transport/internet"
+	"../v2fly_core/transport/internet/headers/noop"
+	"../v2fly_core/transport/internet/headers/srtp"
+	"../v2fly_core/transport/internet/headers/utp"
+	"../v2fly_core/transport/internet/headers/wechat"
+	"../v2fly_core/transport/internet/headers/wireguard"
 )
 
 func TestAllHeadersLoadable(t *testing.T) {

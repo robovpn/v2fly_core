@@ -14,8 +14,8 @@ import (
 	"sync"
 )
 
-// A Command is an implementation of a v2ray command
-// like v2ray run or v2ray version.
+// A Command is an implementation of a v2fly command
+// like v2fly run or v2fly version.
 type Command struct {
 	// Run runs the command.
 	// The args are the arguments after the command name.
@@ -50,7 +50,7 @@ type Command struct {
 	Commands []*Command
 }
 
-// LongName returns the command's long name: all the words in the usage line between first word (e.g. "v2ray") and a flag or argument,
+// LongName returns the command's long name: all the words in the usage line between first word (e.g. "v2fly") and a flag or argument,
 func (c *Command) LongName() string {
 	name := c.UsageLine
 	if i := strings.Index(name, " ["); i >= 0 {

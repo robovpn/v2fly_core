@@ -1,9 +1,9 @@
 package conf
 
 import (
-	"v2ray.com/core/app/policy"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/bytes"
+	"v2fly_core/app/policy"
+	"v2fly_core/common"
+	"v2fly_core/common/bytes"
 )
 
 type Policy struct {

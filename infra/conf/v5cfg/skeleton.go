@@ -3,11 +3,11 @@ package v5cfg
 import (
 	"encoding/json"
 
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/muxcfg"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/proxycfg"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/sniffer"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/socketcfg"
+	"../v2fly_core/infra/conf/cfgcommon"
+	"../v2fly_core/infra/conf/cfgcommon/muxcfg"
+	"../v2fly_core/infra/conf/cfgcommon/proxycfg"
+	"../v2fly_core/infra/conf/cfgcommon/sniffer"
+	"../v2fly_core/infra/conf/cfgcommon/socketcfg"
 )
 
 type RootConfig struct {

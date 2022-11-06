@@ -1,8 +1,8 @@
 package log
 
 import (
-	log "github.com/v2fly/v2ray-core/v5/common/log"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	log "../v2fly_core/common/log"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -73,8 +73,8 @@ type LogSpecification struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type  LogType      `protobuf:"varint,1,opt,name=type,proto3,enum=v2ray.core.app.log.LogType" json:"type,omitempty"`
-	Level log.Severity `protobuf:"varint,2,opt,name=level,proto3,enum=v2ray.core.common.log.Severity" json:"level,omitempty"`
+	Type  LogType      `protobuf:"varint,1,opt,name=type,proto3,enum=v2fly.core.app.log.LogType" json:"type,omitempty"`
+	Level log.Severity `protobuf:"varint,2,opt,name=level,proto3,enum=v2fly.core.common.log.Severity" json:"level,omitempty"`
 	Path  string       `protobuf:"bytes,3,opt,name=path,proto3" json:"path,omitempty"`
 }
 
@@ -243,16 +243,16 @@ func file_app_log_config_proto_rawDescGZIP() []byte {
 var file_app_log_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_app_log_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_app_log_config_proto_goTypes = []interface{}{
-	(LogType)(0),             // 0: v2ray.core.app.log.LogType
-	(*LogSpecification)(nil), // 1: v2ray.core.app.log.LogSpecification
-	(*Config)(nil),           // 2: v2ray.core.app.log.Config
-	(log.Severity)(0),        // 3: v2ray.core.common.log.Severity
+	(LogType)(0),             // 0: v2fly.core.app.log.LogType
+	(*LogSpecification)(nil), // 1: v2fly.core.app.log.LogSpecification
+	(*Config)(nil),           // 2: v2fly.core.app.log.Config
+	(log.Severity)(0),        // 3: v2fly.core.common.log.Severity
 }
 var file_app_log_config_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.app.log.LogSpecification.type:type_name -> v2ray.core.app.log.LogType
-	3, // 1: v2ray.core.app.log.LogSpecification.level:type_name -> v2ray.core.common.log.Severity
-	1, // 2: v2ray.core.app.log.Config.error:type_name -> v2ray.core.app.log.LogSpecification
-	1, // 3: v2ray.core.app.log.Config.access:type_name -> v2ray.core.app.log.LogSpecification
+	0, // 0: v2fly.core.app.log.LogSpecification.type:type_name -> v2fly.core.app.log.LogType
+	3, // 1: v2fly.core.app.log.LogSpecification.level:type_name -> v2fly.core.common.log.Severity
+	1, // 2: v2fly.core.app.log.Config.error:type_name -> v2fly.core.app.log.LogSpecification
+	1, // 3: v2fly.core.app.log.Config.access:type_name -> v2fly.core.app.log.LogSpecification
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name

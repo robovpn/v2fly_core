@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/buf"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol/udp"
-	"v2ray.com/core/features/routing"
-	"v2ray.com/core/transport"
-	. "v2ray.com/core/transport/internet/udp"
-	"v2ray.com/core/transport/pipe"
+	"v2fly_core/common"
+	"v2fly_core/common/buf"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol/udp"
+	"v2fly_core/features/routing"
+	"v2fly_core/transport"
+	. "v2fly_core/transport/internet/udp"
+	"v2fly_core/transport/pipe"
 )
 
 type TestDispatcher struct {

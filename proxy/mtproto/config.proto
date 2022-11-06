@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package v2ray.core.proxy.mtproto;
-option csharp_namespace = "V2Ray.Core.Proxy.Mtproto";
-option go_package = "v2ray.com/core/proxy/mtproto";
-option java_package = "com.v2ray.core.proxy.mtproto";
+package v2fly.core.proxy.mtproto;
+option csharp_namespace = "v2fly.Core.Proxy.Mtproto";
+option go_package = "v2fly_core/proxy/mtproto";
+option java_package = "com.v2fly.core.proxy.mtproto";
 option java_multiple_files = true;
 
 import "common/protocol/user.proto";
@@ -16,7 +16,7 @@ message ServerConfig {
   // User is a list of users that allowed to connect to this inbound.
   // Although this is a repeated field, only the first user is effective for
   // now.
-  repeated v2ray.core.common.protocol.User user = 1;
+  repeated v2fly.core.common.protocol.User user = 1;
 }
 
 message ClientConfig {}

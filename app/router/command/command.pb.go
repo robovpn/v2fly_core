@@ -1,8 +1,8 @@
 package command
 
 import (
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	net "../v2fly_core/common/net"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -17,15 +17,15 @@ const (
 )
 
 // RoutingContext is the context with information relative to routing process.
-// It conforms to the structure of v2ray.core.features.routing.Context and
-// v2ray.core.features.routing.Route.
+// It conforms to the structure of v2fly.core.features.routing.Context and
+// v2fly.core.features.routing.Route.
 type RoutingContext struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
 	InboundTag        string            `protobuf:"bytes,1,opt,name=InboundTag,proto3" json:"InboundTag,omitempty"`
-	Network           net.Network       `protobuf:"varint,2,opt,name=Network,proto3,enum=v2ray.core.common.net.Network" json:"Network,omitempty"`
+	Network           net.Network       `protobuf:"varint,2,opt,name=Network,proto3,enum=v2fly.core.common.net.Network" json:"Network,omitempty"`
 	SourceIPs         [][]byte          `protobuf:"bytes,3,rep,name=SourceIPs,proto3" json:"SourceIPs,omitempty"`
 	TargetIPs         [][]byte          `protobuf:"bytes,4,rep,name=TargetIPs,proto3" json:"TargetIPs,omitempty"`
 	SourcePort        uint32            `protobuf:"varint,5,opt,name=SourcePort,proto3" json:"SourcePort,omitempty"`
@@ -155,7 +155,7 @@ func (x *RoutingContext) GetOutboundTag() string {
 }
 
 // SubscribeRoutingStatsRequest subscribes to routing statistics channel if
-// opened by v2ray-core.
+// opened by v2fly-core.
 // * FieldSelectors selects a subset of fields in routing statistics to return.
 // Valid selectors:
 //   - inbound: Selects connection's inbound tag.
@@ -820,35 +820,35 @@ func file_app_router_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_router_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 12)
 var file_app_router_command_command_proto_goTypes = []interface{}{
-	(*RoutingContext)(nil),                 // 0: v2ray.core.app.router.command.RoutingContext
-	(*SubscribeRoutingStatsRequest)(nil),   // 1: v2ray.core.app.router.command.SubscribeRoutingStatsRequest
-	(*TestRouteRequest)(nil),               // 2: v2ray.core.app.router.command.TestRouteRequest
-	(*PrincipleTargetInfo)(nil),            // 3: v2ray.core.app.router.command.PrincipleTargetInfo
-	(*OverrideInfo)(nil),                   // 4: v2ray.core.app.router.command.OverrideInfo
-	(*BalancerMsg)(nil),                    // 5: v2ray.core.app.router.command.BalancerMsg
-	(*GetBalancerInfoRequest)(nil),         // 6: v2ray.core.app.router.command.GetBalancerInfoRequest
-	(*GetBalancerInfoResponse)(nil),        // 7: v2ray.core.app.router.command.GetBalancerInfoResponse
-	(*OverrideBalancerTargetRequest)(nil),  // 8: v2ray.core.app.router.command.OverrideBalancerTargetRequest
-	(*OverrideBalancerTargetResponse)(nil), // 9: v2ray.core.app.router.command.OverrideBalancerTargetResponse
-	(*Config)(nil),                         // 10: v2ray.core.app.router.command.Config
-	nil,                                    // 11: v2ray.core.app.router.command.RoutingContext.AttributesEntry
-	(net.Network)(0),                       // 12: v2ray.core.common.net.Network
+	(*RoutingContext)(nil),                 // 0: v2fly.core.app.router.command.RoutingContext
+	(*SubscribeRoutingStatsRequest)(nil),   // 1: v2fly.core.app.router.command.SubscribeRoutingStatsRequest
+	(*TestRouteRequest)(nil),               // 2: v2fly.core.app.router.command.TestRouteRequest
+	(*PrincipleTargetInfo)(nil),            // 3: v2fly.core.app.router.command.PrincipleTargetInfo
+	(*OverrideInfo)(nil),                   // 4: v2fly.core.app.router.command.OverrideInfo
+	(*BalancerMsg)(nil),                    // 5: v2fly.core.app.router.command.BalancerMsg
+	(*GetBalancerInfoRequest)(nil),         // 6: v2fly.core.app.router.command.GetBalancerInfoRequest
+	(*GetBalancerInfoResponse)(nil),        // 7: v2fly.core.app.router.command.GetBalancerInfoResponse
+	(*OverrideBalancerTargetRequest)(nil),  // 8: v2fly.core.app.router.command.OverrideBalancerTargetRequest
+	(*OverrideBalancerTargetResponse)(nil), // 9: v2fly.core.app.router.command.OverrideBalancerTargetResponse
+	(*Config)(nil),                         // 10: v2fly.core.app.router.command.Config
+	nil,                                    // 11: v2fly.core.app.router.command.RoutingContext.AttributesEntry
+	(net.Network)(0),                       // 12: v2fly.core.common.net.Network
 }
 var file_app_router_command_command_proto_depIdxs = []int32{
-	12, // 0: v2ray.core.app.router.command.RoutingContext.Network:type_name -> v2ray.core.common.net.Network
-	11, // 1: v2ray.core.app.router.command.RoutingContext.Attributes:type_name -> v2ray.core.app.router.command.RoutingContext.AttributesEntry
-	0,  // 2: v2ray.core.app.router.command.TestRouteRequest.RoutingContext:type_name -> v2ray.core.app.router.command.RoutingContext
-	4,  // 3: v2ray.core.app.router.command.BalancerMsg.override:type_name -> v2ray.core.app.router.command.OverrideInfo
-	3,  // 4: v2ray.core.app.router.command.BalancerMsg.principle_target:type_name -> v2ray.core.app.router.command.PrincipleTargetInfo
-	5,  // 5: v2ray.core.app.router.command.GetBalancerInfoResponse.balancer:type_name -> v2ray.core.app.router.command.BalancerMsg
-	1,  // 6: v2ray.core.app.router.command.RoutingService.SubscribeRoutingStats:input_type -> v2ray.core.app.router.command.SubscribeRoutingStatsRequest
-	2,  // 7: v2ray.core.app.router.command.RoutingService.TestRoute:input_type -> v2ray.core.app.router.command.TestRouteRequest
-	6,  // 8: v2ray.core.app.router.command.RoutingService.GetBalancerInfo:input_type -> v2ray.core.app.router.command.GetBalancerInfoRequest
-	8,  // 9: v2ray.core.app.router.command.RoutingService.OverrideBalancerTarget:input_type -> v2ray.core.app.router.command.OverrideBalancerTargetRequest
-	0,  // 10: v2ray.core.app.router.command.RoutingService.SubscribeRoutingStats:output_type -> v2ray.core.app.router.command.RoutingContext
-	0,  // 11: v2ray.core.app.router.command.RoutingService.TestRoute:output_type -> v2ray.core.app.router.command.RoutingContext
-	7,  // 12: v2ray.core.app.router.command.RoutingService.GetBalancerInfo:output_type -> v2ray.core.app.router.command.GetBalancerInfoResponse
-	9,  // 13: v2ray.core.app.router.command.RoutingService.OverrideBalancerTarget:output_type -> v2ray.core.app.router.command.OverrideBalancerTargetResponse
+	12, // 0: v2fly.core.app.router.command.RoutingContext.Network:type_name -> v2fly.core.common.net.Network
+	11, // 1: v2fly.core.app.router.command.RoutingContext.Attributes:type_name -> v2fly.core.app.router.command.RoutingContext.AttributesEntry
+	0,  // 2: v2fly.core.app.router.command.TestRouteRequest.RoutingContext:type_name -> v2fly.core.app.router.command.RoutingContext
+	4,  // 3: v2fly.core.app.router.command.BalancerMsg.override:type_name -> v2fly.core.app.router.command.OverrideInfo
+	3,  // 4: v2fly.core.app.router.command.BalancerMsg.principle_target:type_name -> v2fly.core.app.router.command.PrincipleTargetInfo
+	5,  // 5: v2fly.core.app.router.command.GetBalancerInfoResponse.balancer:type_name -> v2fly.core.app.router.command.BalancerMsg
+	1,  // 6: v2fly.core.app.router.command.RoutingService.SubscribeRoutingStats:input_type -> v2fly.core.app.router.command.SubscribeRoutingStatsRequest
+	2,  // 7: v2fly.core.app.router.command.RoutingService.TestRoute:input_type -> v2fly.core.app.router.command.TestRouteRequest
+	6,  // 8: v2fly.core.app.router.command.RoutingService.GetBalancerInfo:input_type -> v2fly.core.app.router.command.GetBalancerInfoRequest
+	8,  // 9: v2fly.core.app.router.command.RoutingService.OverrideBalancerTarget:input_type -> v2fly.core.app.router.command.OverrideBalancerTargetRequest
+	0,  // 10: v2fly.core.app.router.command.RoutingService.SubscribeRoutingStats:output_type -> v2fly.core.app.router.command.RoutingContext
+	0,  // 11: v2fly.core.app.router.command.RoutingService.TestRoute:output_type -> v2fly.core.app.router.command.RoutingContext
+	7,  // 12: v2fly.core.app.router.command.RoutingService.GetBalancerInfo:output_type -> v2fly.core.app.router.command.GetBalancerInfoResponse
+	9,  // 13: v2fly.core.app.router.command.RoutingService.OverrideBalancerTarget:output_type -> v2fly.core.app.router.command.OverrideBalancerTargetResponse
 	10, // [10:14] is the sub-list for method output_type
 	6,  // [6:10] is the sub-list for method input_type
 	6,  // [6:6] is the sub-list for extension type_name

@@ -1,7 +1,7 @@
 package command
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -590,24 +590,24 @@ func file_app_stats_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_stats_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
 var file_app_stats_command_command_proto_goTypes = []interface{}{
-	(*GetStatsRequest)(nil),    // 0: v2ray.core.app.stats.command.GetStatsRequest
-	(*Stat)(nil),               // 1: v2ray.core.app.stats.command.Stat
-	(*GetStatsResponse)(nil),   // 2: v2ray.core.app.stats.command.GetStatsResponse
-	(*QueryStatsRequest)(nil),  // 3: v2ray.core.app.stats.command.QueryStatsRequest
-	(*QueryStatsResponse)(nil), // 4: v2ray.core.app.stats.command.QueryStatsResponse
-	(*SysStatsRequest)(nil),    // 5: v2ray.core.app.stats.command.SysStatsRequest
-	(*SysStatsResponse)(nil),   // 6: v2ray.core.app.stats.command.SysStatsResponse
-	(*Config)(nil),             // 7: v2ray.core.app.stats.command.Config
+	(*GetStatsRequest)(nil),    // 0: v2fly.core.app.stats.command.GetStatsRequest
+	(*Stat)(nil),               // 1: v2fly.core.app.stats.command.Stat
+	(*GetStatsResponse)(nil),   // 2: v2fly.core.app.stats.command.GetStatsResponse
+	(*QueryStatsRequest)(nil),  // 3: v2fly.core.app.stats.command.QueryStatsRequest
+	(*QueryStatsResponse)(nil), // 4: v2fly.core.app.stats.command.QueryStatsResponse
+	(*SysStatsRequest)(nil),    // 5: v2fly.core.app.stats.command.SysStatsRequest
+	(*SysStatsResponse)(nil),   // 6: v2fly.core.app.stats.command.SysStatsResponse
+	(*Config)(nil),             // 7: v2fly.core.app.stats.command.Config
 }
 var file_app_stats_command_command_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.app.stats.command.GetStatsResponse.stat:type_name -> v2ray.core.app.stats.command.Stat
-	1, // 1: v2ray.core.app.stats.command.QueryStatsResponse.stat:type_name -> v2ray.core.app.stats.command.Stat
-	0, // 2: v2ray.core.app.stats.command.StatsService.GetStats:input_type -> v2ray.core.app.stats.command.GetStatsRequest
-	3, // 3: v2ray.core.app.stats.command.StatsService.QueryStats:input_type -> v2ray.core.app.stats.command.QueryStatsRequest
-	5, // 4: v2ray.core.app.stats.command.StatsService.GetSysStats:input_type -> v2ray.core.app.stats.command.SysStatsRequest
-	2, // 5: v2ray.core.app.stats.command.StatsService.GetStats:output_type -> v2ray.core.app.stats.command.GetStatsResponse
-	4, // 6: v2ray.core.app.stats.command.StatsService.QueryStats:output_type -> v2ray.core.app.stats.command.QueryStatsResponse
-	6, // 7: v2ray.core.app.stats.command.StatsService.GetSysStats:output_type -> v2ray.core.app.stats.command.SysStatsResponse
+	1, // 0: v2fly.core.app.stats.command.GetStatsResponse.stat:type_name -> v2fly.core.app.stats.command.Stat
+	1, // 1: v2fly.core.app.stats.command.QueryStatsResponse.stat:type_name -> v2fly.core.app.stats.command.Stat
+	0, // 2: v2fly.core.app.stats.command.StatsService.GetStats:input_type -> v2fly.core.app.stats.command.GetStatsRequest
+	3, // 3: v2fly.core.app.stats.command.StatsService.QueryStats:input_type -> v2fly.core.app.stats.command.QueryStatsRequest
+	5, // 4: v2fly.core.app.stats.command.StatsService.GetSysStats:input_type -> v2fly.core.app.stats.command.SysStatsRequest
+	2, // 5: v2fly.core.app.stats.command.StatsService.GetStats:output_type -> v2fly.core.app.stats.command.GetStatsResponse
+	4, // 6: v2fly.core.app.stats.command.StatsService.QueryStats:output_type -> v2fly.core.app.stats.command.QueryStatsResponse
+	6, // 7: v2fly.core.app.stats.command.StatsService.GetSysStats:output_type -> v2fly.core.app.stats.command.SysStatsResponse
 	5, // [5:8] is the sub-list for method output_type
 	2, // [2:5] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

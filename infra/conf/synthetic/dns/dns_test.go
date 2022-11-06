@@ -10,13 +10,13 @@ import (
 
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	"github.com/v2fly/v2ray-core/v5/app/dns"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/testassist"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/standard"
-	dns2 "github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/dns"
+	"../v2fly_core/app/dns"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/platform/filesystem"
+	"../v2fly_core/infra/conf/cfgcommon/testassist"
+	_ "../v2fly_core/infra/conf/geodata/standard"
+	dns2 "../v2fly_core/infra/conf/synthetic/dns"
 )
 
 func init() {
@@ -32,7 +32,7 @@ func init() {
 	geoipPath := filepath.Join(tempPath, "geoip.dat")
 	geositePath := filepath.Join(tempPath, "geosite.dat")
 
-	os.Setenv("v2ray.location.asset", tempPath)
+	os.Setenv("v2fly.location.asset", tempPath)
 
 	if _, err := os.Stat(geoipPath); err != nil && errors.Is(err, fs.ErrNotExist) {
 		common.Must(os.MkdirAll(tempPath, 0o755))

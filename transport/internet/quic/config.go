@@ -7,10 +7,10 @@ import (
 
 	"golang.org/x/crypto/chacha20poly1305"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"../v2fly_core/common"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/transport/internet"
 )
 
 func getAuth(config *Config) (cipher.AEAD, error) {
@@ -19,7 +19,7 @@ func getAuth(config *Config) (cipher.AEAD, error) {
 		return nil, nil
 	}
 
-	salted := []byte(config.Key + "v2ray-quic-salt")
+	salted := []byte(config.Key + "v2fly-quic-salt")
 	key := sha256.Sum256(salted)
 
 	if security == protocol.SecurityType_AES128_GCM {

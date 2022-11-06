@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	. "github.com/v2fly/v2ray-core/v5/common/protocol"
+	"../v2fly_core/common/net"
+	. "../v2fly_core/common/protocol"
 )
 
 func TestServerList(t *testing.T) {

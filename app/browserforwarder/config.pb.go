@@ -1,7 +1,7 @@
 package browserforwarder
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -112,7 +112,7 @@ func file_app_browserforwarder_config_proto_rawDescGZIP() []byte {
 
 var file_app_browserforwarder_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_app_browserforwarder_config_proto_goTypes = []interface{}{
-	(*Config)(nil), // 0: v2ray.core.app.browserforwarder.Config
+	(*Config)(nil), // 0: v2fly.core.app.browserforwarder.Config
 }
 var file_app_browserforwarder_config_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

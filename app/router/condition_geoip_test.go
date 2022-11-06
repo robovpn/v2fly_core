@@ -10,11 +10,11 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem"
+	"../v2fly_core/app/router"
+	"../v2fly_core/app/router/routercommon"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/platform/filesystem"
 )
 
 func init() {
@@ -26,7 +26,7 @@ func init() {
 	tempPath := filepath.Join(wd, "..", "..", "testing", "temp")
 	geoipPath := filepath.Join(tempPath, "geoip.dat")
 
-	os.Setenv("v2ray.location.asset", tempPath)
+	os.Setenv("v2fly.location.asset", tempPath)
 
 	if _, err := os.Stat(geoipPath); err != nil && errors.Is(err, fs.ErrNotExist) {
 		common.Must(os.MkdirAll(tempPath, 0o755))

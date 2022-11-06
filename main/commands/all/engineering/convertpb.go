@@ -8,9 +8,9 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common/cmdarg"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	core "../v2fly_core"
+	"../v2fly_core/common/cmdarg"
+	"../v2fly_core/main/commands/base"
 )
 
 var (

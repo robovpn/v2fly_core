@@ -11,32 +11,32 @@ import (
 	"strings"
 	"syscall"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common/cmdarg"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	core "../v2fly_core"
+	"../v2fly_core/common/cmdarg"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/main/commands/base"
 )
 
-// CmdRun runs V2Ray with config
+// CmdRun runs v2fly with config
 var CmdRun = &base.Command{
 	CustomFlags: true,
 	UsageLine:   "{{.Exec}} run [-c config.json] [-d dir]",
-	Short:       "run V2Ray with config",
+	Short:       "run v2fly with config",
 	Long: `
-Run V2Ray with config.
+Run v2fly with config.
 
 {{.Exec}} will also use the config directory specified by environment 
-variable "v2ray.location.confdir". If no config found, it tries 
+variable "v2fly.location.confdir". If no config found, it tries
 to load config from one of below:
 
 	1. The default "config.json" in the current directory
-	2. The config file from ENV "v2ray.location.config"
+	2. The config file from ENV "v2fly.location.config"
 	3. The stdin if all failed above
 
 Arguments:
 
 	-c, -config <file>
-		Config file for V2Ray. Multiple assign is accepted.
+		Config file for v2fly. Multiple assign is accepted.
 
 	-d, -confdir <dir>
 		A directory with config files. Multiple assign is accepted.
@@ -79,7 +79,7 @@ func executeRun(cmd *base.Command, args []string) {
 	cmd.Flag.Parse(args)
 	printVersion()
 	configFiles = getConfigFilePath()
-	server, err := startV2Ray()
+	server, err := startv2fly()
 	if err != nil {
 		base.Fatalf("Failed to start: %s", err)
 	}
@@ -191,7 +191,7 @@ func getConfigFilePath() cmdarg.Arg {
 	return nil
 }
 
-func startV2Ray() (core.Server, error) {
+func startv2fly() (core.Server, error) {
 	config, err := core.LoadConfig(*configFormat, configFiles)
 	if err != nil {
 		if len(configFiles) == 0 {

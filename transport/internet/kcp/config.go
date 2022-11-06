@@ -3,9 +3,9 @@ package kcp
 import (
 	"crypto/cipher"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"../v2fly_core/common"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/transport/internet"
 )
 
 const protocolName = "mkcp"

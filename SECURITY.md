@@ -2,10 +2,10 @@
 
 ## 受支持的版本 Supported Versions
 
-目前 v2ray-core 项目由 [V2Fly 社区](https://github.com/v2fly) 继续提供代码维护，由于精力有限且项目复杂度较高，只维护主线代码的功能和安全性完整。原则上主页的兼容性保证继续遵循，
+目前 v2fly-core 项目由 [V2Fly 社区](https://github.com/v2fly) 继续提供代码维护，由于精力有限且项目复杂度较高，只维护主线代码的功能和安全性完整。原则上主页的兼容性保证继续遵循，
 如有例外另行说明。
 
-Currently v2ray-core project is maintained by [V2Fly community](https://github.com/v2fly). Feature and security guarantee may only be limited to the
+Currently v2fly-core project is maintained by [V2Fly community](https://github.com/v2fly). Feature and security guarantee may only be limited to the
 master branch, though we would still try our best to follow the compatibility claims listed on the official website.
 
 

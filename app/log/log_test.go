@@ -6,10 +6,10 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/v2fly/v2ray-core/v5/app/log"
-	"github.com/v2fly/v2ray-core/v5/common"
-	clog "github.com/v2fly/v2ray-core/v5/common/log"
-	"github.com/v2fly/v2ray-core/v5/testing/mocks"
+	"../v2fly_core/app/log"
+	"../v2fly_core/common"
+	clog "../v2fly_core/common/log"
+	"../v2fly_core/testing/mocks"
 )
 
 func TestCustomLogHandler(t *testing.T) {

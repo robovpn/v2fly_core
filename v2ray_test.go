@@ -6,24 +6,24 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	. "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
-	"github.com/v2fly/v2ray-core/v5/features/dns/localdns"
-	_ "github.com/v2fly/v2ray-core/v5/main/distro/all"
-	"github.com/v2fly/v2ray-core/v5/proxy/dokodemo"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess/outbound"
-	"github.com/v2fly/v2ray-core/v5/testing/servers/tcp"
+	. "../v2fly_core"
+	"../v2fly_core/app/dispatcher"
+	"../v2fly_core/app/proxyman"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/common/uuid"
+	"../v2fly_core/features/dns"
+	"../v2fly_core/features/dns/localdns"
+	_ "../v2fly_core/main/distro/all"
+	"../v2fly_core/proxy/dokodemo"
+	"../v2fly_core/proxy/vmess"
+	"../v2fly_core/proxy/vmess/outbound"
+	"../v2fly_core/testing/servers/tcp"
 )
 
-func TestV2RayDependency(t *testing.T) {
+func Testv2flyDependency(t *testing.T) {
 	instance := new(Instance)
 
 	wait := make(chan bool, 1)
@@ -37,7 +37,7 @@ func TestV2RayDependency(t *testing.T) {
 	<-wait
 }
 
-func TestV2RayClose(t *testing.T) {
+func Testv2flyClose(t *testing.T) {
 	port := tcp.PickPort()
 
 	userID := uuid.New()

@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/signal"
-	"github.com/v2fly/v2ray-core/v5/common/signal/semaphore"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/signal"
+	"../v2fly_core/common/signal/semaphore"
 )
 
 var (

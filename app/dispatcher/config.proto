@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package v2ray.core.app.dispatcher;
-option csharp_namespace = "V2Ray.Core.App.Dispatcher";
-option go_package = "github.com/v2fly/v2ray-core/v5/app/dispatcher";
-option java_package = "com.v2ray.core.app.dispatcher";
+package v2fly.core.app.dispatcher;
+option csharp_namespace = "v2fly.Core.App.Dispatcher";
+option go_package = "../v2fly_core/app/dispatcher";
+option java_package = "com.v2fly.core.app.dispatcher";
 option java_multiple_files = true;
 
 message SessionConfig {

@@ -1,7 +1,7 @@
 package tcp
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -118,11 +118,11 @@ func file_transport_internet_tcp_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_tcp_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_internet_tcp_config_proto_goTypes = []interface{}{
-	(*Config)(nil),    // 0: v2ray.core.transport.internet.tcp.Config
+	(*Config)(nil),    // 0: v2fly.core.transport.internet.tcp.Config
 	(*anypb.Any)(nil), // 1: google.protobuf.Any
 }
 var file_transport_internet_tcp_config_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.transport.internet.tcp.Config.header_settings:type_name -> google.protobuf.Any
+	1, // 0: v2fly.core.transport.internet.tcp.Config.header_settings:type_name -> google.protobuf.Any
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

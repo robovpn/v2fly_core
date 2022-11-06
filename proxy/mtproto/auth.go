@@ -7,7 +7,7 @@ import (
 	"io"
 	"sync"
 
-	"v2ray.com/core/common"
+	"v2fly_core/common"
 )
 
 const (

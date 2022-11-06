@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	. "github.com/v2fly/v2ray-core/v5/common/strmatcher"
+	"../v2fly_core/common"
+	. "../v2fly_core/common/strmatcher"
 )
 
-// See https://github.com/v2fly/v2ray-core/issues/92#issuecomment-673238489
+// See https://github.com/v2fly/v2fly-core/issues/92#issuecomment-673238489
 func TestLinearIndexMatcher(t *testing.T) {
 	rules := []struct {
 		Type   Type

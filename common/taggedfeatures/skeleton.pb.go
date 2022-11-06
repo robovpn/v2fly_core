@@ -108,13 +108,13 @@ func file_common_taggedfeatures_skeleton_proto_rawDescGZIP() []byte {
 
 var file_common_taggedfeatures_skeleton_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_common_taggedfeatures_skeleton_proto_goTypes = []interface{}{
-	(*Config)(nil),    // 0: v2ray.core.common.taggedfeatures.Config
-	nil,               // 1: v2ray.core.common.taggedfeatures.Config.FeaturesEntry
+	(*Config)(nil),    // 0: v2fly.core.common.taggedfeatures.Config
+	nil,               // 1: v2fly.core.common.taggedfeatures.Config.FeaturesEntry
 	(*anypb.Any)(nil), // 2: google.protobuf.Any
 }
 var file_common_taggedfeatures_skeleton_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.common.taggedfeatures.Config.features:type_name -> v2ray.core.common.taggedfeatures.Config.FeaturesEntry
-	2, // 1: v2ray.core.common.taggedfeatures.Config.FeaturesEntry.value:type_name -> google.protobuf.Any
+	1, // 0: v2fly.core.common.taggedfeatures.Config.features:type_name -> v2fly.core.common.taggedfeatures.Config.FeaturesEntry
+	2, // 1: v2fly.core.common.taggedfeatures.Config.FeaturesEntry.value:type_name -> google.protobuf.Any
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

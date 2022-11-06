@@ -12,7 +12,7 @@ import (
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
-	protocol "v2ray.com/core/common/protocol"
+	protocol "v2fly_core/common/protocol"
 )
 
 const (
@@ -199,13 +199,13 @@ func file_proxy_mtproto_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_mtproto_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_proxy_mtproto_config_proto_goTypes = []interface{}{
-	(*Account)(nil),       // 0: v2ray.core.proxy.mtproto.Account
-	(*ServerConfig)(nil),  // 1: v2ray.core.proxy.mtproto.ServerConfig
-	(*ClientConfig)(nil),  // 2: v2ray.core.proxy.mtproto.ClientConfig
-	(*protocol.User)(nil), // 3: v2ray.core.common.protocol.User
+	(*Account)(nil),       // 0: v2fly.core.proxy.mtproto.Account
+	(*ServerConfig)(nil),  // 1: v2fly.core.proxy.mtproto.ServerConfig
+	(*ClientConfig)(nil),  // 2: v2fly.core.proxy.mtproto.ClientConfig
+	(*protocol.User)(nil), // 3: v2fly.core.common.protocol.User
 }
 var file_proxy_mtproto_config_proto_depIdxs = []int32{
-	3, // 0: v2ray.core.proxy.mtproto.ServerConfig.user:type_name -> v2ray.core.common.protocol.User
+	3, // 0: v2fly.core.proxy.mtproto.ServerConfig.user:type_name -> v2fly.core.common.protocol.User
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

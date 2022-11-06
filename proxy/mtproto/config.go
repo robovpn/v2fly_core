@@ -1,7 +1,7 @@
 package mtproto
 
 import (
-	"v2ray.com/core/common/protocol"
+	"v2fly_core/common/protocol"
 )
 
 func (a *Account) Equals(another protocol.Account) bool {

@@ -3,11 +3,11 @@ package vmess_test
 import (
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
-	. "github.com/v2fly/v2ray-core/v5/proxy/vmess"
+	"../v2fly_core/common"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/common/uuid"
+	. "../v2fly_core/proxy/vmess"
 )
 
 func toAccount(a *Account) protocol.Account {

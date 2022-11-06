@@ -28,7 +28,7 @@ func NewGunServiceClient(cc grpc.ClientConnInterface) GunServiceClient {
 }
 
 func (c *gunServiceClient) Tun(ctx context.Context, opts ...grpc.CallOption) (GunService_TunClient, error) {
-	stream, err := c.cc.NewStream(ctx, &GunService_ServiceDesc.Streams[0], "/v2ray.core.transport.internet.grpc.encoding.GunService/Tun", opts...)
+	stream, err := c.cc.NewStream(ctx, &GunService_ServiceDesc.Streams[0], "/v2fly.core.transport.internet.grpc.encoding.GunService/Tun", opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -116,7 +116,7 @@ func (x *gunServiceTunServer) Recv() (*Hunk, error) {
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var GunService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v2ray.core.transport.internet.grpc.encoding.GunService",
+	ServiceName: "v2fly.core.transport.internet.grpc.encoding.GunService",
 	HandlerType: (*GunServiceServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams: []grpc.StreamDesc{

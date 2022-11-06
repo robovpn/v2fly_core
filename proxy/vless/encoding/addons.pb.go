@@ -104,7 +104,7 @@ func file_proxy_vless_encoding_addons_proto_rawDescGZIP() []byte {
 
 var file_proxy_vless_encoding_addons_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_vless_encoding_addons_proto_goTypes = []interface{}{
-	(*Addons)(nil), // 0: v2ray.core.proxy.vless.encoding.Addons
+	(*Addons)(nil), // 0: v2fly.core.proxy.vless.encoding.Addons
 }
 var file_proxy_vless_encoding_addons_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

@@ -3,9 +3,9 @@ package conf_test
 import (
 	"testing"
 
-	"v2ray.com/core/common/net"
-	. "v2ray.com/core/infra/conf"
-	"v2ray.com/core/proxy/dokodemo"
+	"v2fly_core/common/net"
+	. "v2fly_core/infra/conf"
+	"v2fly_core/proxy/dokodemo"
 )
 
 func TestDokodemoConfig(t *testing.T) {

@@ -10,13 +10,13 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/features/extension"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/tls"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/session"
+	"../v2fly_core/features/extension"
+	"../v2fly_core/transport/internet"
+	"../v2fly_core/transport/internet/tls"
 )
 
 // Dial dials a WebSocket connection to the given destination.

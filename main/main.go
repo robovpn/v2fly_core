@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/v2fly/v2ray-core/v5/main/commands"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
-	_ "github.com/v2fly/v2ray-core/v5/main/distro/all"
+	"../v2fly_core/main/commands"
+	"../v2fly_core/main/commands/base"
+	_ "../v2fly_core/main/distro/all"
 )
 
 func main() {

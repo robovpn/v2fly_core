@@ -1,7 +1,7 @@
 package kcp
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -608,26 +608,26 @@ func file_transport_internet_kcp_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_kcp_config_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
 var file_transport_internet_kcp_config_proto_goTypes = []interface{}{
-	(*MTU)(nil),              // 0: v2ray.core.transport.internet.kcp.MTU
-	(*TTI)(nil),              // 1: v2ray.core.transport.internet.kcp.TTI
-	(*UplinkCapacity)(nil),   // 2: v2ray.core.transport.internet.kcp.UplinkCapacity
-	(*DownlinkCapacity)(nil), // 3: v2ray.core.transport.internet.kcp.DownlinkCapacity
-	(*WriteBuffer)(nil),      // 4: v2ray.core.transport.internet.kcp.WriteBuffer
-	(*ReadBuffer)(nil),       // 5: v2ray.core.transport.internet.kcp.ReadBuffer
-	(*ConnectionReuse)(nil),  // 6: v2ray.core.transport.internet.kcp.ConnectionReuse
-	(*EncryptionSeed)(nil),   // 7: v2ray.core.transport.internet.kcp.EncryptionSeed
-	(*Config)(nil),           // 8: v2ray.core.transport.internet.kcp.Config
+	(*MTU)(nil),              // 0: v2fly.core.transport.internet.kcp.MTU
+	(*TTI)(nil),              // 1: v2fly.core.transport.internet.kcp.TTI
+	(*UplinkCapacity)(nil),   // 2: v2fly.core.transport.internet.kcp.UplinkCapacity
+	(*DownlinkCapacity)(nil), // 3: v2fly.core.transport.internet.kcp.DownlinkCapacity
+	(*WriteBuffer)(nil),      // 4: v2fly.core.transport.internet.kcp.WriteBuffer
+	(*ReadBuffer)(nil),       // 5: v2fly.core.transport.internet.kcp.ReadBuffer
+	(*ConnectionReuse)(nil),  // 6: v2fly.core.transport.internet.kcp.ConnectionReuse
+	(*EncryptionSeed)(nil),   // 7: v2fly.core.transport.internet.kcp.EncryptionSeed
+	(*Config)(nil),           // 8: v2fly.core.transport.internet.kcp.Config
 	(*anypb.Any)(nil),        // 9: google.protobuf.Any
 }
 var file_transport_internet_kcp_config_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.transport.internet.kcp.Config.mtu:type_name -> v2ray.core.transport.internet.kcp.MTU
-	1, // 1: v2ray.core.transport.internet.kcp.Config.tti:type_name -> v2ray.core.transport.internet.kcp.TTI
-	2, // 2: v2ray.core.transport.internet.kcp.Config.uplink_capacity:type_name -> v2ray.core.transport.internet.kcp.UplinkCapacity
-	3, // 3: v2ray.core.transport.internet.kcp.Config.downlink_capacity:type_name -> v2ray.core.transport.internet.kcp.DownlinkCapacity
-	4, // 4: v2ray.core.transport.internet.kcp.Config.write_buffer:type_name -> v2ray.core.transport.internet.kcp.WriteBuffer
-	5, // 5: v2ray.core.transport.internet.kcp.Config.read_buffer:type_name -> v2ray.core.transport.internet.kcp.ReadBuffer
-	9, // 6: v2ray.core.transport.internet.kcp.Config.header_config:type_name -> google.protobuf.Any
-	7, // 7: v2ray.core.transport.internet.kcp.Config.seed:type_name -> v2ray.core.transport.internet.kcp.EncryptionSeed
+	0, // 0: v2fly.core.transport.internet.kcp.Config.mtu:type_name -> v2fly.core.transport.internet.kcp.MTU
+	1, // 1: v2fly.core.transport.internet.kcp.Config.tti:type_name -> v2fly.core.transport.internet.kcp.TTI
+	2, // 2: v2fly.core.transport.internet.kcp.Config.uplink_capacity:type_name -> v2fly.core.transport.internet.kcp.UplinkCapacity
+	3, // 3: v2fly.core.transport.internet.kcp.Config.downlink_capacity:type_name -> v2fly.core.transport.internet.kcp.DownlinkCapacity
+	4, // 4: v2fly.core.transport.internet.kcp.Config.write_buffer:type_name -> v2fly.core.transport.internet.kcp.WriteBuffer
+	5, // 5: v2fly.core.transport.internet.kcp.Config.read_buffer:type_name -> v2fly.core.transport.internet.kcp.ReadBuffer
+	9, // 6: v2fly.core.transport.internet.kcp.Config.header_config:type_name -> google.protobuf.Any
+	7, // 7: v2fly.core.transport.internet.kcp.Config.seed:type_name -> v2fly.core.transport.internet.kcp.EncryptionSeed
 	8, // [8:8] is the sub-list for method output_type
 	8, // [8:8] is the sub-list for method input_type
 	8, // [8:8] is the sub-list for extension type_name

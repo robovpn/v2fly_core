@@ -1,13 +1,13 @@
 package mergers
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"strings"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/json"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/infra/conf/json"
 )
 
 func init() {
@@ -35,14 +35,14 @@ func init() {
 	)
 }
 
-// Merger is a configurable format merger for V2Ray config files.
+// Merger is a configurable format merger for v2fly config files.
 type Merger struct {
 	Name       string
 	Extensions []string
 	Merge      MergeFunc
 }
 
-// MergeFunc is a utility to merge V2Ray config from external source into a map and returns it.
+// MergeFunc is a utility to merge v2fly config from external source into a map and returns it.
 type MergeFunc func(input interface{}, m map[string]interface{}) error
 
 var (

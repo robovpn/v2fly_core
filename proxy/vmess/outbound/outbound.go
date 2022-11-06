@@ -1,6 +1,6 @@
 package outbound
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -8,23 +8,23 @@ import (
 	"crypto/sha256"
 	"hash/crc64"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/retry"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/common/signal"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/features/policy"
-	"github.com/v2fly/v2ray-core/v5/proxy"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess/encoding"
-	"github.com/v2fly/v2ray-core/v5/transport"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/platform"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/retry"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/common/session"
+	"../v2fly_core/common/signal"
+	"../v2fly_core/common/task"
+	"../v2fly_core/features/policy"
+	"../v2fly_core/proxy"
+	"../v2fly_core/proxy/vmess"
+	"../v2fly_core/proxy/vmess/encoding"
+	"../v2fly_core/transport"
+	"../v2fly_core/transport/internet"
 )
 
 // Handler is an outbound connection handler for VMess protocol.
@@ -232,12 +232,12 @@ func init() {
 
 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
 
-	paddingValue := platform.NewEnvFlag("v2ray.vmess.padding").GetValue(func() string { return defaultFlagValue })
+	paddingValue := platform.NewEnvFlag("v2fly.vmess.padding").GetValue(func() string { return defaultFlagValue })
 	if paddingValue != defaultFlagValue {
 		enablePadding = true
 	}
 
-	isAeadDisabled := platform.NewEnvFlag("v2ray.vmess.aead.disabled").GetValue(func() string { return defaultFlagValue })
+	isAeadDisabled := platform.NewEnvFlag("v2fly.vmess.aead.disabled").GetValue(func() string { return defaultFlagValue })
 	if isAeadDisabled == "true" {
 		aeadDisabled = true
 	}

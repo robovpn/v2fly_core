@@ -1,7 +1,7 @@
 package vmess
 
 import (
-	protocol "github.com/v2fly/v2ray-core/v5/common/protocol"
+	protocol "../v2fly_core/common/protocol"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -134,11 +134,11 @@ func file_proxy_vmess_account_proto_rawDescGZIP() []byte {
 
 var file_proxy_vmess_account_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_vmess_account_proto_goTypes = []interface{}{
-	(*Account)(nil),                 // 0: v2ray.core.proxy.vmess.Account
-	(*protocol.SecurityConfig)(nil), // 1: v2ray.core.common.protocol.SecurityConfig
+	(*Account)(nil),                 // 0: v2fly.core.proxy.vmess.Account
+	(*protocol.SecurityConfig)(nil), // 1: v2fly.core.common.protocol.SecurityConfig
 }
 var file_proxy_vmess_account_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.proxy.vmess.Account.security_settings:type_name -> v2ray.core.common.protocol.SecurityConfig
+	1, // 0: v2fly.core.proxy.vmess.Account.security_settings:type_name -> v2fly.core.common.protocol.SecurityConfig
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

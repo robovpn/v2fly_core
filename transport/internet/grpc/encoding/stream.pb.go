@@ -107,11 +107,11 @@ func file_transport_internet_grpc_encoding_stream_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_grpc_encoding_stream_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_internet_grpc_encoding_stream_proto_goTypes = []interface{}{
-	(*Hunk)(nil), // 0: v2ray.core.transport.internet.grpc.encoding.Hunk
+	(*Hunk)(nil), // 0: v2fly.core.transport.internet.grpc.encoding.Hunk
 }
 var file_transport_internet_grpc_encoding_stream_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.transport.internet.grpc.encoding.GunService.Tun:input_type -> v2ray.core.transport.internet.grpc.encoding.Hunk
-	0, // 1: v2ray.core.transport.internet.grpc.encoding.GunService.Tun:output_type -> v2ray.core.transport.internet.grpc.encoding.Hunk
+	0, // 0: v2fly.core.transport.internet.grpc.encoding.GunService.Tun:input_type -> v2fly.core.transport.internet.grpc.encoding.Hunk
+	0, // 1: v2fly.core.transport.internet.grpc.encoding.GunService.Tun:output_type -> v2fly.core.transport.internet.grpc.encoding.Hunk
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

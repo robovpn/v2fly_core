@@ -12,17 +12,17 @@ import (
 
 	"golang.org/x/net/dns/dnsmessage"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol/dns"
-	udp_proto "github.com/v2fly/v2ray-core/v5/common/protocol/udp"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/common/signal/pubsub"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	dns_feature "github.com/v2fly/v2ray-core/v5/features/dns"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/udp"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/protocol/dns"
+	udp_proto "../v2fly_core/common/protocol/udp"
+	"../v2fly_core/common/session"
+	"../v2fly_core/common/signal/pubsub"
+	"../v2fly_core/common/task"
+	dns_feature "../v2fly_core/features/dns"
+	"../v2fly_core/features/routing"
+	"../v2fly_core/transport/internet/udp"
 )
 
 // ClassicNameServer implemented traditional UDP DNS.

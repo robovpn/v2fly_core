@@ -1,9 +1,9 @@
 package dns
 
 import (
-	routercommon "github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	routercommon "../v2fly_core/app/router/routercommon"
+	net "../v2fly_core/common/net"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -210,11 +210,11 @@ type HostMapping struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2ray.core.app.dns.DomainMatchingType" json:"type,omitempty"`
+	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2fly.core.app.dns.DomainMatchingType" json:"type,omitempty"`
 	Domain string             `protobuf:"bytes,2,opt,name=domain,proto3" json:"domain,omitempty"`
 	Ip     [][]byte           `protobuf:"bytes,3,rep,name=ip,proto3" json:"ip,omitempty"`
 	// ProxiedDomain indicates the mapped domain has the same IP address on this
-	// domain. V2Ray will use this domain for IP queries.
+	// domain. v2fly will use this domain for IP queries.
 	ProxiedDomain string `protobuf:"bytes,4,opt,name=proxied_domain,json=proxiedDomain,proto3" json:"proxied_domain,omitempty"`
 }
 
@@ -304,7 +304,7 @@ type Config struct {
 	Tag string `protobuf:"bytes,6,opt,name=tag,proto3" json:"tag,omitempty"`
 	// DisableCache disables DNS cache
 	DisableCache           bool          `protobuf:"varint,8,opt,name=disableCache,proto3" json:"disableCache,omitempty"`
-	QueryStrategy          QueryStrategy `protobuf:"varint,9,opt,name=query_strategy,json=queryStrategy,proto3,enum=v2ray.core.app.dns.QueryStrategy" json:"query_strategy,omitempty"`
+	QueryStrategy          QueryStrategy `protobuf:"varint,9,opt,name=query_strategy,json=queryStrategy,proto3,enum=v2fly.core.app.dns.QueryStrategy" json:"query_strategy,omitempty"`
 	DisableFallback        bool          `protobuf:"varint,10,opt,name=disableFallback,proto3" json:"disableFallback,omitempty"`
 	DisableFallbackIfMatch bool          `protobuf:"varint,11,opt,name=disableFallbackIfMatch,proto3" json:"disableFallbackIfMatch,omitempty"`
 }
@@ -428,7 +428,7 @@ type SimplifiedConfig struct {
 	Tag string `protobuf:"bytes,6,opt,name=tag,proto3" json:"tag,omitempty"`
 	// DisableCache disables DNS cache
 	DisableCache           bool          `protobuf:"varint,8,opt,name=disableCache,proto3" json:"disableCache,omitempty"`
-	QueryStrategy          QueryStrategy `protobuf:"varint,9,opt,name=query_strategy,json=queryStrategy,proto3,enum=v2ray.core.app.dns.QueryStrategy" json:"query_strategy,omitempty"`
+	QueryStrategy          QueryStrategy `protobuf:"varint,9,opt,name=query_strategy,json=queryStrategy,proto3,enum=v2fly.core.app.dns.QueryStrategy" json:"query_strategy,omitempty"`
 	DisableFallback        bool          `protobuf:"varint,10,opt,name=disableFallback,proto3" json:"disableFallback,omitempty"`
 	DisableFallbackIfMatch bool          `protobuf:"varint,11,opt,name=disableFallbackIfMatch,proto3" json:"disableFallbackIfMatch,omitempty"`
 }
@@ -526,11 +526,11 @@ type SimplifiedHostMapping struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2ray.core.app.dns.DomainMatchingType" json:"type,omitempty"`
+	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2fly.core.app.dns.DomainMatchingType" json:"type,omitempty"`
 	Domain string             `protobuf:"bytes,2,opt,name=domain,proto3" json:"domain,omitempty"`
 	Ip     []string           `protobuf:"bytes,3,rep,name=ip,proto3" json:"ip,omitempty"`
 	// ProxiedDomain indicates the mapped domain has the same IP address on this
-	// domain. V2Ray will use this domain for IP queries.
+	// domain. v2fly will use this domain for IP queries.
 	ProxiedDomain string `protobuf:"bytes,4,opt,name=proxied_domain,json=proxiedDomain,proto3" json:"proxied_domain,omitempty"`
 }
 
@@ -686,7 +686,7 @@ type NameServer_PriorityDomain struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2ray.core.app.dns.DomainMatchingType" json:"type,omitempty"`
+	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2fly.core.app.dns.DomainMatchingType" json:"type,omitempty"`
 	Domain string             `protobuf:"bytes,2,opt,name=domain,proto3" json:"domain,omitempty"`
 }
 
@@ -796,7 +796,7 @@ type SimplifiedNameServer_PriorityDomain struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2ray.core.app.dns.DomainMatchingType" json:"type,omitempty"`
+	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=v2fly.core.app.dns.DomainMatchingType" json:"type,omitempty"`
 	Domain string             `protobuf:"bytes,2,opt,name=domain,proto3" json:"domain,omitempty"`
 }
 
@@ -1104,45 +1104,45 @@ func file_app_dns_config_proto_rawDescGZIP() []byte {
 var file_app_dns_config_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_app_dns_config_proto_msgTypes = make([]protoimpl.MessageInfo, 11)
 var file_app_dns_config_proto_goTypes = []interface{}{
-	(DomainMatchingType)(0),                     // 0: v2ray.core.app.dns.DomainMatchingType
-	(QueryStrategy)(0),                          // 1: v2ray.core.app.dns.QueryStrategy
-	(*NameServer)(nil),                          // 2: v2ray.core.app.dns.NameServer
-	(*HostMapping)(nil),                         // 3: v2ray.core.app.dns.HostMapping
-	(*Config)(nil),                              // 4: v2ray.core.app.dns.Config
-	(*SimplifiedConfig)(nil),                    // 5: v2ray.core.app.dns.SimplifiedConfig
-	(*SimplifiedHostMapping)(nil),               // 6: v2ray.core.app.dns.SimplifiedHostMapping
-	(*SimplifiedNameServer)(nil),                // 7: v2ray.core.app.dns.SimplifiedNameServer
-	(*NameServer_PriorityDomain)(nil),           // 8: v2ray.core.app.dns.NameServer.PriorityDomain
-	(*NameServer_OriginalRule)(nil),             // 9: v2ray.core.app.dns.NameServer.OriginalRule
-	nil,                                         // 10: v2ray.core.app.dns.Config.HostsEntry
-	(*SimplifiedNameServer_PriorityDomain)(nil), // 11: v2ray.core.app.dns.SimplifiedNameServer.PriorityDomain
-	(*SimplifiedNameServer_OriginalRule)(nil),   // 12: v2ray.core.app.dns.SimplifiedNameServer.OriginalRule
-	(*net.Endpoint)(nil),                        // 13: v2ray.core.common.net.Endpoint
-	(*routercommon.GeoIP)(nil),                  // 14: v2ray.core.app.router.routercommon.GeoIP
-	(*net.IPOrDomain)(nil),                      // 15: v2ray.core.common.net.IPOrDomain
+	(DomainMatchingType)(0),                     // 0: v2fly.core.app.dns.DomainMatchingType
+	(QueryStrategy)(0),                          // 1: v2fly.core.app.dns.QueryStrategy
+	(*NameServer)(nil),                          // 2: v2fly.core.app.dns.NameServer
+	(*HostMapping)(nil),                         // 3: v2fly.core.app.dns.HostMapping
+	(*Config)(nil),                              // 4: v2fly.core.app.dns.Config
+	(*SimplifiedConfig)(nil),                    // 5: v2fly.core.app.dns.SimplifiedConfig
+	(*SimplifiedHostMapping)(nil),               // 6: v2fly.core.app.dns.SimplifiedHostMapping
+	(*SimplifiedNameServer)(nil),                // 7: v2fly.core.app.dns.SimplifiedNameServer
+	(*NameServer_PriorityDomain)(nil),           // 8: v2fly.core.app.dns.NameServer.PriorityDomain
+	(*NameServer_OriginalRule)(nil),             // 9: v2fly.core.app.dns.NameServer.OriginalRule
+	nil,                                         // 10: v2fly.core.app.dns.Config.HostsEntry
+	(*SimplifiedNameServer_PriorityDomain)(nil), // 11: v2fly.core.app.dns.SimplifiedNameServer.PriorityDomain
+	(*SimplifiedNameServer_OriginalRule)(nil),   // 12: v2fly.core.app.dns.SimplifiedNameServer.OriginalRule
+	(*net.Endpoint)(nil),                        // 13: v2fly.core.common.net.Endpoint
+	(*routercommon.GeoIP)(nil),                  // 14: v2fly.core.app.router.routercommon.GeoIP
+	(*net.IPOrDomain)(nil),                      // 15: v2fly.core.common.net.IPOrDomain
 }
 var file_app_dns_config_proto_depIdxs = []int32{
-	13, // 0: v2ray.core.app.dns.NameServer.address:type_name -> v2ray.core.common.net.Endpoint
-	8,  // 1: v2ray.core.app.dns.NameServer.prioritized_domain:type_name -> v2ray.core.app.dns.NameServer.PriorityDomain
-	14, // 2: v2ray.core.app.dns.NameServer.geoip:type_name -> v2ray.core.app.router.routercommon.GeoIP
-	9,  // 3: v2ray.core.app.dns.NameServer.original_rules:type_name -> v2ray.core.app.dns.NameServer.OriginalRule
-	0,  // 4: v2ray.core.app.dns.HostMapping.type:type_name -> v2ray.core.app.dns.DomainMatchingType
-	13, // 5: v2ray.core.app.dns.Config.NameServers:type_name -> v2ray.core.common.net.Endpoint
-	2,  // 6: v2ray.core.app.dns.Config.name_server:type_name -> v2ray.core.app.dns.NameServer
-	10, // 7: v2ray.core.app.dns.Config.Hosts:type_name -> v2ray.core.app.dns.Config.HostsEntry
-	3,  // 8: v2ray.core.app.dns.Config.static_hosts:type_name -> v2ray.core.app.dns.HostMapping
-	1,  // 9: v2ray.core.app.dns.Config.query_strategy:type_name -> v2ray.core.app.dns.QueryStrategy
-	7,  // 10: v2ray.core.app.dns.SimplifiedConfig.name_server:type_name -> v2ray.core.app.dns.SimplifiedNameServer
-	3,  // 11: v2ray.core.app.dns.SimplifiedConfig.static_hosts:type_name -> v2ray.core.app.dns.HostMapping
-	1,  // 12: v2ray.core.app.dns.SimplifiedConfig.query_strategy:type_name -> v2ray.core.app.dns.QueryStrategy
-	0,  // 13: v2ray.core.app.dns.SimplifiedHostMapping.type:type_name -> v2ray.core.app.dns.DomainMatchingType
-	13, // 14: v2ray.core.app.dns.SimplifiedNameServer.address:type_name -> v2ray.core.common.net.Endpoint
-	11, // 15: v2ray.core.app.dns.SimplifiedNameServer.prioritized_domain:type_name -> v2ray.core.app.dns.SimplifiedNameServer.PriorityDomain
-	14, // 16: v2ray.core.app.dns.SimplifiedNameServer.geoip:type_name -> v2ray.core.app.router.routercommon.GeoIP
-	12, // 17: v2ray.core.app.dns.SimplifiedNameServer.original_rules:type_name -> v2ray.core.app.dns.SimplifiedNameServer.OriginalRule
-	0,  // 18: v2ray.core.app.dns.NameServer.PriorityDomain.type:type_name -> v2ray.core.app.dns.DomainMatchingType
-	15, // 19: v2ray.core.app.dns.Config.HostsEntry.value:type_name -> v2ray.core.common.net.IPOrDomain
-	0,  // 20: v2ray.core.app.dns.SimplifiedNameServer.PriorityDomain.type:type_name -> v2ray.core.app.dns.DomainMatchingType
+	13, // 0: v2fly.core.app.dns.NameServer.address:type_name -> v2fly.core.common.net.Endpoint
+	8,  // 1: v2fly.core.app.dns.NameServer.prioritized_domain:type_name -> v2fly.core.app.dns.NameServer.PriorityDomain
+	14, // 2: v2fly.core.app.dns.NameServer.geoip:type_name -> v2fly.core.app.router.routercommon.GeoIP
+	9,  // 3: v2fly.core.app.dns.NameServer.original_rules:type_name -> v2fly.core.app.dns.NameServer.OriginalRule
+	0,  // 4: v2fly.core.app.dns.HostMapping.type:type_name -> v2fly.core.app.dns.DomainMatchingType
+	13, // 5: v2fly.core.app.dns.Config.NameServers:type_name -> v2fly.core.common.net.Endpoint
+	2,  // 6: v2fly.core.app.dns.Config.name_server:type_name -> v2fly.core.app.dns.NameServer
+	10, // 7: v2fly.core.app.dns.Config.Hosts:type_name -> v2fly.core.app.dns.Config.HostsEntry
+	3,  // 8: v2fly.core.app.dns.Config.static_hosts:type_name -> v2fly.core.app.dns.HostMapping
+	1,  // 9: v2fly.core.app.dns.Config.query_strategy:type_name -> v2fly.core.app.dns.QueryStrategy
+	7,  // 10: v2fly.core.app.dns.SimplifiedConfig.name_server:type_name -> v2fly.core.app.dns.SimplifiedNameServer
+	3,  // 11: v2fly.core.app.dns.SimplifiedConfig.static_hosts:type_name -> v2fly.core.app.dns.HostMapping
+	1,  // 12: v2fly.core.app.dns.SimplifiedConfig.query_strategy:type_name -> v2fly.core.app.dns.QueryStrategy
+	0,  // 13: v2fly.core.app.dns.SimplifiedHostMapping.type:type_name -> v2fly.core.app.dns.DomainMatchingType
+	13, // 14: v2fly.core.app.dns.SimplifiedNameServer.address:type_name -> v2fly.core.common.net.Endpoint
+	11, // 15: v2fly.core.app.dns.SimplifiedNameServer.prioritized_domain:type_name -> v2fly.core.app.dns.SimplifiedNameServer.PriorityDomain
+	14, // 16: v2fly.core.app.dns.SimplifiedNameServer.geoip:type_name -> v2fly.core.app.router.routercommon.GeoIP
+	12, // 17: v2fly.core.app.dns.SimplifiedNameServer.original_rules:type_name -> v2fly.core.app.dns.SimplifiedNameServer.OriginalRule
+	0,  // 18: v2fly.core.app.dns.NameServer.PriorityDomain.type:type_name -> v2fly.core.app.dns.DomainMatchingType
+	15, // 19: v2fly.core.app.dns.Config.HostsEntry.value:type_name -> v2fly.core.common.net.IPOrDomain
+	0,  // 20: v2fly.core.app.dns.SimplifiedNameServer.PriorityDomain.type:type_name -> v2fly.core.app.dns.DomainMatchingType
 	21, // [21:21] is the sub-list for method output_type
 	21, // [21:21] is the sub-list for method input_type
 	21, // [21:21] is the sub-list for extension type_name

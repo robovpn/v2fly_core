@@ -3,10 +3,10 @@ package environment
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem/fsifce"
-	"github.com/v2fly/v2ray-core/v5/features/extension/storage"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/tagged"
+	"../v2fly_core/common/platform/filesystem/fsifce"
+	"../v2fly_core/features/extension/storage"
+	"../v2fly_core/transport/internet"
+	"../v2fly_core/transport/internet/tagged"
 )
 
 func NewRootEnvImpl(ctx context.Context, transientStorage storage.ScopedTransientStorage) RootEnvironment {

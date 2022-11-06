@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/v2fly/v2ray-core/v5/common/log"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
+	"../v2fly_core/common/log"
+	"../v2fly_core/common/serial"
 )
 
 type hasInnerError interface {
@@ -39,8 +39,8 @@ func (err *Error) pkgPath() string {
 	}
 	path := reflect.TypeOf(err.pathObj).PkgPath()
 	// TODO update required on release
-	path = strings.TrimPrefix(path, "github.com/v2fly/v2ray-core/v5/")
-	path = strings.TrimPrefix(path, "github.com/v2fly/v2ray-core/v5")
+	path = strings.TrimPrefix(path, "../v2fly_core/")
+	path = strings.TrimPrefix(path, "../v2fly_core")
 	return path
 }
 

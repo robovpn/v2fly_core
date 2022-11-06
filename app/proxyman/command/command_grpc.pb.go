@@ -34,7 +34,7 @@ func NewHandlerServiceClient(cc grpc.ClientConnInterface) HandlerServiceClient {
 
 func (c *handlerServiceClient) AddInbound(ctx context.Context, in *AddInboundRequest, opts ...grpc.CallOption) (*AddInboundResponse, error) {
 	out := new(AddInboundResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.proxyman.command.HandlerService/AddInbound", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.proxyman.command.HandlerService/AddInbound", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -43,7 +43,7 @@ func (c *handlerServiceClient) AddInbound(ctx context.Context, in *AddInboundReq
 
 func (c *handlerServiceClient) RemoveInbound(ctx context.Context, in *RemoveInboundRequest, opts ...grpc.CallOption) (*RemoveInboundResponse, error) {
 	out := new(RemoveInboundResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.proxyman.command.HandlerService/RemoveInbound", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.proxyman.command.HandlerService/RemoveInbound", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -52,7 +52,7 @@ func (c *handlerServiceClient) RemoveInbound(ctx context.Context, in *RemoveInbo
 
 func (c *handlerServiceClient) AlterInbound(ctx context.Context, in *AlterInboundRequest, opts ...grpc.CallOption) (*AlterInboundResponse, error) {
 	out := new(AlterInboundResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.proxyman.command.HandlerService/AlterInbound", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.proxyman.command.HandlerService/AlterInbound", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -61,7 +61,7 @@ func (c *handlerServiceClient) AlterInbound(ctx context.Context, in *AlterInboun
 
 func (c *handlerServiceClient) AddOutbound(ctx context.Context, in *AddOutboundRequest, opts ...grpc.CallOption) (*AddOutboundResponse, error) {
 	out := new(AddOutboundResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.proxyman.command.HandlerService/AddOutbound", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.proxyman.command.HandlerService/AddOutbound", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -70,7 +70,7 @@ func (c *handlerServiceClient) AddOutbound(ctx context.Context, in *AddOutboundR
 
 func (c *handlerServiceClient) RemoveOutbound(ctx context.Context, in *RemoveOutboundRequest, opts ...grpc.CallOption) (*RemoveOutboundResponse, error) {
 	out := new(RemoveOutboundResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.proxyman.command.HandlerService/RemoveOutbound", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.proxyman.command.HandlerService/RemoveOutbound", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -79,7 +79,7 @@ func (c *handlerServiceClient) RemoveOutbound(ctx context.Context, in *RemoveOut
 
 func (c *handlerServiceClient) AlterOutbound(ctx context.Context, in *AlterOutboundRequest, opts ...grpc.CallOption) (*AlterOutboundResponse, error) {
 	out := new(AlterOutboundResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.proxyman.command.HandlerService/AlterOutbound", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.proxyman.command.HandlerService/AlterOutbound", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -144,7 +144,7 @@ func _HandlerService_AddInbound_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.proxyman.command.HandlerService/AddInbound",
+		FullMethod: "/v2fly.core.app.proxyman.command.HandlerService/AddInbound",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(HandlerServiceServer).AddInbound(ctx, req.(*AddInboundRequest))
@@ -162,7 +162,7 @@ func _HandlerService_RemoveInbound_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.proxyman.command.HandlerService/RemoveInbound",
+		FullMethod: "/v2fly.core.app.proxyman.command.HandlerService/RemoveInbound",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(HandlerServiceServer).RemoveInbound(ctx, req.(*RemoveInboundRequest))
@@ -180,7 +180,7 @@ func _HandlerService_AlterInbound_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.proxyman.command.HandlerService/AlterInbound",
+		FullMethod: "/v2fly.core.app.proxyman.command.HandlerService/AlterInbound",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(HandlerServiceServer).AlterInbound(ctx, req.(*AlterInboundRequest))
@@ -198,7 +198,7 @@ func _HandlerService_AddOutbound_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.proxyman.command.HandlerService/AddOutbound",
+		FullMethod: "/v2fly.core.app.proxyman.command.HandlerService/AddOutbound",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(HandlerServiceServer).AddOutbound(ctx, req.(*AddOutboundRequest))
@@ -216,7 +216,7 @@ func _HandlerService_RemoveOutbound_Handler(srv interface{}, ctx context.Context
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.proxyman.command.HandlerService/RemoveOutbound",
+		FullMethod: "/v2fly.core.app.proxyman.command.HandlerService/RemoveOutbound",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(HandlerServiceServer).RemoveOutbound(ctx, req.(*RemoveOutboundRequest))
@@ -234,7 +234,7 @@ func _HandlerService_AlterOutbound_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.proxyman.command.HandlerService/AlterOutbound",
+		FullMethod: "/v2fly.core.app.proxyman.command.HandlerService/AlterOutbound",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(HandlerServiceServer).AlterOutbound(ctx, req.(*AlterOutboundRequest))
@@ -246,7 +246,7 @@ func _HandlerService_AlterOutbound_Handler(srv interface{}, ctx context.Context,
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var HandlerService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v2ray.core.app.proxyman.command.HandlerService",
+	ServiceName: "v2fly.core.app.proxyman.command.HandlerService",
 	HandlerType: (*HandlerServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

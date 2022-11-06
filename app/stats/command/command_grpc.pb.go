@@ -31,7 +31,7 @@ func NewStatsServiceClient(cc grpc.ClientConnInterface) StatsServiceClient {
 
 func (c *statsServiceClient) GetStats(ctx context.Context, in *GetStatsRequest, opts ...grpc.CallOption) (*GetStatsResponse, error) {
 	out := new(GetStatsResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.stats.command.StatsService/GetStats", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.stats.command.StatsService/GetStats", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -40,7 +40,7 @@ func (c *statsServiceClient) GetStats(ctx context.Context, in *GetStatsRequest, 
 
 func (c *statsServiceClient) QueryStats(ctx context.Context, in *QueryStatsRequest, opts ...grpc.CallOption) (*QueryStatsResponse, error) {
 	out := new(QueryStatsResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.stats.command.StatsService/QueryStats", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.stats.command.StatsService/QueryStats", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -49,7 +49,7 @@ func (c *statsServiceClient) QueryStats(ctx context.Context, in *QueryStatsReque
 
 func (c *statsServiceClient) GetSysStats(ctx context.Context, in *SysStatsRequest, opts ...grpc.CallOption) (*SysStatsResponse, error) {
 	out := new(SysStatsResponse)
-	err := c.cc.Invoke(ctx, "/v2ray.core.app.stats.command.StatsService/GetSysStats", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/v2fly.core.app.stats.command.StatsService/GetSysStats", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -102,7 +102,7 @@ func _StatsService_GetStats_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.stats.command.StatsService/GetStats",
+		FullMethod: "/v2fly.core.app.stats.command.StatsService/GetStats",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(StatsServiceServer).GetStats(ctx, req.(*GetStatsRequest))
@@ -120,7 +120,7 @@ func _StatsService_QueryStats_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.stats.command.StatsService/QueryStats",
+		FullMethod: "/v2fly.core.app.stats.command.StatsService/QueryStats",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(StatsServiceServer).QueryStats(ctx, req.(*QueryStatsRequest))
@@ -138,7 +138,7 @@ func _StatsService_GetSysStats_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v2ray.core.app.stats.command.StatsService/GetSysStats",
+		FullMethod: "/v2fly.core.app.stats.command.StatsService/GetSysStats",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(StatsServiceServer).GetSysStats(ctx, req.(*SysStatsRequest))
@@ -150,7 +150,7 @@ func _StatsService_GetSysStats_Handler(srv interface{}, ctx context.Context, dec
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var StatsService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v2ray.core.app.stats.command.StatsService",
+	ServiceName: "v2fly.core.app.stats.command.StatsService",
 	HandlerType: (*StatsServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

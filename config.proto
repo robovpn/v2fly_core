@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-package v2ray.core;
-option csharp_namespace = "V2Ray.Core";
-option go_package = "github.com/v2fly/v2ray-core/v5;core";
-option java_package = "com.v2ray.core";
+package v2fly.core;
+option csharp_namespace = "v2fly.Core";
+option go_package = "../v2fly_core;core";
+option java_package = "com.v2fly.core";
 option java_multiple_files = true;
 
 import "google/protobuf/any.proto";
 import "transport/config.proto";
 
-// Config is the master config of V2Ray. V2Ray takes this config as input and
+// Config is the master config of v2fly. v2fly takes this config as input and
 // functions accordingly.
 message Config {
   // Inbound handler configurations. Must have at least one item.
@@ -21,7 +21,7 @@ message Config {
 
   reserved 3;
 
-  // App is for configurations of all features in V2Ray. A feature must
+  // App is for configurations of all features in v2fly. A feature must
   // implement the Feature interface, and its config type must be registered
   // through common.RegisterConfig.
   repeated google.protobuf.Any app = 4;
@@ -29,10 +29,10 @@ message Config {
   // Transport settings.
   // Deprecated. Each inbound and outbound should choose their own transport
   // config. Date to remove: 2020-01-13
-  v2ray.core.transport.Config transport = 5 [deprecated = true];
+  v2fly.core.transport.Config transport = 5 [deprecated = true];
 
   // Configuration for extensions. The config may not work if corresponding
-  // extension is not loaded into V2Ray. V2Ray will ignore such config during
+  // extension is not loaded into v2fly. v2fly will ignore such config during
   // initialization.
   repeated google.protobuf.Any extension = 6;
 }

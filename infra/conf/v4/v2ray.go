@@ -6,19 +6,19 @@ import (
 
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/app/stats"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/loader"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/muxcfg"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/proxycfg"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/sniffer"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/dns"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/log"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/router"
+	core "../v2fly_core"
+	"../v2fly_core/app/dispatcher"
+	"../v2fly_core/app/proxyman"
+	"../v2fly_core/app/stats"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/infra/conf/cfgcommon"
+	"../v2fly_core/infra/conf/cfgcommon/loader"
+	"../v2fly_core/infra/conf/cfgcommon/muxcfg"
+	"../v2fly_core/infra/conf/cfgcommon/proxycfg"
+	"../v2fly_core/infra/conf/cfgcommon/sniffer"
+	"../v2fly_core/infra/conf/synthetic/dns"
+	"../v2fly_core/infra/conf/synthetic/log"
+	"../v2fly_core/infra/conf/synthetic/router"
 )
 
 var (
@@ -466,8 +466,8 @@ func (c *Config) Build() (*core.Config, error) {
 	// Load Additional Services that do not have a json translator
 
 	if msg, err := c.BuildServices(c.Services); err != nil {
-		developererr := newError("Loading a V2Ray Features as a service is intended for developers only. " +
-			"This is used for developers to prototype new features or for an advanced client to use special features in V2Ray," +
+		developererr := newError("Loading a v2fly Features as a service is intended for developers only. " +
+			"This is used for developers to prototype new features or for an advanced client to use special features in v2fly," +
 			" instead of allowing end user to enable it without special tool and knowledge.")
 		sb := strings.Builder{}
 		return nil, newError("Cannot load service").Base(developererr).Base(err).Base(newError(sb.String()))

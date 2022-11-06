@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	"github.com/v2fly/v2ray-core/v5/transport/pipe"
+	"../v2fly_core/common/buf"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/task"
+	"../v2fly_core/transport/internet"
+	"../v2fly_core/transport/pipe"
 )
 
 type Server struct {

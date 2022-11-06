@@ -11,15 +11,15 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/proxy/freedom"
-	"github.com/v2fly/v2ray-core/v5/testing/servers/tcp"
-	"github.com/v2fly/v2ray-core/v5/testing/servers/udp"
+	core "../v2fly_core"
+	"../v2fly_core/app/dispatcher"
+	"../v2fly_core/app/proxyman"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/proxy/freedom"
+	"../v2fly_core/testing/servers/tcp"
+	"../v2fly_core/testing/servers/udp"
 )
 
 func xor(b []byte) []byte {
@@ -38,7 +38,7 @@ func xor2(b []byte) []byte {
 	return r
 }
 
-func TestV2RayDial(t *testing.T) {
+func Testv2flyDial(t *testing.T) {
 	tcpServer := tcp.Server{
 		MsgProcessor: xor,
 	}
@@ -88,7 +88,7 @@ func TestV2RayDial(t *testing.T) {
 	}
 }
 
-func TestV2RayDialUDPConn(t *testing.T) {
+func Testv2flyDialUDPConn(t *testing.T) {
 	udpServer := udp.Server{
 		MsgProcessor: xor,
 	}
@@ -148,7 +148,7 @@ func TestV2RayDialUDPConn(t *testing.T) {
 	}
 }
 
-func TestV2RayDialUDP(t *testing.T) {
+func Testv2flyDialUDP(t *testing.T) {
 	udpServer1 := udp.Server{
 		MsgProcessor: xor,
 	}

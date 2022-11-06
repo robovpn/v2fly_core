@@ -34,7 +34,7 @@ Args:
 			helpSuccess += " " + strings.Join(args[:i], " ")
 		}
 		fmt.Fprintf(os.Stderr, "%s help %s: unknown help topic. Run '%s'.\n", CommandEnv.Exec, strings.Join(args, " "), helpSuccess)
-		SetExitStatus(2) // failed at 'v2ray help cmd'
+		SetExitStatus(2) // failed at 'v2fly help cmd'
 		Exit()
 	}
 
@@ -132,7 +132,7 @@ func buildCommandText(cmd *Command) {
 	cmd.UsageLine = buildText(cmd.UsageLine, data)
 	// DO NOT SUPPORT ".Short":
 	// - It's not necessary
-	// - Or, we have to build text for all sub commands of current command, like "v2ray help api"
+	// - Or, we have to build text for all sub commands of current command, like "v2fly help api"
 	// cmd.Short = buildText(cmd.Short, data)
 	cmd.Long = buildText(cmd.Long, data)
 }

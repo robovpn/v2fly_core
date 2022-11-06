@@ -175,7 +175,7 @@ func main() {
 		"--NoPrefixComments",
 		"--Section", "Standard",
 		"--Section", "Default",
-		"--Section", "pkgPrefix(github.com/v2fly/v2ray-core)",
+		"--Section", "pkgPrefix(github.com/v2fly/v2fly-core)",
 	}
 
 	RunMany(gofmt, gofmtArgs, rawFilesSlice)

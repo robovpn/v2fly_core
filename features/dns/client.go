@@ -1,10 +1,10 @@
 package dns
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"../v2fly_core/common/errors"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/features"
 )
 
 // IPOption is an object for IP query options.
@@ -14,9 +14,9 @@ type IPOption struct {
 	FakeEnable bool
 }
 
-// Client is a V2Ray feature for querying DNS information.
+// Client is a v2fly feature for querying DNS information.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 type Client interface {
 	features.Feature
 
@@ -26,21 +26,21 @@ type Client interface {
 
 // IPv4Lookup is an optional feature for querying IPv4 addresses only.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 type IPv4Lookup interface {
 	LookupIPv4(domain string) ([]net.IP, error)
 }
 
 // IPv6Lookup is an optional feature for querying IPv6 addresses only.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 type IPv6Lookup interface {
 	LookupIPv6(domain string) ([]net.IP, error)
 }
 
 // ClientWithIPOption is an optional feature for querying DNS information.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 type ClientWithIPOption interface {
 	// GetIPOption returns IPOption for the DNS client.
 	GetIPOption() *IPOption
@@ -54,7 +54,7 @@ type ClientWithIPOption interface {
 
 // ClientType returns the type of Client interface. Can be used for implementing common.HasType.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 func ClientType() interface{} {
 	return (*Client)(nil)
 }

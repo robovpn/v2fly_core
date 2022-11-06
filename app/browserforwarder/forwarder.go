@@ -10,14 +10,14 @@ import (
 
 	"github.com/v2fly/BrowserBridge/handler"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform/securedload"
-	"github.com/v2fly/v2ray-core/v5/features/extension"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"../v2fly_core/common"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/platform/securedload"
+	"../v2fly_core/features/extension"
+	"../v2fly_core/transport/internet"
 )
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 type Forwarder struct {
 	ctx context.Context

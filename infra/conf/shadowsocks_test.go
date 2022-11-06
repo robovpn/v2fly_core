@@ -3,11 +3,11 @@ package conf_test
 import (
 	"testing"
 
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol"
-	"v2ray.com/core/common/serial"
-	. "v2ray.com/core/infra/conf"
-	"v2ray.com/core/proxy/shadowsocks"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol"
+	"v2fly_core/common/serial"
+	. "v2fly_core/infra/conf"
+	"v2fly_core/proxy/shadowsocks"
 )
 
 func TestShadowsocksServerConfigParsing(t *testing.T) {
@@ -19,14 +19,14 @@ func TestShadowsocksServerConfigParsing(t *testing.T) {
 		{
 			Input: `{
 				"method": "aes-128-cfb",
-				"password": "v2ray-password"
+				"password": "v2fly-password"
 			}`,
 			Parser: loadJSON(creator),
 			Output: &shadowsocks.ServerConfig{
 				User: &protocol.User{
 					Account: serial.ToTypedMessage(&shadowsocks.Account{
 						CipherType: shadowsocks.CipherType_AES_128_CFB,
-						Password:   "v2ray-password",
+						Password:   "v2fly-password",
 					}),
 				},
 				Network: []net.Network{net.Network_TCP},

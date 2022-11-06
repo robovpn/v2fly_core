@@ -8,34 +8,34 @@ import (
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/log"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common"
-	clog "github.com/v2fly/v2ray-core/v5/common/log"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/muxcfg"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/testassist"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/memconservative"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/standard"
-	v4 "github.com/v2fly/v2ray-core/v5/infra/conf/v4"
-	"github.com/v2fly/v2ray-core/v5/proxy/blackhole"
-	dns_proxy "github.com/v2fly/v2ray-core/v5/proxy/dns"
-	"github.com/v2fly/v2ray-core/v5/proxy/freedom"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess/inbound"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/http"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/tls"
-	"github.com/v2fly/v2ray-core/v5/transport/internet/websocket"
+	core "../v2fly_core"
+	"../v2fly_core/app/dispatcher"
+	"../v2fly_core/app/log"
+	"../v2fly_core/app/proxyman"
+	"../v2fly_core/app/router"
+	"../v2fly_core/app/router/routercommon"
+	"../v2fly_core/common"
+	clog "../v2fly_core/common/log"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/infra/conf/cfgcommon/muxcfg"
+	"../v2fly_core/infra/conf/cfgcommon/testassist"
+	_ "../v2fly_core/infra/conf/geodata/memconservative"
+	_ "../v2fly_core/infra/conf/geodata/standard"
+	v4 "../v2fly_core/infra/conf/v4"
+	"../v2fly_core/proxy/blackhole"
+	dns_proxy "../v2fly_core/proxy/dns"
+	"../v2fly_core/proxy/freedom"
+	"../v2fly_core/proxy/vmess"
+	"../v2fly_core/proxy/vmess/inbound"
+	"../v2fly_core/transport/internet"
+	"../v2fly_core/transport/internet/http"
+	"../v2fly_core/transport/internet/tls"
+	"../v2fly_core/transport/internet/websocket"
 )
 
-func TestV2RayConfig(t *testing.T) {
+func Testv2flyConfig(t *testing.T) {
 	createParser := func() func(string) (proto.Message, error) {
 		return func(s string) (proto.Message, error) {
 			config := new(v4.Config)
@@ -54,9 +54,9 @@ func TestV2RayConfig(t *testing.T) {
 					"settings": {}
 				},
 				"log": {
-					"access": "/var/log/v2ray/access.log",
+					"access": "/var/log/v2fly/access.log",
 					"loglevel": "error",
-					"error": "/var/log/v2ray/error.log"
+					"error": "/var/log/v2fly/error.log"
 				},
 				"inbound": {
 					"streamSettings": {
@@ -150,11 +150,11 @@ func TestV2RayConfig(t *testing.T) {
 						Error: &log.LogSpecification{
 							Type:  log.LogType_File,
 							Level: clog.Severity_Error,
-							Path:  "/var/log/v2ray/error.log",
+							Path:  "/var/log/v2fly/error.log",
 						},
 						Access: &log.LogSpecification{
 							Type: log.LogType_File,
-							Path: "/var/log/v2ray/access.log",
+							Path: "/var/log/v2fly/access.log",
 						},
 					}),
 					serial.ToTypedMessage(&dispatcher.Config{}),
@@ -265,7 +265,7 @@ func TestV2RayConfig(t *testing.T) {
 										}),
 									},
 								},
-								SecurityType: "v2ray.core.transport.internet.tls.Config",
+								SecurityType: "v2fly.core.transport.internet.tls.Config",
 								SecuritySettings: []*anypb.Any{
 									serial.ToTypedMessage(&tls.Config{
 										NextProtocol: []string{"h2"},
@@ -321,7 +321,7 @@ func TestV2RayConfig(t *testing.T) {
 										}),
 									},
 								},
-								SecurityType: "v2ray.core.transport.internet.tls.Config",
+								SecurityType: "v2fly.core.transport.internet.tls.Config",
 								SecuritySettings: []*anypb.Any{
 									serial.ToTypedMessage(&tls.Config{
 										NextProtocol: []string{"h2"},

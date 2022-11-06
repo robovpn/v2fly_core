@@ -39,7 +39,7 @@ steps:
       RELEASE_SHA: $(Build.SourceVersion)
       TRIGGER_REASON: $(Build.SourceBranch)
       GITHUB_REPO_OWNER: v2fly
-      GITHUB_REPO_NAME: v2ray-core
+      GITHUB_REPO_NAME: v2fly-core
   - script: |
       echo $RELEASE_TAG
       ./release/tagrelease.sh

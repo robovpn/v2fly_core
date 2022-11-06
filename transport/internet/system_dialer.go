@@ -5,8 +5,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/session"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/session"
 )
 
 var effectiveSystemDialer SystemDialer = &DefaultSystemDialer{}
@@ -158,7 +158,7 @@ func (v *SimpleSystemDialer) Dial(ctx context.Context, src net.Address, dest net
 // UseAlternativeSystemDialer replaces the current system dialer with a given one.
 // Caller must ensure there is no race condition.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 func UseAlternativeSystemDialer(dialer SystemDialer) {
 	if dialer == nil {
 		dialer = &DefaultSystemDialer{}
@@ -170,7 +170,7 @@ func UseAlternativeSystemDialer(dialer SystemDialer) {
 // The controller can be used to operate on file descriptors before they are put into use.
 // It only works when effective dialer is the default dialer.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 func RegisterDialerController(ctl func(network, address string, fd uintptr) error) error {
 	if ctl == nil {
 		return newError("nil listener controller")

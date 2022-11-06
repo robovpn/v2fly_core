@@ -1,8 +1,8 @@
 package dokodemo
 
 import (
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	net "../v2fly_core/common/net"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -29,7 +29,7 @@ type Config struct {
 	// Deprecated: Do not use.
 	NetworkList *net.NetworkList `protobuf:"bytes,3,opt,name=network_list,json=networkList,proto3" json:"network_list,omitempty"`
 	// List of networks that the Dokodemo accepts.
-	Networks []net.Network `protobuf:"varint,7,rep,packed,name=networks,proto3,enum=v2ray.core.common.net.Network" json:"networks,omitempty"`
+	Networks []net.Network `protobuf:"varint,7,rep,packed,name=networks,proto3,enum=v2fly.core.common.net.Network" json:"networks,omitempty"`
 	// Deprecated: Do not use.
 	Timeout        uint32 `protobuf:"varint,4,opt,name=timeout,proto3" json:"timeout,omitempty"`
 	FollowRedirect bool   `protobuf:"varint,5,opt,name=follow_redirect,json=followRedirect,proto3" json:"follow_redirect,omitempty"`
@@ -261,18 +261,18 @@ func file_proxy_dokodemo_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_dokodemo_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proxy_dokodemo_config_proto_goTypes = []interface{}{
-	(*Config)(nil),           // 0: v2ray.core.proxy.dokodemo.Config
-	(*SimplifiedConfig)(nil), // 1: v2ray.core.proxy.dokodemo.SimplifiedConfig
-	(*net.IPOrDomain)(nil),   // 2: v2ray.core.common.net.IPOrDomain
-	(*net.NetworkList)(nil),  // 3: v2ray.core.common.net.NetworkList
-	(net.Network)(0),         // 4: v2ray.core.common.net.Network
+	(*Config)(nil),           // 0: v2fly.core.proxy.dokodemo.Config
+	(*SimplifiedConfig)(nil), // 1: v2fly.core.proxy.dokodemo.SimplifiedConfig
+	(*net.IPOrDomain)(nil),   // 2: v2fly.core.common.net.IPOrDomain
+	(*net.NetworkList)(nil),  // 3: v2fly.core.common.net.NetworkList
+	(net.Network)(0),         // 4: v2fly.core.common.net.Network
 }
 var file_proxy_dokodemo_config_proto_depIdxs = []int32{
-	2, // 0: v2ray.core.proxy.dokodemo.Config.address:type_name -> v2ray.core.common.net.IPOrDomain
-	3, // 1: v2ray.core.proxy.dokodemo.Config.network_list:type_name -> v2ray.core.common.net.NetworkList
-	4, // 2: v2ray.core.proxy.dokodemo.Config.networks:type_name -> v2ray.core.common.net.Network
-	2, // 3: v2ray.core.proxy.dokodemo.SimplifiedConfig.address:type_name -> v2ray.core.common.net.IPOrDomain
-	3, // 4: v2ray.core.proxy.dokodemo.SimplifiedConfig.networks:type_name -> v2ray.core.common.net.NetworkList
+	2, // 0: v2fly.core.proxy.dokodemo.Config.address:type_name -> v2fly.core.common.net.IPOrDomain
+	3, // 1: v2fly.core.proxy.dokodemo.Config.network_list:type_name -> v2fly.core.common.net.NetworkList
+	4, // 2: v2fly.core.proxy.dokodemo.Config.networks:type_name -> v2fly.core.common.net.Network
+	2, // 3: v2fly.core.proxy.dokodemo.SimplifiedConfig.address:type_name -> v2fly.core.common.net.IPOrDomain
+	3, // 4: v2fly.core.proxy.dokodemo.SimplifiedConfig.networks:type_name -> v2fly.core.common.net.NetworkList
 	5, // [5:5] is the sub-list for method output_type
 	5, // [5:5] is the sub-list for method input_type
 	5, // [5:5] is the sub-list for extension type_name

@@ -1,8 +1,8 @@
 package multiobservatory
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
-	taggedfeatures "github.com/v2fly/v2ray-core/v5/common/taggedfeatures"
+	_ "../v2fly_core/common/protoext"
+	taggedfeatures "../v2fly_core/common/taggedfeatures"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -111,11 +111,11 @@ func file_app_observatory_multiobservatory_config_proto_rawDescGZIP() []byte {
 
 var file_app_observatory_multiobservatory_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_app_observatory_multiobservatory_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                // 0: v2ray.core.app.observatory.multiobservatory.Config
-	(*taggedfeatures.Config)(nil), // 1: v2ray.core.common.taggedfeatures.Config
+	(*Config)(nil),                // 0: v2fly.core.app.observatory.multiobservatory.Config
+	(*taggedfeatures.Config)(nil), // 1: v2fly.core.common.taggedfeatures.Config
 }
 var file_app_observatory_multiobservatory_config_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.app.observatory.multiobservatory.Config.holders:type_name -> v2ray.core.common.taggedfeatures.Config
+	1, // 0: v2fly.core.app.observatory.multiobservatory.Config.holders:type_name -> v2fly.core.common.taggedfeatures.Config
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

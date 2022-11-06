@@ -1,6 +1,6 @@
 package http
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"bufio"
@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
+	"../v2fly_core/common"
+	"../v2fly_core/common/buf"
 )
 
 const (

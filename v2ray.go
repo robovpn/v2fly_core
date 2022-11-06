@@ -7,19 +7,19 @@ import (
 	"reflect"
 	"sync"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/serial"
-	"v2ray.com/core/features"
-	"v2ray.com/core/features/dns"
-	"v2ray.com/core/features/dns/localdns"
-	"v2ray.com/core/features/inbound"
-	"v2ray.com/core/features/outbound"
-	"v2ray.com/core/features/policy"
-	"v2ray.com/core/features/routing"
-	"v2ray.com/core/features/stats"
+	"v2fly_core/common"
+	"v2fly_core/common/serial"
+	"v2fly_core/features"
+	"v2fly_core/features/dns"
+	"v2fly_core/features/dns/localdns"
+	"v2fly_core/features/inbound"
+	"v2fly_core/features/outbound"
+	"v2fly_core/features/policy"
+	"v2fly_core/features/routing"
+	"v2fly_core/features/stats"
 )
 
-// Server is an instance of V2Ray. At any time, there must be at most one Server instance running.
+// Server is an instance of v2fly. At any time, there must be at most one Server instance running.
 type Server interface {
 	common.Runnable
 }
@@ -86,7 +86,7 @@ func (r *resolution) resolve(allFeatures []features.Feature) (bool, error) {
 	return true, err
 }
 
-// Instance combines all functionalities in V2Ray.
+// Instance combines all functionalities in v2fly.
 type Instance struct {
 	access             sync.Mutex
 	features           []features.Feature
@@ -155,9 +155,9 @@ func RequireFeatures(ctx context.Context, callback interface{}) error {
 	return v.RequireFeatures(callback)
 }
 
-// New returns a new V2Ray instance based on given configuration.
+// New returns a new v2fly instance based on given configuration.
 // The instance is not started at this point.
-// To ensure V2Ray instance works properly, the config must contain one Dispatcher, one InboundHandlerManager and one OutboundHandlerManager. Other features are optional.
+// To ensure v2fly instance works properly, the config must contain one Dispatcher, one InboundHandlerManager and one OutboundHandlerManager. Other features are optional.
 func New(config *Config) (*Instance, error) {
 	var server = &Instance{ctx: context.Background()}
 
@@ -241,7 +241,7 @@ func (s *Instance) Type() interface{} {
 	return ServerType()
 }
 
-// Close shutdown the V2Ray instance.
+// Close shutdown the v2fly instance.
 func (s *Instance) Close() error {
 	s.access.Lock()
 	defer s.access.Unlock()
@@ -324,10 +324,10 @@ func (s *Instance) GetFeature(featureType interface{}) features.Feature {
 	return getFeature(s.features, reflect.TypeOf(featureType))
 }
 
-// Start starts the V2Ray instance, including all registered features. When Start returns error, the state of the instance is unknown.
-// A V2Ray instance can be started only once. Upon closing, the instance is not guaranteed to start again.
+// Start starts the v2fly instance, including all registered features. When Start returns error, the state of the instance is unknown.
+// A v2fly instance can be started only once. Upon closing, the instance is not guaranteed to start again.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 func (s *Instance) Start() error {
 	s.access.Lock()
 	defer s.access.Unlock()
@@ -339,7 +339,7 @@ func (s *Instance) Start() error {
 		}
 	}
 
-	newError("V2Ray ", Version(), " started").AtWarning().WriteToLog()
+	newError("v2fly ", Version(), " started").AtWarning().WriteToLog()
 
 	return nil
 }

@@ -3,8 +3,8 @@ package cfgcommon
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
+	"../v2fly_core/common"
+	"../v2fly_core/infra/conf/geodata"
 )
 
 type configureLoadingContext int

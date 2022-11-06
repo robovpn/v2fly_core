@@ -4,98 +4,98 @@ import (
 	// The following are necessary as they register handlers in their init functions.
 
 	// Mandatory features. Can't remove unless there are replacements.
-	_ "github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	_ "github.com/v2fly/v2ray-core/v5/app/proxyman/inbound"
-	_ "github.com/v2fly/v2ray-core/v5/app/proxyman/outbound"
+	_ "../v2fly_core/app/dispatcher"
+	_ "../v2fly_core/app/proxyman/inbound"
+	_ "../v2fly_core/app/proxyman/outbound"
 
 	// Default commander and all its services. This is an optional feature.
-	_ "github.com/v2fly/v2ray-core/v5/app/commander"
-	_ "github.com/v2fly/v2ray-core/v5/app/log/command"
-	_ "github.com/v2fly/v2ray-core/v5/app/proxyman/command"
-	_ "github.com/v2fly/v2ray-core/v5/app/stats/command"
+	_ "../v2fly_core/app/commander"
+	_ "../v2fly_core/app/log/command"
+	_ "../v2fly_core/app/proxyman/command"
+	_ "../v2fly_core/app/stats/command"
 
 	// Developer preview services
-	_ "github.com/v2fly/v2ray-core/v5/app/instman/command"
-	_ "github.com/v2fly/v2ray-core/v5/app/observatory/command"
+	_ "../v2fly_core/app/instman/command"
+	_ "../v2fly_core/app/observatory/command"
 
 	// Other optional features.
-	_ "github.com/v2fly/v2ray-core/v5/app/dns"
-	_ "github.com/v2fly/v2ray-core/v5/app/dns/fakedns"
-	_ "github.com/v2fly/v2ray-core/v5/app/log"
-	_ "github.com/v2fly/v2ray-core/v5/app/policy"
-	_ "github.com/v2fly/v2ray-core/v5/app/reverse"
-	_ "github.com/v2fly/v2ray-core/v5/app/router"
-	_ "github.com/v2fly/v2ray-core/v5/app/stats"
+	_ "../v2fly_core/app/dns"
+	_ "../v2fly_core/app/dns/fakedns"
+	_ "../v2fly_core/app/log"
+	_ "../v2fly_core/app/policy"
+	_ "../v2fly_core/app/reverse"
+	_ "../v2fly_core/app/router"
+	_ "../v2fly_core/app/stats"
 
 	// Fix dependency cycle caused by core import in internet package
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/tagged/taggedimpl"
+	_ "../v2fly_core/transport/internet/tagged/taggedimpl"
 
 	// Developer preview features
-	_ "github.com/v2fly/v2ray-core/v5/app/instman"
-	_ "github.com/v2fly/v2ray-core/v5/app/observatory"
-	_ "github.com/v2fly/v2ray-core/v5/app/restfulapi"
+	_ "../v2fly_core/app/instman"
+	_ "../v2fly_core/app/observatory"
+	_ "../v2fly_core/app/restfulapi"
 
 	// Inbound and outbound proxies.
-	_ "github.com/v2fly/v2ray-core/v5/proxy/blackhole"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/dns"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/dokodemo"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/freedom"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/http"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/shadowsocks"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/socks"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/trojan"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/vless/inbound"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/vless/outbound"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/vmess/inbound"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/vmess/outbound"
+	_ "../v2fly_core/proxy/blackhole"
+	_ "../v2fly_core/proxy/dns"
+	_ "../v2fly_core/proxy/dokodemo"
+	_ "../v2fly_core/proxy/freedom"
+	_ "../v2fly_core/proxy/http"
+	_ "../v2fly_core/proxy/shadowsocks"
+	_ "../v2fly_core/proxy/socks"
+	_ "../v2fly_core/proxy/trojan"
+	_ "../v2fly_core/proxy/vless/inbound"
+	_ "../v2fly_core/proxy/vless/outbound"
+	_ "../v2fly_core/proxy/vmess/inbound"
+	_ "../v2fly_core/proxy/vmess/outbound"
 
 	// Developer preview proxies
-	_ "github.com/v2fly/v2ray-core/v5/proxy/vlite/inbound"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/vlite/outbound"
+	_ "../v2fly_core/proxy/vlite/inbound"
+	_ "../v2fly_core/proxy/vlite/outbound"
 
 	// Transports
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/domainsocket"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/grpc"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/http"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/kcp"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/quic"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/tcp"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/tls"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/udp"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/websocket"
+	_ "../v2fly_core/transport/internet/domainsocket"
+	_ "../v2fly_core/transport/internet/grpc"
+	_ "../v2fly_core/transport/internet/http"
+	_ "../v2fly_core/transport/internet/kcp"
+	_ "../v2fly_core/transport/internet/quic"
+	_ "../v2fly_core/transport/internet/tcp"
+	_ "../v2fly_core/transport/internet/tls"
+	_ "../v2fly_core/transport/internet/udp"
+	_ "../v2fly_core/transport/internet/websocket"
 
 	// Transport headers
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/http"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/noop"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/srtp"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/tls"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/utp"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/wechat"
-	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/wireguard"
+	_ "../v2fly_core/transport/internet/headers/http"
+	_ "../v2fly_core/transport/internet/headers/noop"
+	_ "../v2fly_core/transport/internet/headers/srtp"
+	_ "../v2fly_core/transport/internet/headers/tls"
+	_ "../v2fly_core/transport/internet/headers/utp"
+	_ "../v2fly_core/transport/internet/headers/wechat"
+	_ "../v2fly_core/transport/internet/headers/wireguard"
 
 	// Geo loaders
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/memconservative"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/standard"
+	_ "../v2fly_core/infra/conf/geodata/memconservative"
+	_ "../v2fly_core/infra/conf/geodata/standard"
 
 	// JSON, TOML, YAML config support. (jsonv4) This disable selective compile
-	_ "github.com/v2fly/v2ray-core/v5/main/formats"
+	_ "../v2fly_core/main/formats"
 
 	// commands
-	_ "github.com/v2fly/v2ray-core/v5/main/commands/all"
+	_ "../v2fly_core/main/commands/all"
 
 	// engineering commands
-	_ "github.com/v2fly/v2ray-core/v5/main/commands/all/engineering"
+	_ "../v2fly_core/main/commands/all/engineering"
 
 	// Commands that rely on jsonv4 format This disable selective compile
-	_ "github.com/v2fly/v2ray-core/v5/main/commands/all/api/jsonv4"
-	_ "github.com/v2fly/v2ray-core/v5/main/commands/all/jsonv4"
+	_ "../v2fly_core/main/commands/all/api/jsonv4"
+	_ "../v2fly_core/main/commands/all/jsonv4"
 
 	// V5 version of json configure file parser
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/v5cfg"
+	_ "../v2fly_core/infra/conf/v5cfg"
 
 	// Simplified config
-	_ "github.com/v2fly/v2ray-core/v5/proxy/http/simplified"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/shadowsocks/simplified"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/socks/simplified"
-	_ "github.com/v2fly/v2ray-core/v5/proxy/trojan/simplified"
+	_ "../v2fly_core/proxy/http/simplified"
+	_ "../v2fly_core/proxy/shadowsocks/simplified"
+	_ "../v2fly_core/proxy/socks/simplified"
+	_ "../v2fly_core/proxy/trojan/simplified"
 )

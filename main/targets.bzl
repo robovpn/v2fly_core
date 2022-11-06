@@ -2,12 +2,12 @@ load("//infra/bazel:build.bzl", "foreign_go_binary")
 
 def gen_targets(matrix):
   pkg = "./main"
-  output = "v2ray"
+  output = "v2fly"
 
   for (os, arch, ver) in matrix:
 
     if arch in ["arm"]:
-      bin_name = "v2ray_" + os + "_" + arch + "_" + ver
+      bin_name = "v2fly_" + os + "_" + arch + "_" + ver
       foreign_go_binary(
         name = bin_name,
         pkg = pkg,
@@ -19,7 +19,7 @@ def gen_targets(matrix):
       )
 
       if os in ["windows"]:
-        bin_name = "v2ray_" + os + "_" + arch + "_" + ver + "_nowindow"
+        bin_name = "v2fly_" + os + "_" + arch + "_" + ver + "_nowindow"
         foreign_go_binary(
           name = bin_name,
           pkg = pkg,
@@ -32,7 +32,7 @@ def gen_targets(matrix):
         )
 
     else:
-      bin_name = "v2ray_" + os + "_" + arch
+      bin_name = "v2fly_" + os + "_" + arch
       foreign_go_binary(
         name = bin_name,
         pkg = pkg,
@@ -43,7 +43,7 @@ def gen_targets(matrix):
       )
 
       if os in ["windows"]:
-        bin_name = "v2ray_" + os + "_" + arch + "_nowindow"
+        bin_name = "v2fly_" + os + "_" + arch + "_nowindow"
         foreign_go_binary(
           name = bin_name,
           pkg = pkg,
@@ -55,7 +55,7 @@ def gen_targets(matrix):
         )
 
       if arch in ["mips", "mipsle"]:
-        bin_name = "v2ray_" + os + "_" + arch + "_softfloat"
+        bin_name = "v2fly_" + os + "_" + arch + "_softfloat"
         foreign_go_binary(
           name = bin_name,
           pkg = pkg,

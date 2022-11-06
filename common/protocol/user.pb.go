@@ -119,11 +119,11 @@ func file_common_protocol_user_proto_rawDescGZIP() []byte {
 
 var file_common_protocol_user_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_protocol_user_proto_goTypes = []interface{}{
-	(*User)(nil),      // 0: v2ray.core.common.protocol.User
+	(*User)(nil),      // 0: v2fly.core.common.protocol.User
 	(*anypb.Any)(nil), // 1: google.protobuf.Any
 }
 var file_common_protocol_user_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.common.protocol.User.account:type_name -> google.protobuf.Any
+	1, // 0: v2fly.core.common.protocol.User.account:type_name -> google.protobuf.Any
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

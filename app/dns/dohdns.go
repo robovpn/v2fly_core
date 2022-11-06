@@ -15,15 +15,15 @@ import (
 	"time"
 
 	"golang.org/x/net/dns/dnsmessage"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/protocol/dns"
-	"v2ray.com/core/common/session"
-	"v2ray.com/core/common/signal/pubsub"
-	"v2ray.com/core/common/task"
-	dns_feature "v2ray.com/core/features/dns"
-	"v2ray.com/core/features/routing"
-	"v2ray.com/core/transport/internet"
+	"v2fly_core/common"
+	"v2fly_core/common/net"
+	"v2fly_core/common/protocol/dns"
+	"v2fly_core/common/session"
+	"v2fly_core/common/signal/pubsub"
+	"v2fly_core/common/task"
+	dns_feature "v2fly_core/features/dns"
+	"v2fly_core/features/routing"
+	"v2fly_core/transport/internet"
 )
 
 // DoHNameServer implemented DNS over HTTPS (RFC8484) Wire Format,
@@ -50,8 +50,8 @@ func NewDoHNameServer(url *url.URL, dispatcher routing.Dispatcher, clientIP net.
 	// This makes DOH inefficient without a keep-alived connection
 	// See: core/app/proxyman/outbound/handler.go:113
 	// Using mux (https request wrapped in a stream layer) improves the situation.
-	// Recommend to use NewDoHLocalNameServer (DOHL:) if v2ray instance is running on
-	//  a normal network eg. the server side of v2ray
+	// Recommend to use NewDoHLocalNameServer (DOHL:) if v2fly instance is running on
+	//  a normal network eg. the server side of v2fly
 	tr := &http.Transport{
 		MaxIdleConns:        30,
 		IdleConnTimeout:     90 * time.Second,

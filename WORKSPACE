@@ -1,1 +1,1 @@
-workspace(name = "v2ray_core")
+workspace(name = "v2fly_core")

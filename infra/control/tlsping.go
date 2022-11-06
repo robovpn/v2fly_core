@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net"
 
-	"v2ray.com/core/common"
+	"v2fly_core/common"
 )
 
 type TLSPingCommand struct{}

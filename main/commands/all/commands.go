@@ -1,12 +1,12 @@
 package all
 
 import (
-	"github.com/v2fly/v2ray-core/v5/main/commands/all/api"
-	"github.com/v2fly/v2ray-core/v5/main/commands/all/tls"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"../v2fly_core/main/commands/all/api"
+	"../v2fly_core/main/commands/all/tls"
+	"../v2fly_core/main/commands/base"
 )
 
-//go:generate go run v2ray.com/core/common/errors/errorgen
+//go:generate go run v2fly_core/common/errors/errorgen
 
 func init() {
 	base.RootCommand.Commands = append(

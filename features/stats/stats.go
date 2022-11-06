@@ -1,17 +1,17 @@
 package stats
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"../v2fly_core/common"
+	"../v2fly_core/features"
 )
 
 // Counter is the interface for stats counters.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 type Counter interface {
 	// Value is the current value of the counter.
 	Value() int64
@@ -23,7 +23,7 @@ type Counter interface {
 
 // Channel is the interface for stats channel.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 type Channel interface {
 	// Channel is a runnable unit.
 	common.Runnable
@@ -60,7 +60,7 @@ func UnsubscribeClosableChannel(c Channel, sub chan interface{}) error {
 
 // Manager is the interface for stats manager.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 type Manager interface {
 	features.Feature
 
@@ -101,7 +101,7 @@ func GetOrRegisterChannel(m Manager, name string) (Channel, error) {
 
 // ManagerType returns the type of Manager interface. Can be used to implement common.HasType.
 //
-// v2ray:api:stable
+// v2fly:api:stable
 func ManagerType() interface{} {
 	return (*Manager)(nil)
 }

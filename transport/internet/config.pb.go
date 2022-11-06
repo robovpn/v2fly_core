@@ -186,7 +186,7 @@ type TransportConfig struct {
 	// Deprecated. Use the string form below.
 	//
 	// Deprecated: Do not use.
-	Protocol TransportProtocol `protobuf:"varint,1,opt,name=protocol,proto3,enum=v2ray.core.transport.internet.TransportProtocol" json:"protocol,omitempty"`
+	Protocol TransportProtocol `protobuf:"varint,1,opt,name=protocol,proto3,enum=v2fly.core.transport.internet.TransportProtocol" json:"protocol,omitempty"`
 	// Type of network that this settings supports.
 	ProtocolName string `protobuf:"bytes,3,opt,name=protocol_name,json=protocolName,proto3" json:"protocol_name,omitempty"`
 	// Specific settings. Must be of the transports.
@@ -255,7 +255,7 @@ type StreamConfig struct {
 	// Effective network. Deprecated. Use the string form below.
 	//
 	// Deprecated: Do not use.
-	Protocol TransportProtocol `protobuf:"varint,1,opt,name=protocol,proto3,enum=v2ray.core.transport.internet.TransportProtocol" json:"protocol,omitempty"`
+	Protocol TransportProtocol `protobuf:"varint,1,opt,name=protocol,proto3,enum=v2fly.core.transport.internet.TransportProtocol" json:"protocol,omitempty"`
 	// Effective network.
 	ProtocolName      string             `protobuf:"bytes,5,opt,name=protocol_name,json=protocolName,proto3" json:"protocol_name,omitempty"`
 	TransportSettings []*TransportConfig `protobuf:"bytes,2,rep,name=transport_settings,json=transportSettings,proto3" json:"transport_settings,omitempty"`
@@ -405,9 +405,9 @@ type SocketConfig struct {
 	// Mark of the connection. If non-zero, the value will be set to SO_MARK.
 	Mark uint32 `protobuf:"varint,1,opt,name=mark,proto3" json:"mark,omitempty"`
 	// TFO is the state of TFO settings.
-	Tfo SocketConfig_TCPFastOpenState `protobuf:"varint,2,opt,name=tfo,proto3,enum=v2ray.core.transport.internet.SocketConfig_TCPFastOpenState" json:"tfo,omitempty"`
+	Tfo SocketConfig_TCPFastOpenState `protobuf:"varint,2,opt,name=tfo,proto3,enum=v2fly.core.transport.internet.SocketConfig_TCPFastOpenState" json:"tfo,omitempty"`
 	// TProxy is for enabling TProxy socket option.
-	Tproxy SocketConfig_TProxyMode `protobuf:"varint,3,opt,name=tproxy,proto3,enum=v2ray.core.transport.internet.SocketConfig_TProxyMode" json:"tproxy,omitempty"`
+	Tproxy SocketConfig_TProxyMode `protobuf:"varint,3,opt,name=tproxy,proto3,enum=v2fly.core.transport.internet.SocketConfig_TProxyMode" json:"tproxy,omitempty"`
 	// ReceiveOriginalDestAddress is for enabling IP_RECVORIGDSTADDR socket
 	// option. This option is for UDP only.
 	ReceiveOriginalDestAddress bool   `protobuf:"varint,4,opt,name=receive_original_dest_address,json=receiveOriginalDestAddress,proto3" json:"receive_original_dest_address,omitempty"`
@@ -684,24 +684,24 @@ func file_transport_internet_config_proto_rawDescGZIP() []byte {
 var file_transport_internet_config_proto_enumTypes = make([]protoimpl.EnumInfo, 3)
 var file_transport_internet_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_transport_internet_config_proto_goTypes = []interface{}{
-	(TransportProtocol)(0),             // 0: v2ray.core.transport.internet.TransportProtocol
-	(SocketConfig_TCPFastOpenState)(0), // 1: v2ray.core.transport.internet.SocketConfig.TCPFastOpenState
-	(SocketConfig_TProxyMode)(0),       // 2: v2ray.core.transport.internet.SocketConfig.TProxyMode
-	(*TransportConfig)(nil),            // 3: v2ray.core.transport.internet.TransportConfig
-	(*StreamConfig)(nil),               // 4: v2ray.core.transport.internet.StreamConfig
-	(*ProxyConfig)(nil),                // 5: v2ray.core.transport.internet.ProxyConfig
-	(*SocketConfig)(nil),               // 6: v2ray.core.transport.internet.SocketConfig
+	(TransportProtocol)(0),             // 0: v2fly.core.transport.internet.TransportProtocol
+	(SocketConfig_TCPFastOpenState)(0), // 1: v2fly.core.transport.internet.SocketConfig.TCPFastOpenState
+	(SocketConfig_TProxyMode)(0),       // 2: v2fly.core.transport.internet.SocketConfig.TProxyMode
+	(*TransportConfig)(nil),            // 3: v2fly.core.transport.internet.TransportConfig
+	(*StreamConfig)(nil),               // 4: v2fly.core.transport.internet.StreamConfig
+	(*ProxyConfig)(nil),                // 5: v2fly.core.transport.internet.ProxyConfig
+	(*SocketConfig)(nil),               // 6: v2fly.core.transport.internet.SocketConfig
 	(*anypb.Any)(nil),                  // 7: google.protobuf.Any
 }
 var file_transport_internet_config_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.transport.internet.TransportConfig.protocol:type_name -> v2ray.core.transport.internet.TransportProtocol
-	7, // 1: v2ray.core.transport.internet.TransportConfig.settings:type_name -> google.protobuf.Any
-	0, // 2: v2ray.core.transport.internet.StreamConfig.protocol:type_name -> v2ray.core.transport.internet.TransportProtocol
-	3, // 3: v2ray.core.transport.internet.StreamConfig.transport_settings:type_name -> v2ray.core.transport.internet.TransportConfig
-	7, // 4: v2ray.core.transport.internet.StreamConfig.security_settings:type_name -> google.protobuf.Any
-	6, // 5: v2ray.core.transport.internet.StreamConfig.socket_settings:type_name -> v2ray.core.transport.internet.SocketConfig
-	1, // 6: v2ray.core.transport.internet.SocketConfig.tfo:type_name -> v2ray.core.transport.internet.SocketConfig.TCPFastOpenState
-	2, // 7: v2ray.core.transport.internet.SocketConfig.tproxy:type_name -> v2ray.core.transport.internet.SocketConfig.TProxyMode
+	0, // 0: v2fly.core.transport.internet.TransportConfig.protocol:type_name -> v2fly.core.transport.internet.TransportProtocol
+	7, // 1: v2fly.core.transport.internet.TransportConfig.settings:type_name -> google.protobuf.Any
+	0, // 2: v2fly.core.transport.internet.StreamConfig.protocol:type_name -> v2fly.core.transport.internet.TransportProtocol
+	3, // 3: v2fly.core.transport.internet.StreamConfig.transport_settings:type_name -> v2fly.core.transport.internet.TransportConfig
+	7, // 4: v2fly.core.transport.internet.StreamConfig.security_settings:type_name -> google.protobuf.Any
+	6, // 5: v2fly.core.transport.internet.StreamConfig.socket_settings:type_name -> v2fly.core.transport.internet.SocketConfig
+	1, // 6: v2fly.core.transport.internet.SocketConfig.tfo:type_name -> v2fly.core.transport.internet.SocketConfig.TCPFastOpenState
+	2, // 7: v2fly.core.transport.internet.SocketConfig.tproxy:type_name -> v2fly.core.transport.internet.SocketConfig.TProxyMode
 	8, // [8:8] is the sub-list for method output_type
 	8, // [8:8] is the sub-list for method input_type
 	8, // [8:8] is the sub-list for extension type_name

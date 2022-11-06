@@ -1,10 +1,10 @@
 package common
 
-import "github.com/v2fly/v2ray-core/v5/common/errors"
+import "../v2fly_core/common/errors"
 
 // Closable is the interface for objects that can release its resources.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 type Closable interface {
 	// Close release all resources used by this object, including goroutines.
 	Close() error
@@ -12,14 +12,14 @@ type Closable interface {
 
 // Interruptible is an interface for objects that can be stopped before its completion.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 type Interruptible interface {
 	Interrupt()
 }
 
 // Close closes the obj if it is a Closable.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 func Close(obj interface{}) error {
 	if c, ok := obj.(Closable); ok {
 		return c.Close()
@@ -29,7 +29,7 @@ func Close(obj interface{}) error {
 
 // Interrupt calls Interrupt() if object implements Interruptible interface, or Close() if the object implements Closable interface.
 //
-// v2ray:api:beta
+// v2fly:api:beta
 func Interrupt(obj interface{}) error {
 	if c, ok := obj.(Interruptible); ok {
 		c.Interrupt()

@@ -7,13 +7,13 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"v2ray.com/core/app/dns"
-	"v2ray.com/core/app/router"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/net"
-	"v2ray.com/core/common/platform"
-	"v2ray.com/core/common/platform/filesystem"
-	. "v2ray.com/core/infra/conf"
+	"v2fly_core/app/dns"
+	"v2fly_core/app/router"
+	"v2fly_core/common"
+	"v2fly_core/common/net"
+	"v2fly_core/common/platform"
+	"v2fly_core/common/platform/filesystem"
+	. "v2fly_core/infra/conf"
 )
 
 func init() {
@@ -25,7 +25,7 @@ func init() {
 	}
 
 	geositeFilePath := filepath.Join(wd, "geosite.dat")
-	os.Setenv("v2ray.location.asset", wd)
+	os.Setenv("v2fly.location.asset", wd)
 	geositeFile, err := os.OpenFile(geositeFilePath, os.O_CREATE|os.O_WRONLY, 0600)
 	common.Must(err)
 	defer geositeFile.Close()
@@ -49,7 +49,7 @@ func TestDNSConfigParsing(t *testing.T) {
 	geositePath := platform.GetAssetLocation("geosite.dat")
 	defer func() {
 		os.Remove(geositePath)
-		os.Unsetenv("v2ray.location.asset")
+		os.Unsetenv("v2fly.location.asset")
 	}()
 
 	parserCreator := func() func(string) (proto.Message, error) {
@@ -68,10 +68,10 @@ func TestDNSConfigParsing(t *testing.T) {
 				"servers": [{
 					"address": "8.8.8.8",
 					"port": 5353,
-					"domains": ["domain:v2ray.com"]
+					"domains": ["domain:v2fly.com"]
 				}],
 				"hosts": {
-					"v2ray.com": "127.0.0.1",
+					"v2fly.com": "127.0.0.1",
 					"domain:example.com": "google.com",
 					"geosite:test": "10.0.0.1",
 					"keyword:google": "8.8.8.8",
@@ -95,12 +95,12 @@ func TestDNSConfigParsing(t *testing.T) {
 						PrioritizedDomain: []*dns.NameServer_PriorityDomain{
 							{
 								Type:   dns.DomainMatchingType_Subdomain,
-								Domain: "v2ray.com",
+								Domain: "v2fly.com",
 							},
 						},
 						OriginalRules: []*dns.NameServer_OriginalRule{
 							{
-								Rule: "domain:v2ray.com",
+								Rule: "domain:v2fly.com",
 								Size: 1,
 							},
 						},
@@ -129,7 +129,7 @@ func TestDNSConfigParsing(t *testing.T) {
 					},
 					{
 						Type:   dns.DomainMatchingType_Full,
-						Domain: "v2ray.com",
+						Domain: "v2fly.com",
 						Ip:     [][]byte{{127, 0, 0, 1}},
 					},
 				},

@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/v2fly/v2ray-core/v5/common/platform"
+	"../v2fly_core/common/platform"
 )
 
 type allocStrategy struct {
@@ -139,7 +139,7 @@ var useReadv = false
 
 func init() {
 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
-	value := platform.NewEnvFlag("v2ray.buf.readv").GetValue(func() string { return defaultFlagValue })
+	value := platform.NewEnvFlag("v2fly.buf.readv").GetValue(func() string { return defaultFlagValue })
 	switch value {
 	case defaultFlagValue, "auto":
 		if (runtime.GOARCH == "386" || runtime.GOARCH == "amd64" || runtime.GOARCH == "s390x") && (runtime.GOOS == "linux" || runtime.GOOS == "darwin" || runtime.GOOS == "windows") {

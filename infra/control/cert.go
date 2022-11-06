@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/protocol/tls/cert"
-	"v2ray.com/core/common/task"
+	"v2fly_core/common"
+	"v2fly_core/common/protocol/tls/cert"
+	"v2fly_core/common/task"
 )
 
 type stringList []string
@@ -44,7 +44,7 @@ func (c *CertificateCommand) Description() Description {
 	return Description{
 		Short: "Generate TLS certificates.",
 		Usage: []string{
-			"v2ctl cert [--ca] [--domain=v2ray.com] [--expire=240h]",
+			"v2ctl cert [--ca] [--domain=v2fly.com] [--expire=240h]",
 			"Generate new TLS certificate",
 			"--ca The new certificate is a CA certificate",
 			"--domain Common name for the certificate",
@@ -90,8 +90,8 @@ func (c *CertificateCommand) Execute(args []string) error {
 	var domainNames stringList
 	fs.Var(&domainNames, "domain", "Domain name for the certificate")
 
-	commonName := fs.String("name", "V2Ray Inc", "The common name of this certificate")
-	organization := fs.String("org", "V2Ray Inc", "Organization of the certificate")
+	commonName := fs.String("name", "v2fly Inc", "The common name of this certificate")
+	organization := fs.String("org", "v2fly Inc", "Organization of the certificate")
 
 	isCA := fs.Bool("ca", false, "Whether this certificate is a CA")
 	jsonOutput := fs.Bool("json", true, "Print certificate in JSON format")

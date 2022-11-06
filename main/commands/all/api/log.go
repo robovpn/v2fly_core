@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	logService "github.com/v2fly/v2ray-core/v5/app/log/command"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	logService "../v2fly_core/app/log/command"
+	"../v2fly_core/main/commands/base"
 )
 
 var cmdLog = &base.Command{
@@ -14,7 +14,7 @@ var cmdLog = &base.Command{
 	UsageLine:   "{{.Exec}} api log [--server=127.0.0.1:8080]",
 	Short:       "log operations",
 	Long: `
-Follow and print logs from v2ray.
+Follow and print logs from v2fly.
 
 > Make sure you have "LoggerService" set in "config.api.services" 
 of server config.
@@ -73,7 +73,7 @@ func followLogger() {
 	if err != nil {
 		base.Fatalf("failed to follow logger: %s", err)
 	}
-	// work with `v2ray api log | grep expr`
+	// work with `v2fly api log | grep expr`
 	log.SetOutput(os.Stdout)
 	for {
 		resp, err := stream.Recv()

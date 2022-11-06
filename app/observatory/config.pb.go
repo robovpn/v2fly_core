@@ -1,7 +1,7 @@
 package observatory
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -528,16 +528,16 @@ func file_app_observatory_config_proto_rawDescGZIP() []byte {
 
 var file_app_observatory_config_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
 var file_app_observatory_config_proto_goTypes = []interface{}{
-	(*ObservationResult)(nil),           // 0: v2ray.core.app.observatory.ObservationResult
-	(*HealthPingMeasurementResult)(nil), // 1: v2ray.core.app.observatory.HealthPingMeasurementResult
-	(*OutboundStatus)(nil),              // 2: v2ray.core.app.observatory.OutboundStatus
-	(*ProbeResult)(nil),                 // 3: v2ray.core.app.observatory.ProbeResult
-	(*Intensity)(nil),                   // 4: v2ray.core.app.observatory.Intensity
-	(*Config)(nil),                      // 5: v2ray.core.app.observatory.Config
+	(*ObservationResult)(nil),           // 0: v2fly.core.app.observatory.ObservationResult
+	(*HealthPingMeasurementResult)(nil), // 1: v2fly.core.app.observatory.HealthPingMeasurementResult
+	(*OutboundStatus)(nil),              // 2: v2fly.core.app.observatory.OutboundStatus
+	(*ProbeResult)(nil),                 // 3: v2fly.core.app.observatory.ProbeResult
+	(*Intensity)(nil),                   // 4: v2fly.core.app.observatory.Intensity
+	(*Config)(nil),                      // 5: v2fly.core.app.observatory.Config
 }
 var file_app_observatory_config_proto_depIdxs = []int32{
-	2, // 0: v2ray.core.app.observatory.ObservationResult.status:type_name -> v2ray.core.app.observatory.OutboundStatus
-	1, // 1: v2ray.core.app.observatory.OutboundStatus.health_ping:type_name -> v2ray.core.app.observatory.HealthPingMeasurementResult
+	2, // 0: v2fly.core.app.observatory.ObservationResult.status:type_name -> v2fly.core.app.observatory.OutboundStatus
+	1, // 1: v2fly.core.app.observatory.OutboundStatus.health_ping:type_name -> v2fly.core.app.observatory.HealthPingMeasurementResult
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/v2fly/v2ray-core/v5/common/strmatcher"
+	. "../v2fly_core/common/strmatcher"
 )
 
 func TestDomainMatcherGroup(t *testing.T) {

@@ -1,6 +1,6 @@
 package commander
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,15 +9,15 @@ import (
 
 	"google.golang.org/grpc"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/signal/done"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/v5cfg"
+	core "../v2fly_core"
+	"../v2fly_core/common"
+	"../v2fly_core/common/serial"
+	"../v2fly_core/common/signal/done"
+	"../v2fly_core/features/outbound"
+	"../v2fly_core/infra/conf/v5cfg"
 )
 
-// Commander is a V2Ray feature that provides gRPC methods to external clients.
+// Commander is a v2fly feature that provides gRPC methods to external clients.
 type Commander struct {
 	sync.Mutex
 	server   *grpc.Server

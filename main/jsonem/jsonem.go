@@ -3,12 +3,12 @@ package jsonem
 import (
 	"io"
 
-	"v2ray.com/core"
-	"v2ray.com/core/common"
-	"v2ray.com/core/common/cmdarg"
-	"v2ray.com/core/infra/conf"
-	"v2ray.com/core/infra/conf/serial"
-	"v2ray.com/core/main/confloader"
+	"v2fly_core"
+	"v2fly_core/common"
+	"v2fly_core/common/cmdarg"
+	"v2fly_core/infra/conf"
+	"v2fly_core/infra/conf/serial"
+	"v2fly_core/main/confloader"
 )
 
 func init() {

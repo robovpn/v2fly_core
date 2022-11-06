@@ -95,7 +95,7 @@ func file_common_net_packetaddr_config_proto_rawDescGZIP() []byte {
 
 var file_common_net_packetaddr_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_common_net_packetaddr_config_proto_goTypes = []interface{}{
-	(PacketAddrType)(0), // 0: v2ray.core.net.packetaddr.PacketAddrType
+	(PacketAddrType)(0), // 0: v2fly.core.net.packetaddr.PacketAddrType
 }
 var file_common_net_packetaddr_config_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

@@ -1,7 +1,7 @@
 package command
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -400,21 +400,21 @@ func file_app_instman_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_instman_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_app_instman_command_command_proto_goTypes = []interface{}{
-	(*ListInstanceReq)(nil),   // 0: v2ray.core.app.instman.command.ListInstanceReq
-	(*ListInstanceResp)(nil),  // 1: v2ray.core.app.instman.command.ListInstanceResp
-	(*AddInstanceReq)(nil),    // 2: v2ray.core.app.instman.command.AddInstanceReq
-	(*AddInstanceResp)(nil),   // 3: v2ray.core.app.instman.command.AddInstanceResp
-	(*StartInstanceReq)(nil),  // 4: v2ray.core.app.instman.command.StartInstanceReq
-	(*StartInstanceResp)(nil), // 5: v2ray.core.app.instman.command.StartInstanceResp
-	(*Config)(nil),            // 6: v2ray.core.app.instman.command.Config
+	(*ListInstanceReq)(nil),   // 0: v2fly.core.app.instman.command.ListInstanceReq
+	(*ListInstanceResp)(nil),  // 1: v2fly.core.app.instman.command.ListInstanceResp
+	(*AddInstanceReq)(nil),    // 2: v2fly.core.app.instman.command.AddInstanceReq
+	(*AddInstanceResp)(nil),   // 3: v2fly.core.app.instman.command.AddInstanceResp
+	(*StartInstanceReq)(nil),  // 4: v2fly.core.app.instman.command.StartInstanceReq
+	(*StartInstanceResp)(nil), // 5: v2fly.core.app.instman.command.StartInstanceResp
+	(*Config)(nil),            // 6: v2fly.core.app.instman.command.Config
 }
 var file_app_instman_command_command_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.app.instman.command.InstanceManagementService.ListInstance:input_type -> v2ray.core.app.instman.command.ListInstanceReq
-	2, // 1: v2ray.core.app.instman.command.InstanceManagementService.AddInstance:input_type -> v2ray.core.app.instman.command.AddInstanceReq
-	4, // 2: v2ray.core.app.instman.command.InstanceManagementService.StartInstance:input_type -> v2ray.core.app.instman.command.StartInstanceReq
-	1, // 3: v2ray.core.app.instman.command.InstanceManagementService.ListInstance:output_type -> v2ray.core.app.instman.command.ListInstanceResp
-	3, // 4: v2ray.core.app.instman.command.InstanceManagementService.AddInstance:output_type -> v2ray.core.app.instman.command.AddInstanceResp
-	5, // 5: v2ray.core.app.instman.command.InstanceManagementService.StartInstance:output_type -> v2ray.core.app.instman.command.StartInstanceResp
+	0, // 0: v2fly.core.app.instman.command.InstanceManagementService.ListInstance:input_type -> v2fly.core.app.instman.command.ListInstanceReq
+	2, // 1: v2fly.core.app.instman.command.InstanceManagementService.AddInstance:input_type -> v2fly.core.app.instman.command.AddInstanceReq
+	4, // 2: v2fly.core.app.instman.command.InstanceManagementService.StartInstance:input_type -> v2fly.core.app.instman.command.StartInstanceReq
+	1, // 3: v2fly.core.app.instman.command.InstanceManagementService.ListInstance:output_type -> v2fly.core.app.instman.command.ListInstanceResp
+	3, // 4: v2fly.core.app.instman.command.InstanceManagementService.AddInstance:output_type -> v2fly.core.app.instman.command.AddInstanceResp
+	5, // 5: v2fly.core.app.instman.command.InstanceManagementService.StartInstance:output_type -> v2fly.core.app.instman.command.StartInstanceResp
 	3, // [3:6] is the sub-list for method output_type
 	0, // [0:3] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

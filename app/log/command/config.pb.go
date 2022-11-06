@@ -267,17 +267,17 @@ func file_app_log_command_config_proto_rawDescGZIP() []byte {
 
 var file_app_log_command_config_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
 var file_app_log_command_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                // 0: v2ray.core.app.log.command.Config
-	(*RestartLoggerRequest)(nil),  // 1: v2ray.core.app.log.command.RestartLoggerRequest
-	(*RestartLoggerResponse)(nil), // 2: v2ray.core.app.log.command.RestartLoggerResponse
-	(*FollowLogRequest)(nil),      // 3: v2ray.core.app.log.command.FollowLogRequest
-	(*FollowLogResponse)(nil),     // 4: v2ray.core.app.log.command.FollowLogResponse
+	(*Config)(nil),                // 0: v2fly.core.app.log.command.Config
+	(*RestartLoggerRequest)(nil),  // 1: v2fly.core.app.log.command.RestartLoggerRequest
+	(*RestartLoggerResponse)(nil), // 2: v2fly.core.app.log.command.RestartLoggerResponse
+	(*FollowLogRequest)(nil),      // 3: v2fly.core.app.log.command.FollowLogRequest
+	(*FollowLogResponse)(nil),     // 4: v2fly.core.app.log.command.FollowLogResponse
 }
 var file_app_log_command_config_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.app.log.command.LoggerService.RestartLogger:input_type -> v2ray.core.app.log.command.RestartLoggerRequest
-	3, // 1: v2ray.core.app.log.command.LoggerService.FollowLog:input_type -> v2ray.core.app.log.command.FollowLogRequest
-	2, // 2: v2ray.core.app.log.command.LoggerService.RestartLogger:output_type -> v2ray.core.app.log.command.RestartLoggerResponse
-	4, // 3: v2ray.core.app.log.command.LoggerService.FollowLog:output_type -> v2ray.core.app.log.command.FollowLogResponse
+	1, // 0: v2fly.core.app.log.command.LoggerService.RestartLogger:input_type -> v2fly.core.app.log.command.RestartLoggerRequest
+	3, // 1: v2fly.core.app.log.command.LoggerService.FollowLog:input_type -> v2fly.core.app.log.command.FollowLogRequest
+	2, // 2: v2fly.core.app.log.command.LoggerService.RestartLogger:output_type -> v2fly.core.app.log.command.RestartLoggerResponse
+	4, // 3: v2fly.core.app.log.command.LoggerService.FollowLog:output_type -> v2fly.core.app.log.command.FollowLogResponse
 	2, // [2:4] is the sub-list for method output_type
 	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

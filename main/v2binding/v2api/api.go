@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/main/v2binding"
+	"../v2fly_core/main/v2binding"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package routercommon
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -79,7 +79,7 @@ type Domain struct {
 	unknownFields protoimpl.UnknownFields
 
 	// Domain matching type.
-	Type Domain_Type `protobuf:"varint,1,opt,name=type,proto3,enum=v2ray.core.app.router.routercommon.Domain_Type" json:"type,omitempty"`
+	Type Domain_Type `protobuf:"varint,1,opt,name=type,proto3,enum=v2fly.core.app.router.routercommon.Domain_Type" json:"type,omitempty"`
 	// Domain value.
 	Value string `protobuf:"bytes,2,opt,name=value,proto3" json:"value,omitempty"`
 	// Attributes of this domain. May be used for filtering.
@@ -659,22 +659,22 @@ func file_app_router_routercommon_common_proto_rawDescGZIP() []byte {
 var file_app_router_routercommon_common_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_app_router_routercommon_common_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_app_router_routercommon_common_proto_goTypes = []interface{}{
-	(Domain_Type)(0),         // 0: v2ray.core.app.router.routercommon.Domain.Type
-	(*Domain)(nil),           // 1: v2ray.core.app.router.routercommon.Domain
-	(*CIDR)(nil),             // 2: v2ray.core.app.router.routercommon.CIDR
-	(*GeoIP)(nil),            // 3: v2ray.core.app.router.routercommon.GeoIP
-	(*GeoIPList)(nil),        // 4: v2ray.core.app.router.routercommon.GeoIPList
-	(*GeoSite)(nil),          // 5: v2ray.core.app.router.routercommon.GeoSite
-	(*GeoSiteList)(nil),      // 6: v2ray.core.app.router.routercommon.GeoSiteList
-	(*Domain_Attribute)(nil), // 7: v2ray.core.app.router.routercommon.Domain.Attribute
+	(Domain_Type)(0),         // 0: v2fly.core.app.router.routercommon.Domain.Type
+	(*Domain)(nil),           // 1: v2fly.core.app.router.routercommon.Domain
+	(*CIDR)(nil),             // 2: v2fly.core.app.router.routercommon.CIDR
+	(*GeoIP)(nil),            // 3: v2fly.core.app.router.routercommon.GeoIP
+	(*GeoIPList)(nil),        // 4: v2fly.core.app.router.routercommon.GeoIPList
+	(*GeoSite)(nil),          // 5: v2fly.core.app.router.routercommon.GeoSite
+	(*GeoSiteList)(nil),      // 6: v2fly.core.app.router.routercommon.GeoSiteList
+	(*Domain_Attribute)(nil), // 7: v2fly.core.app.router.routercommon.Domain.Attribute
 }
 var file_app_router_routercommon_common_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.app.router.routercommon.Domain.type:type_name -> v2ray.core.app.router.routercommon.Domain.Type
-	7, // 1: v2ray.core.app.router.routercommon.Domain.attribute:type_name -> v2ray.core.app.router.routercommon.Domain.Attribute
-	2, // 2: v2ray.core.app.router.routercommon.GeoIP.cidr:type_name -> v2ray.core.app.router.routercommon.CIDR
-	3, // 3: v2ray.core.app.router.routercommon.GeoIPList.entry:type_name -> v2ray.core.app.router.routercommon.GeoIP
-	1, // 4: v2ray.core.app.router.routercommon.GeoSite.domain:type_name -> v2ray.core.app.router.routercommon.Domain
-	5, // 5: v2ray.core.app.router.routercommon.GeoSiteList.entry:type_name -> v2ray.core.app.router.routercommon.GeoSite
+	0, // 0: v2fly.core.app.router.routercommon.Domain.type:type_name -> v2fly.core.app.router.routercommon.Domain.Type
+	7, // 1: v2fly.core.app.router.routercommon.Domain.attribute:type_name -> v2fly.core.app.router.routercommon.Domain.Attribute
+	2, // 2: v2fly.core.app.router.routercommon.GeoIP.cidr:type_name -> v2fly.core.app.router.routercommon.CIDR
+	3, // 3: v2fly.core.app.router.routercommon.GeoIPList.entry:type_name -> v2fly.core.app.router.routercommon.GeoIP
+	1, // 4: v2fly.core.app.router.routercommon.GeoSite.domain:type_name -> v2fly.core.app.router.routercommon.Domain
+	5, // 5: v2fly.core.app.router.routercommon.GeoSiteList.entry:type_name -> v2fly.core.app.router.routercommon.GeoSite
 	6, // [6:6] is the sub-list for method output_type
 	6, // [6:6] is the sub-list for method input_type
 	6, // [6:6] is the sub-list for extension type_name

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/v2fly/v2ray-core/v5/app/dns/fakedns"
+	"../v2fly_core/app/dns/fakedns"
 )
 
 type FakeDNSPoolElementConfig struct {

@@ -4,8 +4,8 @@
 package tcp
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"../v2fly_core/common/net"
+	"../v2fly_core/transport/internet"
 )
 
 // GetOriginalDestination from tcp conn

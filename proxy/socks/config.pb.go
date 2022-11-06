@@ -1,9 +1,9 @@
 package socks
 
 import (
-	net "github.com/v2fly/v2ray-core/v5/common/net"
-	packetaddr "github.com/v2fly/v2ray-core/v5/common/net/packetaddr"
-	protocol "github.com/v2fly/v2ray-core/v5/common/protocol"
+	net "../v2fly_core/common/net"
+	packetaddr "../v2fly_core/common/net/packetaddr"
+	protocol "../v2fly_core/common/protocol"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -177,14 +177,14 @@ type ServerConfig struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	AuthType   AuthType          `protobuf:"varint,1,opt,name=auth_type,json=authType,proto3,enum=v2ray.core.proxy.socks.AuthType" json:"auth_type,omitempty"`
+	AuthType   AuthType          `protobuf:"varint,1,opt,name=auth_type,json=authType,proto3,enum=v2fly.core.proxy.socks.AuthType" json:"auth_type,omitempty"`
 	Accounts   map[string]string `protobuf:"bytes,2,rep,name=accounts,proto3" json:"accounts,omitempty" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 	Address    *net.IPOrDomain   `protobuf:"bytes,3,opt,name=address,proto3" json:"address,omitempty"`
 	UdpEnabled bool              `protobuf:"varint,4,opt,name=udp_enabled,json=udpEnabled,proto3" json:"udp_enabled,omitempty"`
 	// Deprecated: Do not use.
 	Timeout        uint32                    `protobuf:"varint,5,opt,name=timeout,proto3" json:"timeout,omitempty"`
 	UserLevel      uint32                    `protobuf:"varint,6,opt,name=user_level,json=userLevel,proto3" json:"user_level,omitempty"`
-	PacketEncoding packetaddr.PacketAddrType `protobuf:"varint,7,opt,name=packet_encoding,json=packetEncoding,proto3,enum=v2ray.core.net.packetaddr.PacketAddrType" json:"packet_encoding,omitempty"`
+	PacketEncoding packetaddr.PacketAddrType `protobuf:"varint,7,opt,name=packet_encoding,json=packetEncoding,proto3,enum=v2fly.core.net.packetaddr.PacketAddrType" json:"packet_encoding,omitempty"`
 }
 
 func (x *ServerConfig) Reset() {
@@ -277,7 +277,7 @@ type ClientConfig struct {
 
 	// Sever is a list of Socks server addresses.
 	Server  []*protocol.ServerEndpoint `protobuf:"bytes,1,rep,name=server,proto3" json:"server,omitempty"`
-	Version Version                    `protobuf:"varint,2,opt,name=version,proto3,enum=v2ray.core.proxy.socks.Version" json:"version,omitempty"`
+	Version Version                    `protobuf:"varint,2,opt,name=version,proto3,enum=v2fly.core.proxy.socks.Version" json:"version,omitempty"`
 }
 
 func (x *ClientConfig) Reset() {
@@ -410,23 +410,23 @@ func file_proxy_socks_config_proto_rawDescGZIP() []byte {
 var file_proxy_socks_config_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_proxy_socks_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_socks_config_proto_goTypes = []interface{}{
-	(AuthType)(0),                   // 0: v2ray.core.proxy.socks.AuthType
-	(Version)(0),                    // 1: v2ray.core.proxy.socks.Version
-	(*Account)(nil),                 // 2: v2ray.core.proxy.socks.Account
-	(*ServerConfig)(nil),            // 3: v2ray.core.proxy.socks.ServerConfig
-	(*ClientConfig)(nil),            // 4: v2ray.core.proxy.socks.ClientConfig
-	nil,                             // 5: v2ray.core.proxy.socks.ServerConfig.AccountsEntry
-	(*net.IPOrDomain)(nil),          // 6: v2ray.core.common.net.IPOrDomain
-	(packetaddr.PacketAddrType)(0),  // 7: v2ray.core.net.packetaddr.PacketAddrType
-	(*protocol.ServerEndpoint)(nil), // 8: v2ray.core.common.protocol.ServerEndpoint
+	(AuthType)(0),                   // 0: v2fly.core.proxy.socks.AuthType
+	(Version)(0),                    // 1: v2fly.core.proxy.socks.Version
+	(*Account)(nil),                 // 2: v2fly.core.proxy.socks.Account
+	(*ServerConfig)(nil),            // 3: v2fly.core.proxy.socks.ServerConfig
+	(*ClientConfig)(nil),            // 4: v2fly.core.proxy.socks.ClientConfig
+	nil,                             // 5: v2fly.core.proxy.socks.ServerConfig.AccountsEntry
+	(*net.IPOrDomain)(nil),          // 6: v2fly.core.common.net.IPOrDomain
+	(packetaddr.PacketAddrType)(0),  // 7: v2fly.core.net.packetaddr.PacketAddrType
+	(*protocol.ServerEndpoint)(nil), // 8: v2fly.core.common.protocol.ServerEndpoint
 }
 var file_proxy_socks_config_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.proxy.socks.ServerConfig.auth_type:type_name -> v2ray.core.proxy.socks.AuthType
-	5, // 1: v2ray.core.proxy.socks.ServerConfig.accounts:type_name -> v2ray.core.proxy.socks.ServerConfig.AccountsEntry
-	6, // 2: v2ray.core.proxy.socks.ServerConfig.address:type_name -> v2ray.core.common.net.IPOrDomain
-	7, // 3: v2ray.core.proxy.socks.ServerConfig.packet_encoding:type_name -> v2ray.core.net.packetaddr.PacketAddrType
-	8, // 4: v2ray.core.proxy.socks.ClientConfig.server:type_name -> v2ray.core.common.protocol.ServerEndpoint
-	1, // 5: v2ray.core.proxy.socks.ClientConfig.version:type_name -> v2ray.core.proxy.socks.Version
+	0, // 0: v2fly.core.proxy.socks.ServerConfig.auth_type:type_name -> v2fly.core.proxy.socks.AuthType
+	5, // 1: v2fly.core.proxy.socks.ServerConfig.accounts:type_name -> v2fly.core.proxy.socks.ServerConfig.AccountsEntry
+	6, // 2: v2fly.core.proxy.socks.ServerConfig.address:type_name -> v2fly.core.common.net.IPOrDomain
+	7, // 3: v2fly.core.proxy.socks.ServerConfig.packet_encoding:type_name -> v2fly.core.net.packetaddr.PacketAddrType
+	8, // 4: v2fly.core.proxy.socks.ClientConfig.server:type_name -> v2fly.core.common.protocol.ServerEndpoint
+	1, // 5: v2fly.core.proxy.socks.ClientConfig.version:type_name -> v2fly.core.proxy.socks.Version
 	6, // [6:6] is the sub-list for method output_type
 	6, // [6:6] is the sub-list for method input_type
 	6, // [6:6] is the sub-list for extension type_name

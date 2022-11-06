@@ -1,7 +1,7 @@
 package commander
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -217,13 +217,13 @@ func file_app_commander_config_proto_rawDescGZIP() []byte {
 
 var file_app_commander_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_app_commander_config_proto_goTypes = []interface{}{
-	(*Config)(nil),           // 0: v2ray.core.app.commander.Config
-	(*ReflectionConfig)(nil), // 1: v2ray.core.app.commander.ReflectionConfig
-	(*SimplifiedConfig)(nil), // 2: v2ray.core.app.commander.SimplifiedConfig
+	(*Config)(nil),           // 0: v2fly.core.app.commander.Config
+	(*ReflectionConfig)(nil), // 1: v2fly.core.app.commander.ReflectionConfig
+	(*SimplifiedConfig)(nil), // 2: v2fly.core.app.commander.SimplifiedConfig
 	(*anypb.Any)(nil),        // 3: google.protobuf.Any
 }
 var file_app_commander_config_proto_depIdxs = []int32{
-	3, // 0: v2ray.core.app.commander.Config.service:type_name -> google.protobuf.Any
+	3, // 0: v2fly.core.app.commander.Config.service:type_name -> google.protobuf.Any
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

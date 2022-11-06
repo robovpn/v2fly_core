@@ -3,7 +3,7 @@ package strmatcher_test
 import (
 	"testing"
 
-	. "github.com/v2fly/v2ray-core/v5/common/strmatcher"
+	. "../v2fly_core/common/strmatcher"
 )
 
 func BenchmarkLinearIndexMatcher(b *testing.B) {

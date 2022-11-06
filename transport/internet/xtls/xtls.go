@@ -5,10 +5,10 @@ package xtls
 import (
 	xtls "github.com/xtls/go"
 
-	"v2ray.com/core/common/net"
+	"v2fly_core/common/net"
 )
 
-//go:generate go run v2ray.com/core/common/errors/errorgen
+//go:generate go run v2fly_core/common/errors/errorgen
 
 type Conn struct {
 	*xtls.Conn

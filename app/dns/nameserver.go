@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/strmatcher"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
+	core "../v2fly_core"
+	"../v2fly_core/app/router"
+	"../v2fly_core/common/errors"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/strmatcher"
+	"../v2fly_core/features/dns"
+	"../v2fly_core/features/routing"
 )
 
 // Server is the interface for Name Server.
@@ -87,8 +87,8 @@ func NewClient(ctx context.Context, ns *NameServer, clientIP net.IP, container r
 			// But `matcherInfos` has no enough length to add rules, which leads to core panics (rule index out of range).
 			// To avoid this, the length of `matcherInfos` must be equal to the expected, so manually append it with Golang default zero value first for later modification.
 			// Related issues:
-			// https://github.com/v2fly/v2ray-core/issues/529
-			// https://github.com/v2fly/v2ray-core/issues/719
+			// https://github.com/v2fly/v2fly-core/issues/529
+			// https://github.com/v2fly/v2fly-core/issues/719
 			for i := 0; i < len(localTLDsAndDotlessDomains); i++ {
 				*matcherInfos = append(*matcherInfos, DomainMatcherInfo{
 					clientIdx:     uint16(0),

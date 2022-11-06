@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package v2ray.core.proxy.vless.inbound;
-option csharp_namespace = "V2Ray.Core.Proxy.Vless.Inbound";
-option go_package = "github.com/v2fly/v2ray-core/v5/proxy/vless/inbound";
-option java_package = "com.v2ray.core.proxy.vless.inbound";
+package v2fly.core.proxy.vless.inbound;
+option csharp_namespace = "v2fly.Core.Proxy.Vless.Inbound";
+option go_package = "../v2fly_core/proxy/vless/inbound";
+option java_package = "com.v2fly.core.proxy.vless.inbound";
 option java_multiple_files = true;
 
 import "common/protocol/user.proto";
@@ -18,7 +18,7 @@ message Fallback {
 }
 
 message Config {
-  repeated v2ray.core.common.protocol.User clients = 1;
+  repeated v2fly.core.common.protocol.User clients = 1;
   // Decryption settings. Only applies to server side, and only accepts "none"
   // for now.
   string decryption = 2;
@@ -26,8 +26,8 @@ message Config {
 }
 
 message SimplifiedConfig {
-  option (v2ray.core.common.protoext.message_opt).type = "inbound";
-  option (v2ray.core.common.protoext.message_opt).short_name = "vless";
+  option (v2fly.core.common.protoext.message_opt).type = "inbound";
+  option (v2fly.core.common.protoext.message_opt).short_name = "vless";
 
   repeated string users = 1;
 }

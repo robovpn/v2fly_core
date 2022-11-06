@@ -1,10 +1,10 @@
 package geodata
 
 import (
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
+	"../v2fly_core/app/router/routercommon"
 )
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run ../v2fly_core/common/errors/errorgen
 
 type LoaderImplementation interface {
 	LoadSite(filename, list string) ([]*routercommon.Domain, error)

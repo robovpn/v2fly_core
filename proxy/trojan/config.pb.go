@@ -1,7 +1,7 @@
 package trojan
 
 import (
-	protocol "github.com/v2fly/v2ray-core/v5/common/protocol"
+	protocol "../v2fly_core/common/protocol"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -300,17 +300,17 @@ func file_proxy_trojan_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_trojan_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_trojan_config_proto_goTypes = []interface{}{
-	(*Account)(nil),                 // 0: v2ray.core.proxy.trojan.Account
-	(*Fallback)(nil),                // 1: v2ray.core.proxy.trojan.Fallback
-	(*ClientConfig)(nil),            // 2: v2ray.core.proxy.trojan.ClientConfig
-	(*ServerConfig)(nil),            // 3: v2ray.core.proxy.trojan.ServerConfig
-	(*protocol.ServerEndpoint)(nil), // 4: v2ray.core.common.protocol.ServerEndpoint
-	(*protocol.User)(nil),           // 5: v2ray.core.common.protocol.User
+	(*Account)(nil),                 // 0: v2fly.core.proxy.trojan.Account
+	(*Fallback)(nil),                // 1: v2fly.core.proxy.trojan.Fallback
+	(*ClientConfig)(nil),            // 2: v2fly.core.proxy.trojan.ClientConfig
+	(*ServerConfig)(nil),            // 3: v2fly.core.proxy.trojan.ServerConfig
+	(*protocol.ServerEndpoint)(nil), // 4: v2fly.core.common.protocol.ServerEndpoint
+	(*protocol.User)(nil),           // 5: v2fly.core.common.protocol.User
 }
 var file_proxy_trojan_config_proto_depIdxs = []int32{
-	4, // 0: v2ray.core.proxy.trojan.ClientConfig.server:type_name -> v2ray.core.common.protocol.ServerEndpoint
-	5, // 1: v2ray.core.proxy.trojan.ServerConfig.users:type_name -> v2ray.core.common.protocol.User
-	1, // 2: v2ray.core.proxy.trojan.ServerConfig.fallbacks:type_name -> v2ray.core.proxy.trojan.Fallback
+	4, // 0: v2fly.core.proxy.trojan.ClientConfig.server:type_name -> v2fly.core.common.protocol.ServerEndpoint
+	5, // 1: v2fly.core.proxy.trojan.ServerConfig.users:type_name -> v2fly.core.common.protocol.User
+	1, // 2: v2fly.core.proxy.trojan.ServerConfig.fallbacks:type_name -> v2fly.core.proxy.trojan.Fallback
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

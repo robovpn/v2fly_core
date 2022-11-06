@@ -511,23 +511,23 @@ func file_transport_internet_headers_http_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_headers_http_config_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_transport_internet_headers_http_config_proto_goTypes = []interface{}{
-	(*Header)(nil),         // 0: v2ray.core.transport.internet.headers.http.Header
-	(*Version)(nil),        // 1: v2ray.core.transport.internet.headers.http.Version
-	(*Method)(nil),         // 2: v2ray.core.transport.internet.headers.http.Method
-	(*RequestConfig)(nil),  // 3: v2ray.core.transport.internet.headers.http.RequestConfig
-	(*Status)(nil),         // 4: v2ray.core.transport.internet.headers.http.Status
-	(*ResponseConfig)(nil), // 5: v2ray.core.transport.internet.headers.http.ResponseConfig
-	(*Config)(nil),         // 6: v2ray.core.transport.internet.headers.http.Config
+	(*Header)(nil),         // 0: v2fly.core.transport.internet.headers.http.Header
+	(*Version)(nil),        // 1: v2fly.core.transport.internet.headers.http.Version
+	(*Method)(nil),         // 2: v2fly.core.transport.internet.headers.http.Method
+	(*RequestConfig)(nil),  // 3: v2fly.core.transport.internet.headers.http.RequestConfig
+	(*Status)(nil),         // 4: v2fly.core.transport.internet.headers.http.Status
+	(*ResponseConfig)(nil), // 5: v2fly.core.transport.internet.headers.http.ResponseConfig
+	(*Config)(nil),         // 6: v2fly.core.transport.internet.headers.http.Config
 }
 var file_transport_internet_headers_http_config_proto_depIdxs = []int32{
-	1, // 0: v2ray.core.transport.internet.headers.http.RequestConfig.version:type_name -> v2ray.core.transport.internet.headers.http.Version
-	2, // 1: v2ray.core.transport.internet.headers.http.RequestConfig.method:type_name -> v2ray.core.transport.internet.headers.http.Method
-	0, // 2: v2ray.core.transport.internet.headers.http.RequestConfig.header:type_name -> v2ray.core.transport.internet.headers.http.Header
-	1, // 3: v2ray.core.transport.internet.headers.http.ResponseConfig.version:type_name -> v2ray.core.transport.internet.headers.http.Version
-	4, // 4: v2ray.core.transport.internet.headers.http.ResponseConfig.status:type_name -> v2ray.core.transport.internet.headers.http.Status
-	0, // 5: v2ray.core.transport.internet.headers.http.ResponseConfig.header:type_name -> v2ray.core.transport.internet.headers.http.Header
-	3, // 6: v2ray.core.transport.internet.headers.http.Config.request:type_name -> v2ray.core.transport.internet.headers.http.RequestConfig
-	5, // 7: v2ray.core.transport.internet.headers.http.Config.response:type_name -> v2ray.core.transport.internet.headers.http.ResponseConfig
+	1, // 0: v2fly.core.transport.internet.headers.http.RequestConfig.version:type_name -> v2fly.core.transport.internet.headers.http.Version
+	2, // 1: v2fly.core.transport.internet.headers.http.RequestConfig.method:type_name -> v2fly.core.transport.internet.headers.http.Method
+	0, // 2: v2fly.core.transport.internet.headers.http.RequestConfig.header:type_name -> v2fly.core.transport.internet.headers.http.Header
+	1, // 3: v2fly.core.transport.internet.headers.http.ResponseConfig.version:type_name -> v2fly.core.transport.internet.headers.http.Version
+	4, // 4: v2fly.core.transport.internet.headers.http.ResponseConfig.status:type_name -> v2fly.core.transport.internet.headers.http.Status
+	0, // 5: v2fly.core.transport.internet.headers.http.ResponseConfig.header:type_name -> v2fly.core.transport.internet.headers.http.Header
+	3, // 6: v2fly.core.transport.internet.headers.http.Config.request:type_name -> v2fly.core.transport.internet.headers.http.RequestConfig
+	5, // 7: v2fly.core.transport.internet.headers.http.Config.response:type_name -> v2fly.core.transport.internet.headers.http.ResponseConfig
 	8, // [8:8] is the sub-list for method output_type
 	8, // [8:8] is the sub-list for method input_type
 	8, // [8:8] is the sub-list for extension type_name

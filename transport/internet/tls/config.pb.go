@@ -1,7 +1,7 @@
 package tls
 
 import (
-	_ "github.com/v2fly/v2ray-core/v5/common/protoext"
+	_ "../v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -76,7 +76,7 @@ type Certificate struct {
 	Certificate []byte `protobuf:"bytes,1,opt,name=Certificate,proto3" json:"Certificate,omitempty"`
 	// TLS key in x509 format.
 	Key             []byte            `protobuf:"bytes,2,opt,name=Key,proto3" json:"Key,omitempty"`
-	Usage           Certificate_Usage `protobuf:"varint,3,opt,name=usage,proto3,enum=v2ray.core.transport.internet.tls.Certificate_Usage" json:"usage,omitempty"`
+	Usage           Certificate_Usage `protobuf:"varint,3,opt,name=usage,proto3,enum=v2fly.core.transport.internet.tls.Certificate_Usage" json:"usage,omitempty"`
 	CertificateFile string            `protobuf:"bytes,96001,opt,name=certificate_file,json=certificateFile,proto3" json:"certificate_file,omitempty"`
 	KeyFile         string            `protobuf:"bytes,96002,opt,name=key_file,json=keyFile,proto3" json:"key_file,omitempty"`
 }
@@ -351,13 +351,13 @@ func file_transport_internet_tls_config_proto_rawDescGZIP() []byte {
 var file_transport_internet_tls_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_transport_internet_tls_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_transport_internet_tls_config_proto_goTypes = []interface{}{
-	(Certificate_Usage)(0), // 0: v2ray.core.transport.internet.tls.Certificate.Usage
-	(*Certificate)(nil),    // 1: v2ray.core.transport.internet.tls.Certificate
-	(*Config)(nil),         // 2: v2ray.core.transport.internet.tls.Config
+	(Certificate_Usage)(0), // 0: v2fly.core.transport.internet.tls.Certificate.Usage
+	(*Certificate)(nil),    // 1: v2fly.core.transport.internet.tls.Certificate
+	(*Config)(nil),         // 2: v2fly.core.transport.internet.tls.Config
 }
 var file_transport_internet_tls_config_proto_depIdxs = []int32{
-	0, // 0: v2ray.core.transport.internet.tls.Certificate.usage:type_name -> v2ray.core.transport.internet.tls.Certificate.Usage
-	1, // 1: v2ray.core.transport.internet.tls.Config.certificate:type_name -> v2ray.core.transport.internet.tls.Certificate
+	0, // 0: v2fly.core.transport.internet.tls.Certificate.usage:type_name -> v2fly.core.transport.internet.tls.Certificate.Usage
+	1, // 1: v2fly.core.transport.internet.tls.Config.certificate:type_name -> v2fly.core.transport.internet.tls.Certificate
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

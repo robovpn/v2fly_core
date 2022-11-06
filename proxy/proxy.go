@@ -1,4 +1,4 @@
-// Package proxy contains all proxies used by V2Ray.
+// Package proxy contains all proxies used by v2fly.
 //
 // To implement an inbound or outbound proxy, one needs to do the following:
 // 1. Implement the interface(s) below.
@@ -9,11 +9,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
-	"github.com/v2fly/v2ray-core/v5/transport"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	"../v2fly_core/common/net"
+	"../v2fly_core/common/protocol"
+	"../v2fly_core/features/routing"
+	"../v2fly_core/transport"
+	"../v2fly_core/transport/internet"
 )
 
 // A timeout for reading the first payload from the client, used in 0-RTT optimizations.
