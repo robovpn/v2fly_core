@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/common/environment/envctx"
 	"github.com/robovpn/v2fly_core/common/environment/envimpl"

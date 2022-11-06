@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/golang/protobuf/jsonpb"
+	"google.golang.org/protobuf/jsonpb"
 )
 
 func (n Network) SystemString() string {

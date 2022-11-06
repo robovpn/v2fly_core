@@ -1,7 +1,7 @@
 package v2jsonpb
 
 import (
-	"github.com/golang/protobuf/jsonpb"
+	"google.golang.org/protobuf/jsonpb"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )

@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/golang/protobuf/jsonpb"
+	"google.golang.org/protobuf/jsonpb"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/hkdf"
 

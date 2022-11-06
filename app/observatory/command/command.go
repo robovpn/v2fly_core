@@ -8,7 +8,7 @@ package command
 import (
 	"context"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 	"google.golang.org/grpc"
 
 	core "github.com/robovpn/v2fly_core"

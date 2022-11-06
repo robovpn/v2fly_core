@@ -6,7 +6,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/golang/protobuf/jsonpb"
+	"google.golang.org/protobuf/jsonpb"
 )
 
 var (

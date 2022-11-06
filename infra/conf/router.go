@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/app/router"
 	"github.com/robovpn/v2fly_core/common/net"

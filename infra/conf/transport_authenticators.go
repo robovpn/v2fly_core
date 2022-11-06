@@ -3,7 +3,7 @@ package conf
 import (
 	"sort"
 
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/robovpn/v2fly_core/transport/internet/headers/http"
 	"github.com/robovpn/v2fly_core/transport/internet/headers/noop"
