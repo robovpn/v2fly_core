@@ -3,7 +3,7 @@ package log
 import (
 	"sync"
 
-	"github.com/robovpn/v2fly_core/common/serial"
+	"/v2fly_core/common/serial"
 )
 
 // Message is the interface for all log messages.

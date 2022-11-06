@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/robovpn/v2fly_core/common/net"
+	"/v2fly_core/common/net"
 )
 
 // ParseXForwardedFor parses X-Forwarded-For header in http headers, and return the IP list in it.

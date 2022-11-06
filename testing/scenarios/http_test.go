@@ -12,16 +12,16 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/freedom"
-	v2http "github.com/robovpn/v2fly_core/proxy/http"
-	v2httptest "github.com/robovpn/v2fly_core/testing/servers/http"
-	"github.com/robovpn/v2fly_core/testing/servers/tcp"
+	core "/v2fly_core"
+	"/v2fly_core/app/proxyman"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/proxy/freedom"
+	v2http "/v2fly_core/proxy/http"
+	v2httptest "/v2fly_core/testing/servers/http"
+	"/v2fly_core/testing/servers/tcp"
 )
 
 func TestHttpConformance(t *testing.T) {

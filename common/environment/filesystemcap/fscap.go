@@ -1,6 +1,6 @@
 package filesystemcap
 
-import "github.com/robovpn/v2fly_core/common/platform/filesystem/fsifce"
+import "/v2fly_core/common/platform/filesystem/fsifce"
 
 type FileSystemCapabilitySet interface {
 	OpenFileForReadSeek() fsifce.FileSeekerFunc

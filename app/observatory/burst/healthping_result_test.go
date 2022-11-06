@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/v2fly_core/app/observatory/burst"
+	"/v2fly_core/app/observatory/burst"
 )
 
 func TestHealthPingResults(t *testing.T) {

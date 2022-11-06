@@ -5,7 +5,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/features"
+	"/v2fly_core/features"
 )
 
 type Observatory interface {

@@ -8,12 +8,12 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/vless"
-	"github.com/robovpn/v2fly_core/proxy/vless/inbound"
-	"github.com/robovpn/v2fly_core/proxy/vless/outbound"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/proxy/vless"
+	"/v2fly_core/proxy/vless/inbound"
+	"/v2fly_core/proxy/vless/outbound"
 )
 
 type VLessInboundFallback struct {

@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"io"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/cmdarg"
-	"github.com/robovpn/v2fly_core/infra/conf/json"
+	core "/v2fly_core"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/cmdarg"
+	"/v2fly_core/infra/conf/json"
 )
 
 const jsonV5 = "jsonv5"

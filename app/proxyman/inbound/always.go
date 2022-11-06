@@ -3,17 +3,17 @@ package inbound
 import (
 	"context"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/dice"
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/mux"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/features/policy"
-	"github.com/robovpn/v2fly_core/features/stats"
-	"github.com/robovpn/v2fly_core/proxy"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	core "/v2fly_core"
+	"/v2fly_core/app/proxyman"
+	"/v2fly_core/common"
+	"/v2fly_core/common/dice"
+	"/v2fly_core/common/errors"
+	"/v2fly_core/common/mux"
+	"/v2fly_core/common/net"
+	"/v2fly_core/features/policy"
+	"/v2fly_core/features/stats"
+	"/v2fly_core/proxy"
+	"/v2fly_core/transport/internet"
 )
 
 func getStatCounter(v *core.Instance, tag string) (stats.Counter, stats.Counter) {

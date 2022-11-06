@@ -6,9 +6,9 @@ import (
 	"os"
 
 	"google.golang.org/protobuf/proto"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/infra/conf/serial"
-	"github.com/robovpn/v2fly_core/infra/control"
+	"/v2fly_core/common"
+	"/v2fly_core/infra/conf/serial"
+	"/v2fly_core/infra/control"
 )
 
 type ConfigCommand struct{}

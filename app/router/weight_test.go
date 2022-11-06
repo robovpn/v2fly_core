@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/app/router"
+	"/v2fly_core/app/router"
 )
 
 func TestWeight(t *testing.T) {

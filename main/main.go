@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/robovpn/v2fly_core/main/commands"
-	"github.com/robovpn/v2fly_core/main/commands/base"
-	_ "github.com/robovpn/v2fly_core/main/distro/all"
+	"/v2fly_core/main/commands"
+	"/v2fly_core/main/commands/base"
+	_ "/v2fly_core/main/distro/all"
 )
 
 func main() {

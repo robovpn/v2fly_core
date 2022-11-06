@@ -8,9 +8,9 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/serial"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/errors"
+	"/v2fly_core/common/serial"
 )
 
 var _ buf.Writer = (*connection)(nil)

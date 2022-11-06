@@ -5,8 +5,8 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/transport/internet"
 )
 
 func (s StreamConfig) BuildV5(ctx context.Context) (proto.Message, error) {

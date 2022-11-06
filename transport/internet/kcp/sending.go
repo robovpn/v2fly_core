@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/robovpn/v2fly_core/common/buf"
+	"/v2fly_core/common/buf"
 )
 
 type SendingWindow struct {

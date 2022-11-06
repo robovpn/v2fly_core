@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/robovpn/v2fly_core/common/strmatcher"
+	. "/v2fly_core/common/strmatcher"
 )
 
 func TestDomainMatcherGroup(t *testing.T) {

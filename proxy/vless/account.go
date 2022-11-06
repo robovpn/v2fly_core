@@ -4,8 +4,8 @@
 package vless
 
 import (
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/uuid"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/uuid"
 )
 
 // AsAccount implements protocol.Account.AsAccount().

@@ -6,10 +6,10 @@ import (
 	"go.starlark.net/starlark"
 	"go.starlark.net/syntax"
 
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/strmatcher"
-	"github.com/robovpn/v2fly_core/features/routing"
+	"/v2fly_core/app/router/routercommon"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/strmatcher"
+	"/v2fly_core/features/routing"
 )
 
 type Condition interface {

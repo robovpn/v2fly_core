@@ -3,7 +3,7 @@ package restfulapi
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common"
+	"/v2fly_core/common"
 )
 
 func init() {

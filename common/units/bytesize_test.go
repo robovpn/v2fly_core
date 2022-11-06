@@ -3,7 +3,7 @@ package units_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common/units"
+	"/v2fly_core/common/units"
 )
 
 func TestByteSizes(t *testing.T) {

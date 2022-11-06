@@ -8,12 +8,12 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/observatory"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/dice"
-	"github.com/robovpn/v2fly_core/features"
-	"github.com/robovpn/v2fly_core/features/extension"
+	core "/v2fly_core"
+	"/v2fly_core/app/observatory"
+	"/v2fly_core/common"
+	"/v2fly_core/common/dice"
+	"/v2fly_core/features"
+	"/v2fly_core/features/extension"
 )
 
 // LeastLoadStrategy represents a least load balancing strategy

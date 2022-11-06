@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/log"
+	. "/v2fly_core/common/errors"
+	"/v2fly_core/common/log"
 )
 
 func TestError(t *testing.T) {

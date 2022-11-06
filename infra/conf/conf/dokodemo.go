@@ -2,7 +2,7 @@ package conf
 
 import (
 	"google.golang.org/protobuf/proto"
-	"github.com/robovpn/v2fly_core/proxy/dokodemo"
+	"/v2fly_core/proxy/dokodemo"
 )
 
 type DokodemoConfig struct {

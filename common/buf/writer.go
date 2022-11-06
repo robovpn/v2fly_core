@@ -5,8 +5,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/errors"
+	"/v2fly_core/common"
+	"/v2fly_core/common/errors"
 )
 
 // BufferToBytesWriter is a Writer that writes alloc.Buffer into underlying writer.

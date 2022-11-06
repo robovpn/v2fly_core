@@ -1,7 +1,7 @@
 package http
 
 import (
-	"github.com/robovpn/v2fly_core/common/protocol"
+	"/v2fly_core/common/protocol"
 )
 
 func (a *Account) Equals(another protocol.Account) bool {

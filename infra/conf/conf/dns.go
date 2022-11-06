@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/robovpn/v2fly_core/app/dns"
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/common/net"
+	"/v2fly_core/app/dns"
+	"/v2fly_core/app/router"
+	"/v2fly_core/common/net"
 )
 
 type NameServerConfig struct {

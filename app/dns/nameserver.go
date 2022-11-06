@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/strmatcher"
-	"github.com/robovpn/v2fly_core/features/dns"
-	"github.com/robovpn/v2fly_core/features/routing"
+	core "/v2fly_core"
+	"/v2fly_core/app/router"
+	"/v2fly_core/common/errors"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/strmatcher"
+	"/v2fly_core/features/dns"
+	"/v2fly_core/features/routing"
 )
 
 // Server is the interface for Name Server.

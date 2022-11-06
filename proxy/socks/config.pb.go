@@ -1,9 +1,9 @@
 package socks
 
 import (
-	net "github.com/robovpn/v2fly_core/common/net"
-	packetaddr "github.com/robovpn/v2fly_core/common/net/packetaddr"
-	protocol "github.com/robovpn/v2fly_core/common/protocol"
+	net "/v2fly_core/common/net"
+	packetaddr "/v2fly_core/common/net/packetaddr"
+	protocol "/v2fly_core/common/protocol"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

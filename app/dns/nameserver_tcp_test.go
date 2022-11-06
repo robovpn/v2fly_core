@@ -8,10 +8,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/robovpn/v2fly_core/app/dns"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	dns_feature "github.com/robovpn/v2fly_core/features/dns"
+	. "/v2fly_core/app/dns"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	dns_feature "/v2fly_core/features/dns"
 )
 
 func TestTCPLocalNameServer(t *testing.T) {

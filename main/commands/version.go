@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/main/commands/base"
+	core "/v2fly_core"
+	"/v2fly_core/main/commands/base"
 )
 
 // CmdVersion prints V2Ray Versions

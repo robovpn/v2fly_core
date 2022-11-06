@@ -6,13 +6,13 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/robovpn/v2fly_core/app/observatory"
-	"github.com/robovpn/v2fly_core/app/observatory/burst"
-	"github.com/robovpn/v2fly_core/app/observatory/multiobservatory"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/common/taggedfeatures"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/duration"
-	"github.com/robovpn/v2fly_core/infra/conf/synthetic/router"
+	"/v2fly_core/app/observatory"
+	"/v2fly_core/app/observatory/burst"
+	"/v2fly_core/app/observatory/multiobservatory"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/common/taggedfeatures"
+	"/v2fly_core/infra/conf/cfgcommon/duration"
+	"/v2fly_core/infra/conf/synthetic/router"
 )
 
 type ObservatoryConfig struct {

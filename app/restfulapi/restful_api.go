@@ -9,9 +9,9 @@ import (
 	"github.com/go-chi/render"
 	"github.com/go-playground/validator/v10"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	core "/v2fly_core"
+	"/v2fly_core/common/net"
+	"/v2fly_core/transport/internet"
 )
 
 var validate *validator.Validate

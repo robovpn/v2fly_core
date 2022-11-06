@@ -1,8 +1,8 @@
 package freedom
 
 import (
-	protocol "github.com/robovpn/v2fly_core/common/protocol"
-	_ "github.com/robovpn/v2fly_core/common/protoext"
+	protocol "/v2fly_core/common/protocol"
+	_ "/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

@@ -9,9 +9,9 @@ import (
 	"github.com/miekg/dns"
 	"golang.org/x/net/dns/dnsmessage"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	dns_feature "github.com/robovpn/v2fly_core/features/dns"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	dns_feature "/v2fly_core/features/dns"
 )
 
 func Test_parseResponse(t *testing.T) {

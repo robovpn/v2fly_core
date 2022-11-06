@@ -4,7 +4,7 @@ import (
 	"crypto/cipher"
 	"io"
 
-	"github.com/robovpn/v2fly_core/common/buf"
+	"/v2fly_core/common/buf"
 )
 
 type CryptionReader struct {

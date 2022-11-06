@@ -6,12 +6,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/dispatcher"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/app/stats"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/transport/internet/xtls"
+	"/v2fly_core"
+	"/v2fly_core/app/dispatcher"
+	"/v2fly_core/app/proxyman"
+	"/v2fly_core/app/stats"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/transport/internet/xtls"
 )
 
 var (

@@ -3,15 +3,15 @@ package v4_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
-	v4 "github.com/robovpn/v2fly_core/infra/conf/v4"
-	"github.com/robovpn/v2fly_core/proxy/vless"
-	"github.com/robovpn/v2fly_core/proxy/vless/inbound"
-	"github.com/robovpn/v2fly_core/proxy/vless/outbound"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/infra/conf/cfgcommon"
+	"/v2fly_core/infra/conf/cfgcommon/testassist"
+	v4 "/v2fly_core/infra/conf/v4"
+	"/v2fly_core/proxy/vless"
+	"/v2fly_core/proxy/vless/inbound"
+	"/v2fly_core/proxy/vless/outbound"
 )
 
 func TestVLessOutbound(t *testing.T) {

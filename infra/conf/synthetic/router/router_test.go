@@ -8,14 +8,14 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
-	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/memconservative"
-	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/standard"
-	router2 "github.com/robovpn/v2fly_core/infra/conf/synthetic/router"
+	"/v2fly_core/app/router"
+	"/v2fly_core/app/router/routercommon"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/infra/conf/cfgcommon/testassist"
+	_ "/v2fly_core/infra/conf/geodata/memconservative"
+	_ "/v2fly_core/infra/conf/geodata/standard"
+	router2 "/v2fly_core/infra/conf/synthetic/router"
 )
 
 func TestRouterConfig(t *testing.T) {

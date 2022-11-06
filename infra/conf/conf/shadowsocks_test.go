@@ -3,11 +3,11 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	. "github.com/robovpn/v2fly_core/infra/conf"
-	"github.com/robovpn/v2fly_core/proxy/shadowsocks"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/serial"
+	. "/v2fly_core/infra/conf"
+	"/v2fly_core/proxy/shadowsocks"
 )
 
 func TestShadowsocksServerConfigParsing(t *testing.T) {

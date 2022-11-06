@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/robovpn/v2fly_core/main/commands/base"
+	"/v2fly_core/main/commands/base"
 )
 
 // CmdAPI calls an API in an V2Ray process

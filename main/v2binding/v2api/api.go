@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/robovpn/v2fly_core/main/v2binding"
+	"/v2fly_core/main/v2binding"
 )
 
 func main() {

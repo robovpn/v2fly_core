@@ -5,10 +5,10 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/loader"
-	"github.com/robovpn/v2fly_core/proxy/blackhole"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/infra/conf/cfgcommon"
+	"/v2fly_core/infra/conf/cfgcommon/loader"
+	"/v2fly_core/proxy/blackhole"
 )
 
 type NoneResponse struct{}

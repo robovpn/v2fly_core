@@ -3,7 +3,7 @@ package extension
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/features"
+	"/v2fly_core/features"
 )
 
 // InstanceManagement : unstable

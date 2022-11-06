@@ -4,9 +4,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/v2fly_core/common/platform/filesystem/fsifce"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/platform"
+	"/v2fly_core/common/platform/filesystem/fsifce"
 )
 
 var NewFileSeeker fsifce.FileSeekerFunc = func(path string) (io.ReadSeekCloser, error) {

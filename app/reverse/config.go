@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"io"
 
-	"github.com/robovpn/v2fly_core/common/dice"
+	"/v2fly_core/common/dice"
 )
 
 func (c *Control) FillInRandom() {

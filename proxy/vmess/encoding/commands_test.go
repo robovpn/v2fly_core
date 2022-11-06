@@ -6,11 +6,11 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/uuid"
-	. "github.com/robovpn/v2fly_core/proxy/vmess/encoding"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/uuid"
+	. "/v2fly_core/proxy/vmess/encoding"
 )
 
 func TestSwitchAccount(t *testing.T) {

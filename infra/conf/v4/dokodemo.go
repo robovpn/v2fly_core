@@ -3,8 +3,8 @@ package v4
 import (
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/proxy/dokodemo"
+	"/v2fly_core/infra/conf/cfgcommon"
+	"/v2fly_core/proxy/dokodemo"
 )
 
 type DokodemoConfig struct {

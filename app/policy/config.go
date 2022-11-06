@@ -3,7 +3,7 @@ package policy
 import (
 	"time"
 
-	"github.com/robovpn/v2fly_core/features/policy"
+	"/v2fly_core/features/policy"
 )
 
 // Duration converts Second to time.Duration.

@@ -7,9 +7,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"github.com/robovpn/v2fly_core/app/stats"
-	. "github.com/robovpn/v2fly_core/app/stats/command"
-	"github.com/robovpn/v2fly_core/common"
+	"/v2fly_core/app/stats"
+	. "/v2fly_core/app/stats/command"
+	"/v2fly_core/common"
 )
 
 func TestGetStats(t *testing.T) {

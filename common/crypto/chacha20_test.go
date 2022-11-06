@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/v2fly_core/common/crypto"
+	"/v2fly_core/common"
+	. "/v2fly_core/common/crypto"
 )
 
 func mustDecodeHex(s string) []byte {

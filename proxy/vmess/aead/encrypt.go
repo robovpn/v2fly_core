@@ -9,7 +9,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
+	"/v2fly_core/common"
 )
 
 func SealVMessAEADHeader(key [16]byte, data []byte) []byte {

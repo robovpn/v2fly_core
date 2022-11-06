@@ -1,8 +1,8 @@
 package features
 
-import "github.com/robovpn/v2fly_core/common"
+import "/v2fly_core/common"
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 // Feature is the interface for V2Ray features. All features must implement this interface.
 // All existing features have an implementation in app directory. These features can be replaced by third-party ones.

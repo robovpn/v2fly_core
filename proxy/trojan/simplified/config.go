@@ -3,10 +3,10 @@ package simplified
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/trojan"
+	"/v2fly_core/common"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/proxy/trojan"
 )
 
 func init() {

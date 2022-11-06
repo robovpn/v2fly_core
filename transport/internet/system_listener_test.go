@@ -5,8 +5,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"/v2fly_core/common"
+	"/v2fly_core/transport/internet"
 )
 
 func TestRegisterListenerController(t *testing.T) {

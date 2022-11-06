@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/v2fly_core/transport"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/errors"
+	"/v2fly_core/common/net"
+	"/v2fly_core/features/routing"
+	"/v2fly_core/transport"
 )
 
 var (

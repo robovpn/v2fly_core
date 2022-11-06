@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/robovpn/v2fly_core/common/platform"
+	"/v2fly_core/common/platform"
 )
 
 type allocStrategy struct {

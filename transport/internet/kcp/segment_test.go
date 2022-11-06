@@ -6,7 +6,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	. "github.com/robovpn/v2fly_core/transport/internet/kcp"
+	. "/v2fly_core/transport/internet/kcp"
 )
 
 func TestBadSegment(t *testing.T) {

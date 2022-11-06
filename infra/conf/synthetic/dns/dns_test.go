@@ -10,13 +10,13 @@ import (
 
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	"github.com/robovpn/v2fly_core/app/dns"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/platform/filesystem"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
-	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/standard"
-	dns2 "github.com/robovpn/v2fly_core/infra/conf/synthetic/dns"
+	"/v2fly_core/app/dns"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/platform/filesystem"
+	"/v2fly_core/infra/conf/cfgcommon/testassist"
+	_ "/v2fly_core/infra/conf/geodata/standard"
+	dns2 "/v2fly_core/infra/conf/synthetic/dns"
 )
 
 func init() {

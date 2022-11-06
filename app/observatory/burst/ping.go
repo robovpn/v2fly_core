@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/transport/internet/tagged"
+	"/v2fly_core/common/net"
+	"/v2fly_core/transport/internet/tagged"
 )
 
 type pingClient struct {

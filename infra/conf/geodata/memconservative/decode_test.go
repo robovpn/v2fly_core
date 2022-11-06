@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"/v2fly_core/common"
+	"/v2fly_core/common/platform"
+	"/v2fly_core/common/platform/filesystem"
 )
 
 func init() {

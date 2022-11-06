@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/crypto"
+	"/v2fly_core/common"
+	"/v2fly_core/common/crypto"
 )
 
 // Authenticate authenticates a byte array using Fnv hash.

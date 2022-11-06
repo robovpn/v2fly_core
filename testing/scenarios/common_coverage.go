@@ -8,7 +8,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/robovpn/v2fly_core/common/uuid"
+	"/v2fly_core/common/uuid"
 )
 
 func BuildV2Ray() error {
@@ -17,7 +17,7 @@ func BuildV2Ray() error {
 		return nil
 	}
 
-	cmd := exec.Command("go", "test", "-tags", "coverage coveragemain", "-coverpkg", "github.com/robovpn/v2fly_core/...", "-c", "-o", testBinaryPath, GetSourcePath())
+	cmd := exec.Command("go", "test", "-tags", "coverage coveragemain", "-coverpkg", "/v2fly_core/...", "-c", "-o", testBinaryPath, GetSourcePath())
 	return cmd.Run()
 }
 

@@ -1,7 +1,7 @@
 package routing
 
 import (
-	"github.com/robovpn/v2fly_core/common/net"
+	"/v2fly_core/common/net"
 )
 
 // Context is a feature to store connection information for routing.

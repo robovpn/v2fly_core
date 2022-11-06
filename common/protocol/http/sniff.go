@@ -5,8 +5,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
 )
 
 type version byte

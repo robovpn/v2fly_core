@@ -6,8 +6,8 @@ import (
 
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/v5cfg"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/infra/conf/v5cfg"
 )
 
 func LoadJSONConfig(ctx context.Context, interfaceType, defaultImpl string, message json.RawMessage) (*Config, error) {

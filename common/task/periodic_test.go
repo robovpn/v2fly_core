@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/v2fly_core/common/task"
+	"/v2fly_core/common"
+	. "/v2fly_core/common/task"
 )
 
 func TestPeriodicTaskStop(t *testing.T) {

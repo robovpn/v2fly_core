@@ -5,10 +5,10 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/proxy/http"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/infra/conf/cfgcommon"
+	"/v2fly_core/proxy/http"
 )
 
 type HTTPAccount struct {

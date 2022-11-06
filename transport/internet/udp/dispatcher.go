@@ -3,9 +3,9 @@ package udp
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/net"
 )
 
 type DispatcherI interface {

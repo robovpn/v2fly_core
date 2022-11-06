@@ -4,7 +4,7 @@
 // Package dns is an implementation of core.DNS feature.
 package dns
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -12,17 +12,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/strmatcher"
-	"github.com/robovpn/v2fly_core/features"
-	"github.com/robovpn/v2fly_core/features/dns"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/infra/conf/geodata"
+	"/v2fly_core/app/router"
+	"/v2fly_core/common"
+	"/v2fly_core/common/errors"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/platform"
+	"/v2fly_core/common/session"
+	"/v2fly_core/common/strmatcher"
+	"/v2fly_core/features"
+	"/v2fly_core/features/dns"
+	"/v2fly_core/infra/conf/cfgcommon"
+	"/v2fly_core/infra/conf/geodata"
 )
 
 // DNS is a DNS rely server.

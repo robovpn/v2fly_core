@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"os"
 
-	"github.com/robovpn/v2fly_core/infra/conf/merge"
-	"github.com/robovpn/v2fly_core/infra/conf/mergers"
-	"github.com/robovpn/v2fly_core/infra/conf/serial"
-	v4 "github.com/robovpn/v2fly_core/infra/conf/v4"
+	"/v2fly_core/infra/conf/merge"
+	"/v2fly_core/infra/conf/mergers"
+	"/v2fly_core/infra/conf/serial"
+	v4 "/v2fly_core/infra/conf/v4"
 )
 
 // LoadConfig load config files to *conf.Config, it will:

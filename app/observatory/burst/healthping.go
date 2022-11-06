@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common/dice"
+	"/v2fly_core/common/dice"
 )
 
 // HealthPingSettings holds settings for health Checker

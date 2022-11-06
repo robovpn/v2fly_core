@@ -1,7 +1,7 @@
 package all
 
 import (
-	"github.com/robovpn/v2fly_core/main/commands/base"
+	"/v2fly_core/main/commands/base"
 )
 
 var docFormat = &base.Command{

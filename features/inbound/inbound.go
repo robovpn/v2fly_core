@@ -3,9 +3,9 @@ package inbound
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/features"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	"/v2fly_core/features"
 )
 
 // Handler is the interface for handlers that process inbound connections.

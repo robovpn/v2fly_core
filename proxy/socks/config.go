@@ -1,6 +1,6 @@
 package socks
 
-import "github.com/robovpn/v2fly_core/common/protocol"
+import "/v2fly_core/common/protocol"
 
 func (a *Account) Equals(another protocol.Account) bool {
 	if account, ok := another.(*Account); ok {

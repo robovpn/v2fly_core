@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/signal/done"
-	"github.com/robovpn/v2fly_core/common/task"
+	"/v2fly_core/common"
+	"/v2fly_core/common/signal/done"
+	"/v2fly_core/common/task"
 )
 
 type Subscriber struct {

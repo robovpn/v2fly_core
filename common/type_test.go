@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	. "github.com/robovpn/v2fly_core/common"
+	. "/v2fly_core/common"
 )
 
 type TConfig struct {

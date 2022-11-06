@@ -1,7 +1,7 @@
 package http
 
 import (
-	http "github.com/robovpn/v2fly_core/transport/internet/headers/http"
+	http "/v2fly_core/transport/internet/headers/http"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

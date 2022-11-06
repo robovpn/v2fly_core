@@ -1,6 +1,6 @@
 package outbound
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -8,23 +8,23 @@ import (
 	"crypto/sha256"
 	"hash/crc64"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/retry"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/signal"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/features/policy"
-	"github.com/robovpn/v2fly_core/proxy"
-	"github.com/robovpn/v2fly_core/proxy/vmess"
-	"github.com/robovpn/v2fly_core/proxy/vmess/encoding"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	core "/v2fly_core"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/platform"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/retry"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/common/session"
+	"/v2fly_core/common/signal"
+	"/v2fly_core/common/task"
+	"/v2fly_core/features/policy"
+	"/v2fly_core/proxy"
+	"/v2fly_core/proxy/vmess"
+	"/v2fly_core/proxy/vmess/encoding"
+	"/v2fly_core/transport"
+	"/v2fly_core/transport/internet"
 )
 
 // Handler is an outbound connection handler for VMess protocol.

@@ -13,12 +13,12 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	http_proto "github.com/robovpn/v2fly_core/common/protocol/http"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/transport/internet"
-	v2tls "github.com/robovpn/v2fly_core/transport/internet/tls"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	http_proto "/v2fly_core/common/protocol/http"
+	"/v2fly_core/common/session"
+	"/v2fly_core/transport/internet"
+	v2tls "/v2fly_core/transport/internet/tls"
 )
 
 type requestHandler struct {

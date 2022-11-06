@@ -5,8 +5,8 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/errors"
+	"/v2fly_core/common"
+	"/v2fly_core/common/errors"
 )
 
 var byteGroups = []int{8, 4, 4, 4, 12}

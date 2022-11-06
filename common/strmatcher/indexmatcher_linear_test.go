@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/v2fly_core/common/strmatcher"
+	"/v2fly_core/common"
+	. "/v2fly_core/common/strmatcher"
 )
 
 // See https://github.com/v2fly/v2ray-core/issues/92#issuecomment-673238489

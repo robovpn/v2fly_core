@@ -6,10 +6,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/testing/servers/tcp"
-	. "github.com/robovpn/v2fly_core/transport/internet"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/testing/servers/tcp"
+	. "/v2fly_core/transport/internet"
 )
 
 func TestTCPFastOpen(t *testing.T) {

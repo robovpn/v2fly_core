@@ -7,15 +7,15 @@ import (
 
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/policy"
-	. "github.com/robovpn/v2fly_core/app/proxyman/outbound"
-	"github.com/robovpn/v2fly_core/app/stats"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/features/outbound"
-	"github.com/robovpn/v2fly_core/proxy/freedom"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	core "/v2fly_core"
+	"/v2fly_core/app/policy"
+	. "/v2fly_core/app/proxyman/outbound"
+	"/v2fly_core/app/stats"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/features/outbound"
+	"/v2fly_core/proxy/freedom"
+	"/v2fly_core/transport/internet"
 )
 
 func TestInterfaces(t *testing.T) {
@@ -23,7 +23,7 @@ func TestInterfaces(t *testing.T) {
 	_ = (outbound.Manager)(new(Manager))
 }
 
-//go:linkname toContext github.com/robovpn/v2fly_core.toContext
+//go:linkname toContext /v2fly_core.toContext
 func toContext(ctx context.Context, v *core.Instance) context.Context
 
 func TestOutboundWithoutStatCounter(t *testing.T) {

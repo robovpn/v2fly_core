@@ -3,9 +3,9 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	. "github.com/robovpn/v2fly_core/infra/conf"
-	"github.com/robovpn/v2fly_core/proxy/dokodemo"
+	"/v2fly_core/common/net"
+	. "/v2fly_core/infra/conf"
+	"/v2fly_core/proxy/dokodemo"
 )
 
 func TestDokodemoConfig(t *testing.T) {

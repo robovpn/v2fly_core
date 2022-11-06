@@ -1,13 +1,13 @@
 package proxycfg
 
-import "github.com/robovpn/v2fly_core/transport/internet"
+import "/v2fly_core/transport/internet"
 
 type ProxyConfig struct {
 	Tag                 string `json:"tag"`
 	TransportLayerProxy bool   `json:"transportLayer"`
 }
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 // Build implements Buildable.
 func (v *ProxyConfig) Build() (*internet.ProxyConfig, error) {

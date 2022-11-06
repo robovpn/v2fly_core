@@ -1,6 +1,6 @@
 package command
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,11 +9,11 @@ import (
 
 	grpc "google.golang.org/grpc"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/stats"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/strmatcher"
-	feature_stats "github.com/robovpn/v2fly_core/features/stats"
+	core "/v2fly_core"
+	"/v2fly_core/app/stats"
+	"/v2fly_core/common"
+	"/v2fly_core/common/strmatcher"
+	feature_stats "/v2fly_core/features/stats"
 )
 
 // statsServer is an implementation of StatsService.

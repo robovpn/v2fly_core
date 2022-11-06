@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/robovpn/v2fly_core/app/dns/fakedns"
+	"/v2fly_core/app/dns/fakedns"
 )
 
 type FakeDNSPoolElementConfig struct {

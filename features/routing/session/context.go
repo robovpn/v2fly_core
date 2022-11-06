@@ -3,9 +3,9 @@ package session
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/features/routing"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/session"
+	"/v2fly_core/features/routing"
 )
 
 // Context is an implementation of routing.Context, which is a wrapper of context.context with session info.

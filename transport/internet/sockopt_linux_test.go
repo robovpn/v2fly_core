@@ -5,10 +5,10 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/testing/servers/tcp"
-	. "github.com/robovpn/v2fly_core/transport/internet"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	"/v2fly_core/testing/servers/tcp"
+	. "/v2fly_core/transport/internet"
 )
 
 func TestSockOptMark(t *testing.T) {

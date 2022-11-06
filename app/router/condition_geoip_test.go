@@ -10,11 +10,11 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"/v2fly_core/app/router"
+	"/v2fly_core/app/router/routercommon"
+	"/v2fly_core/common"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/platform/filesystem"
 )
 
 func init() {

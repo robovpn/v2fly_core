@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/features"
+	"/v2fly_core/common/task"
+	"/v2fly_core/features"
 )
 
 type Holder struct {

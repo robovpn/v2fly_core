@@ -1,9 +1,9 @@
 package outbound
 
 import (
-	net "github.com/robovpn/v2fly_core/common/net"
-	protocol "github.com/robovpn/v2fly_core/common/protocol"
-	_ "github.com/robovpn/v2fly_core/common/protoext"
+	net "/v2fly_core/common/net"
+	protocol "/v2fly_core/common/protocol"
+	_ "/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

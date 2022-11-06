@@ -1,7 +1,7 @@
 package v4
 
 import (
-	"github.com/robovpn/v2fly_core/app/policy"
+	"/v2fly_core/app/policy"
 )
 
 type Policy struct {

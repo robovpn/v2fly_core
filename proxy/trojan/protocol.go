@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/protocol"
 )
 
 var (

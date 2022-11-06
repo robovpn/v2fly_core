@@ -1,6 +1,6 @@
 package common
 
-import "github.com/robovpn/v2fly_core/common/errors"
+import "/v2fly_core/common/errors"
 
 // Closable is the interface for objects that can release its resources.
 //

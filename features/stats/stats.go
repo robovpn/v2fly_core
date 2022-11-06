@@ -1,12 +1,12 @@
 package stats
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features"
+	"/v2fly_core/common"
+	"/v2fly_core/features"
 )
 
 // Counter is the interface for stats counters.

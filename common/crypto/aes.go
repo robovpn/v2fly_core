@@ -4,7 +4,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 
-	"github.com/robovpn/v2fly_core/common"
+	"/v2fly_core/common"
 )
 
 // NewAesDecryptionStream creates a new AES encryption stream based on given key and IV.

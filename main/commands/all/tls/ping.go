@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/robovpn/v2fly_core/main/commands/base"
-	v2tls "github.com/robovpn/v2fly_core/transport/internet/tls"
+	"/v2fly_core/main/commands/base"
+	v2tls "/v2fly_core/transport/internet/tls"
 )
 
 // cmdPing is the tls ping command

@@ -3,7 +3,7 @@ package strmatcher_test
 import (
 	"testing"
 
-	. "github.com/robovpn/v2fly_core/common/strmatcher"
+	. "/v2fly_core/common/strmatcher"
 )
 
 func BenchmarkLinearIndexMatcher(b *testing.B) {

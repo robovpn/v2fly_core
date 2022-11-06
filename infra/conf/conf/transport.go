@@ -1,9 +1,9 @@
 package conf
 
 import (
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/transport"
+	"/v2fly_core/transport/internet"
 )
 
 type TransportConfig struct {

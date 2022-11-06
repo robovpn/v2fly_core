@@ -9,11 +9,11 @@ import (
 	mrand "math/rand"
 	gonet "net"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/drain"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/drain"
+	"/v2fly_core/common/net"
+	"/v2fly_core/common/protocol"
 )
 
 const (

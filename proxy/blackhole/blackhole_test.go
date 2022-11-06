@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/blackhole"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/pipe"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/proxy/blackhole"
+	"/v2fly_core/transport"
+	"/v2fly_core/transport/pipe"
 )
 
 func TestBlackHoleHTTPResponse(t *testing.T) {

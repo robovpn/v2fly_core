@@ -3,11 +3,11 @@ package vmess_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/common/uuid"
-	. "github.com/robovpn/v2fly_core/proxy/vmess"
+	"/v2fly_core/common"
+	"/v2fly_core/common/protocol"
+	"/v2fly_core/common/serial"
+	"/v2fly_core/common/uuid"
+	. "/v2fly_core/proxy/vmess"
 )
 
 func toAccount(a *Account) protocol.Account {

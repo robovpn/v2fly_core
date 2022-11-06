@@ -10,12 +10,12 @@ import (
 	"google.golang.org/protobuf/proto"
 	"gopkg.in/yaml.v3"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/infra/conf/jsonpb"
-	"github.com/robovpn/v2fly_core/infra/conf/merge"
-	"github.com/robovpn/v2fly_core/infra/conf/v2jsonpb"
-	"github.com/robovpn/v2fly_core/main/commands/base"
-	"github.com/robovpn/v2fly_core/main/commands/helpers"
+	core "/v2fly_core"
+	"/v2fly_core/infra/conf/jsonpb"
+	"/v2fly_core/infra/conf/merge"
+	"/v2fly_core/infra/conf/v2jsonpb"
+	"/v2fly_core/main/commands/base"
+	"/v2fly_core/main/commands/helpers"
 )
 
 var cmdConvert = &base.Command{

@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/platform"
+	"/v2fly_core/common"
+	"/v2fly_core/common/platform"
 )
 
 func TestNormalizeEnvName(t *testing.T) {

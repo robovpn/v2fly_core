@@ -3,7 +3,7 @@ package geodata
 import (
 	"strings"
 
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"/v2fly_core/app/router/routercommon"
 )
 
 type loader struct {

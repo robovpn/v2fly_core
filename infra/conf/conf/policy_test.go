@@ -3,8 +3,8 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/v2fly_core/infra/conf"
+	"/v2fly_core/common"
+	. "/v2fly_core/infra/conf"
 )
 
 func TestBufferSize(t *testing.T) {

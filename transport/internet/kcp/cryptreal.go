@@ -5,7 +5,7 @@ import (
 	"crypto/cipher"
 	"crypto/sha256"
 
-	"github.com/robovpn/v2fly_core/common"
+	"/v2fly_core/common"
 )
 
 func NewAEADAESGCMBasedOnSeed(seed string) cipher.AEAD {

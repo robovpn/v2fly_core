@@ -3,7 +3,7 @@
 
 package command
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run /v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -11,11 +11,11 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/grpc"
 
-	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/observatory"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features"
-	"github.com/robovpn/v2fly_core/features/extension"
+	core "/v2fly_core"
+	"/v2fly_core/app/observatory"
+	"/v2fly_core/common"
+	"/v2fly_core/features"
+	"/v2fly_core/features/extension"
 )
 
 type service struct {

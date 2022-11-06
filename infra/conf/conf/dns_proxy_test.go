@@ -3,9 +3,9 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	. "github.com/robovpn/v2fly_core/infra/conf"
-	"github.com/robovpn/v2fly_core/proxy/dns"
+	"/v2fly_core/common/net"
+	. "/v2fly_core/infra/conf"
+	"/v2fly_core/proxy/dns"
 )
 
 func TestDnsProxyConfig(t *testing.T) {

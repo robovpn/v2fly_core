@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common/dice"
-	"github.com/robovpn/v2fly_core/common/net"
+	"/v2fly_core/common/dice"
+	"/v2fly_core/common/net"
 )
 
 type ValidationStrategy interface {

@@ -9,9 +9,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	. "github.com/robovpn/v2fly_core/transport/pipe"
+	"/v2fly_core/common"
+	"/v2fly_core/common/buf"
+	. "/v2fly_core/transport/pipe"
 )
 
 func TestPipeReadWrite(t *testing.T) {

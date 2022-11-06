@@ -3,9 +3,9 @@ package v4
 import (
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/proxy/dns"
+	"/v2fly_core/common/net"
+	"/v2fly_core/infra/conf/cfgcommon"
+	"/v2fly_core/proxy/dns"
 )
 
 type DNSOutboundConfig struct {
