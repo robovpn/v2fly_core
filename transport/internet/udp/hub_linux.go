@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"../v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 func RetrieveOriginalDest(oob []byte) net.Destination {

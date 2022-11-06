@@ -1,7 +1,7 @@
 package command
 
 import (
-	observatory "../v2fly_core/app/observatory"
+	observatory "github.com/robovpn/v2fly_core/app/observatory"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

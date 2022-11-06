@@ -8,9 +8,9 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/errors"
-	"../v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
 // EncodeHeaderAddons Add addons byte to the header

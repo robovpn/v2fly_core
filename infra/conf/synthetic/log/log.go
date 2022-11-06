@@ -3,8 +3,8 @@ package log
 import (
 	"strings"
 
-	"../v2fly_core/app/log"
-	clog "../v2fly_core/common/log"
+	"github.com/robovpn/v2fly_core/app/log"
+	clog "github.com/robovpn/v2fly_core/common/log"
 )
 
 func DefaultLogConfig() *log.Config {

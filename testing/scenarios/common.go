@@ -15,16 +15,16 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	core "../v2fly_core"
-	"../v2fly_core/app/dispatcher"
-	"../v2fly_core/app/proxyman"
-	"../v2fly_core/common"
-	"../v2fly_core/common/errors"
-	"../v2fly_core/common/log"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/retry"
-	"../v2fly_core/common/serial"
-	"../v2fly_core/common/units"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/dispatcher"
+	"github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/log"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/retry"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/common/units"
 )
 
 func xor(b []byte) []byte {

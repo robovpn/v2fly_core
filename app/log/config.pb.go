@@ -1,8 +1,8 @@
 package log
 
 import (
-	log "../v2fly_core/common/log"
-	_ "../v2fly_core/common/protoext"
+	log "github.com/robovpn/v2fly_core/common/log"
+	_ "github.com/robovpn/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

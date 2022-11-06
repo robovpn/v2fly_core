@@ -8,8 +8,8 @@ import (
 
 	"github.com/pires/go-proxyproto"
 
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
 )
 
 var effectiveListener = DefaultListener{}

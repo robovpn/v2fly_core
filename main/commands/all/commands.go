@@ -1,9 +1,9 @@
 package all
 
 import (
-	"../v2fly_core/main/commands/all/api"
-	"../v2fly_core/main/commands/all/tls"
-	"../v2fly_core/main/commands/base"
+	"github.com/robovpn/v2fly_core/main/commands/all/api"
+	"github.com/robovpn/v2fly_core/main/commands/all/tls"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 //go:generate go run v2fly_core/common/errors/errorgen

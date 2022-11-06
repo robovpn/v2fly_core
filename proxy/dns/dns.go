@@ -8,18 +8,18 @@ import (
 
 	"golang.org/x/net/dns/dnsmessage"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/net"
-	dns_proto "../v2fly_core/common/protocol/dns"
-	"../v2fly_core/common/session"
-	"../v2fly_core/common/signal"
-	"../v2fly_core/common/task"
-	"../v2fly_core/features/dns"
-	"../v2fly_core/features/policy"
-	"../v2fly_core/transport"
-	"../v2fly_core/transport/internet"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	dns_proto "github.com/robovpn/v2fly_core/common/protocol/dns"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/policy"
+	"github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 func init() {

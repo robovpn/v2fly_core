@@ -6,15 +6,15 @@ import (
 
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "../v2fly_core"
-	"../v2fly_core/app/dispatcher"
-	"../v2fly_core/app/log"
-	. "../v2fly_core/app/log/command"
-	"../v2fly_core/app/proxyman"
-	_ "../v2fly_core/app/proxyman/inbound"
-	_ "../v2fly_core/app/proxyman/outbound"
-	"../v2fly_core/common"
-	"../v2fly_core/common/serial"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/dispatcher"
+	"github.com/robovpn/v2fly_core/app/log"
+	. "github.com/robovpn/v2fly_core/app/log/command"
+	"github.com/robovpn/v2fly_core/app/proxyman"
+	_ "github.com/robovpn/v2fly_core/app/proxyman/inbound"
+	_ "github.com/robovpn/v2fly_core/app/proxyman/outbound"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/serial"
 )
 
 func TestLoggerRestart(t *testing.T) {

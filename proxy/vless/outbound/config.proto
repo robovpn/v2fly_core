@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.proxy.vless.outbound;
 option csharp_namespace = "v2fly.Core.Proxy.Vless.Outbound";
-option go_package = "../v2fly_core/proxy/vless/outbound";
+option go_package = "github.com/robovpn/v2fly_core/proxy/vless/outbound";
 option java_package = "com.v2fly.core.proxy.vless.outbound";
 option java_multiple_files = true;
 

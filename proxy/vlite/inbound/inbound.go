@@ -18,17 +18,17 @@ import (
 	"github.com/xiaokangwang/VLite/transport/uni/uniserver"
 	"github.com/xiaokangwang/VLite/workers/server"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/environment"
-	"../v2fly_core/common/environment/envctx"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/session"
-	"../v2fly_core/common/signal/done"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/environment"
+	"github.com/robovpn/v2fly_core/common/environment/envctx"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 func NewUDPInboundHandler(ctx context.Context, config *UDPProtocolConfig) (*Handler, error) {
 	proxyEnvironment := envctx.EnvironmentFromContext(ctx).(environment.ProxyEnvironment)

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	. "../v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/common"
 )
 
 func TestMust(t *testing.T) {

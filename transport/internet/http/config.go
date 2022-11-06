@@ -1,9 +1,9 @@
 package http
 
 import (
-	"../v2fly_core/common"
-	"../v2fly_core/common/dice"
-	"../v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 const protocolName = "http"

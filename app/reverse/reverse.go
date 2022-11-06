@@ -1,16 +1,16 @@
 package reverse
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/common/errors"
-	"../v2fly_core/common/net"
-	"../v2fly_core/features/outbound"
-	"../v2fly_core/features/routing"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/v2fly_core/features/routing"
 )
 
 const (

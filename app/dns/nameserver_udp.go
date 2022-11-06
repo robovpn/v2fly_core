@@ -12,17 +12,17 @@ import (
 
 	"golang.org/x/net/dns/dnsmessage"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol/dns"
-	udp_proto "../v2fly_core/common/protocol/udp"
-	"../v2fly_core/common/session"
-	"../v2fly_core/common/signal/pubsub"
-	"../v2fly_core/common/task"
-	dns_feature "../v2fly_core/features/dns"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport/internet/udp"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol/dns"
+	udp_proto "github.com/robovpn/v2fly_core/common/protocol/udp"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal/pubsub"
+	"github.com/robovpn/v2fly_core/common/task"
+	dns_feature "github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport/internet/udp"
 )
 
 // ClassicNameServer implemented traditional UDP DNS.

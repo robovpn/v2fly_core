@@ -10,14 +10,14 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/net"
-	http_proto "../v2fly_core/common/protocol/http"
-	"../v2fly_core/common/serial"
-	"../v2fly_core/common/session"
-	"../v2fly_core/common/signal/done"
-	"../v2fly_core/transport/internet"
-	"../v2fly_core/transport/internet/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	http_proto "github.com/robovpn/v2fly_core/common/protocol/http"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 type Listener struct {

@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"hash/fnv"
 
-	"../v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common"
 )
 
 // SimpleAuthenticator is a legacy AEAD used for KCP encryption.

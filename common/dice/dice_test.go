@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"testing"
 
-	. "../v2fly_core/common/dice"
+	. "github.com/robovpn/v2fly_core/common/dice"
 )
 
 func BenchmarkRoll1(b *testing.B) {

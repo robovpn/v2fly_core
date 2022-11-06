@@ -5,9 +5,9 @@ import (
 	"context"
 	"math/rand"
 
-	"../v2fly_core/common/errors"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
 // ID of a session.

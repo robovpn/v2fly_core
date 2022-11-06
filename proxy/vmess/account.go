@@ -6,9 +6,9 @@ package vmess
 import (
 	"strings"
 
-	"../v2fly_core/common/dice"
-	"../v2fly_core/common/protocol"
-	"../v2fly_core/common/uuid"
+	"github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/uuid"
 )
 
 // MemoryAccount is an in-memory form of VMess account.

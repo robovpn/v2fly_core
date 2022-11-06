@@ -3,7 +3,7 @@ package v4
 import (
 	"github.com/golang/protobuf/proto"
 
-	"../v2fly_core/transport/internet/grpc"
+	"github.com/robovpn/v2fly_core/transport/internet/grpc"
 )
 
 type GunConfig struct {

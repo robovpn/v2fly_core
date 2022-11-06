@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"../v2fly_core/common"
-	. "../v2fly_core/common/strmatcher"
+	"github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/common/strmatcher"
 )
 
 func TestSimpleMatcherGroup(t *testing.T) {

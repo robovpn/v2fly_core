@@ -3,7 +3,7 @@ package serial_test
 import (
 	"testing"
 
-	. "../v2fly_core/common/serial"
+	. "github.com/robovpn/v2fly_core/common/serial"
 )
 
 func TestGetInstance(t *testing.T) {

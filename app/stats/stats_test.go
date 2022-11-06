@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	. "../v2fly_core/app/stats"
-	"../v2fly_core/common"
-	"../v2fly_core/features/stats"
+	. "github.com/robovpn/v2fly_core/app/stats"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/features/stats"
 )
 
 func TestInterface(t *testing.T) {

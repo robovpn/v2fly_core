@@ -3,7 +3,7 @@ package socketcfg
 import (
 	"strings"
 
-	"../v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 type SocketConfig struct {

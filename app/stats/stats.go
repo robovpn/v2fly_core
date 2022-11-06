@@ -1,14 +1,14 @@
 package stats
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"sync"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/errors"
-	"../v2fly_core/features/stats"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/features/stats"
 )
 
 // Manager is an implementation of stats.Manager.

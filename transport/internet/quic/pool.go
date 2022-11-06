@@ -3,7 +3,7 @@ package quic
 import (
 	"sync"
 
-	"../v2fly_core/common/bytespool"
+	"github.com/robovpn/v2fly_core/common/bytespool"
 )
 
 var pool *sync.Pool

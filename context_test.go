@@ -5,7 +5,7 @@ import (
 	"testing"
 	_ "unsafe"
 
-	. "../v2fly_core"
+	. "github.com/robovpn/v2fly_core"
 )
 
 func TestFromContextPanic(t *testing.T) {

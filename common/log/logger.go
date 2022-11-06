@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"../v2fly_core/common/platform"
-	"../v2fly_core/common/signal/done"
-	"../v2fly_core/common/signal/semaphore"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/common/signal/semaphore"
 )
 
 // Writer is the interface for writing logs.

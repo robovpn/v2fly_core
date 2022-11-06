@@ -5,10 +5,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/protoext"
-	"../v2fly_core/common/serial"
-	"../v2fly_core/features"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/protoext"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/features"
 )
 
 type ConfigCreator func() interface{}

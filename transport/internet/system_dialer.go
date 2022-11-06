@@ -5,8 +5,8 @@ import (
 	"syscall"
 	"time"
 
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
 )
 
 var effectiveSystemDialer SystemDialer = &DefaultSystemDialer{}

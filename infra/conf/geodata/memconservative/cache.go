@@ -6,8 +6,8 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"../v2fly_core/app/router/routercommon"
-	"../v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common/platform"
 )
 
 type GeoIPCache map[string]*routercommon.GeoIP

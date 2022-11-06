@@ -3,7 +3,7 @@ package wireguard
 import (
 	"context"
 
-	"../v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common"
 )
 
 type Wireguard struct{}

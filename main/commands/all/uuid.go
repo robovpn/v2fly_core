@@ -3,8 +3,8 @@ package all
 import (
 	"fmt"
 
-	"../v2fly_core/common/uuid"
-	"../v2fly_core/main/commands/base"
+	"github.com/robovpn/v2fly_core/common/uuid"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var cmdUUID = &base.Command{

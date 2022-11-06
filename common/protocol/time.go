@@ -3,7 +3,7 @@ package protocol
 import (
 	"time"
 
-	"../v2fly_core/common/dice"
+	"github.com/robovpn/v2fly_core/common/dice"
 )
 
 type Timestamp int64

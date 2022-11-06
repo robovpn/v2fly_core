@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	statsService "../v2fly_core/app/stats/command"
-	"../v2fly_core/common/units"
-	"../v2fly_core/main/commands/base"
+	statsService "github.com/robovpn/v2fly_core/app/stats/command"
+	"github.com/robovpn/v2fly_core/common/units"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var cmdStats = &base.Command{

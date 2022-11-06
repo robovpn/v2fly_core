@@ -33,7 +33,7 @@ build_v2() {
 		local VERSIONTAG=$(git describe --abbrev=0 --tags)
 	fi
 
-	LDFLAGS="-s -w -buildid= -X ../v2fly_core.codename=${CODENAME} -X ../v2fly_core.build=${BUILDNAME} -X ../v2fly_core.version=${VERSIONTAG}"
+	LDFLAGS="-s -w -buildid= -X github.com/robovpn/v2fly_core.codename=${CODENAME} -X github.com/robovpn/v2fly_core.build=${BUILDNAME} -X github.com/robovpn/v2fly_core.version=${VERSIONTAG}"
 
 	echo ">>> Compile v2fly ..."
 	env CGO_ENABLED=0 go build -o "$TMP"/v2fly"${EXESUFFIX}" -ldflags "$LDFLAGS" ./main

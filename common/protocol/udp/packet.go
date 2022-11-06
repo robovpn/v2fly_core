@@ -1,8 +1,8 @@
 package udp
 
 import (
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 // Packet is a UDP packet together with its source and destination address.

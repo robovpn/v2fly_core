@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	logService "../v2fly_core/app/log/command"
-	"../v2fly_core/main/commands/base"
+	logService "github.com/robovpn/v2fly_core/app/log/command"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var cmdLog = &base.Command{

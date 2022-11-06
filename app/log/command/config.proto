@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.app.log.command;
 option csharp_namespace = "v2fly.Core.App.Log.Command";
-option go_package = "../v2fly_core/app/log/command";
+option go_package = "github.com/robovpn/v2fly_core/app/log/command";
 option java_package = "com.v2fly.core.app.log.command";
 option java_multiple_files = true;
 

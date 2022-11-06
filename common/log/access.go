@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"../v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/common/serial"
 )
 
 type logKey int

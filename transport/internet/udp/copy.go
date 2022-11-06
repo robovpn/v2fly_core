@@ -3,8 +3,8 @@ package udp
 import (
 	gonet "net"
 
-	"../v2fly_core/common/signal"
-	"../v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 type dataHandler func(content []byte, address gonet.Addr)

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"../v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
 // Validator stores valid trojan users.

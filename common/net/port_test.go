@@ -3,7 +3,7 @@ package net_test
 import (
 	"testing"
 
-	. "../v2fly_core/common/net"
+	. "github.com/robovpn/v2fly_core/common/net"
 )
 
 func TestPortRangeContains(t *testing.T) {

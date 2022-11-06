@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/errors"
-	. "../v2fly_core/common/retry"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
+	. "github.com/robovpn/v2fly_core/common/retry"
 )
 
 var errorTestOnly = errors.New("this is a fake error")

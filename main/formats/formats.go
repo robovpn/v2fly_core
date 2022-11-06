@@ -3,11 +3,11 @@ package formats
 import (
 	"bytes"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/infra/conf/merge"
-	"../v2fly_core/infra/conf/mergers"
-	"../v2fly_core/infra/conf/serial"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/infra/conf/merge"
+	"github.com/robovpn/v2fly_core/infra/conf/mergers"
+	"github.com/robovpn/v2fly_core/infra/conf/serial"
 )
 
 func init() {

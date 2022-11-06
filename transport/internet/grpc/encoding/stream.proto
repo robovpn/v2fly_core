@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.transport.internet.grpc.encoding;
 option csharp_namespace = "v2fly.Core.Transport.Internet.Grpc.Encoding";
-option go_package = "../v2fly_core/transport/internet/grpc/encoding";
+option go_package = "github.com/robovpn/v2fly_core/transport/internet/grpc/encoding";
 option java_package = "com.v2fly.core.transport.internet.grpc.encoding";
 
 message Hunk {

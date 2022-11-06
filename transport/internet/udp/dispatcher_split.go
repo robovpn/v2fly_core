@@ -6,15 +6,15 @@ import (
 	"sync"
 	"time"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol/udp"
-	"../v2fly_core/common/session"
-	"../v2fly_core/common/signal"
-	"../v2fly_core/common/signal/done"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol/udp"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport"
 )
 
 type ResponseCallback func(ctx context.Context, packet *udp.Packet)

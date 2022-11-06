@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 
-	"../v2fly_core/main/commands/base"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 // CmdTest tests config files

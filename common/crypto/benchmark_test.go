@@ -4,7 +4,7 @@ import (
 	"crypto/cipher"
 	"testing"
 
-	. "../v2fly_core/common/crypto"
+	. "github.com/robovpn/v2fly_core/common/crypto"
 )
 
 const benchSize = 1024 * 1024

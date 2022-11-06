@@ -1,24 +1,24 @@
 package dokodemo
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"sync/atomic"
 	"time"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/log"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol"
-	"../v2fly_core/common/session"
-	"../v2fly_core/common/signal"
-	"../v2fly_core/common/task"
-	"../v2fly_core/features/policy"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport/internet"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/log"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/v2fly_core/features/policy"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 func init() {

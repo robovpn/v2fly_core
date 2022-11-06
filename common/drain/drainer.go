@@ -3,7 +3,7 @@ package drain
 import (
 	"io"
 
-	"../v2fly_core/common/dice"
+	"github.com/robovpn/v2fly_core/common/dice"
 )
 
 type BehaviorSeedLimitedDrainer struct {

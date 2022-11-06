@@ -1,6 +1,6 @@
 package common
 
-import "../v2fly_core/common/errors"
+import "github.com/robovpn/v2fly_core/common/errors"
 
 type errPathObjHolder struct{}
 

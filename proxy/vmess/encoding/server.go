@@ -14,16 +14,16 @@ import (
 
 	"golang.org/x/crypto/chacha20poly1305"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/bitmask"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/crypto"
-	"../v2fly_core/common/drain"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol"
-	"../v2fly_core/common/task"
-	"../v2fly_core/proxy/vmess"
-	vmessaead "../v2fly_core/proxy/vmess/aead"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/bitmask"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/crypto"
+	"github.com/robovpn/v2fly_core/common/drain"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/v2fly_core/proxy/vmess"
+	vmessaead "github.com/robovpn/v2fly_core/proxy/vmess/aead"
 )
 
 type sessionID struct {

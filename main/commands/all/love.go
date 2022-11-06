@@ -7,9 +7,9 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/platform"
-	"../v2fly_core/main/commands/base"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var cmdLove = &base.Command{

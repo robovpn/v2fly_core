@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"context"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/environment/envctx"
-	"../v2fly_core/common/net"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport/internet/udp"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/environment/envctx"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport/internet/udp"
 )
 
 // CreateObject creates a new object based on the given v2fly instance and config. The v2fly instance may be nil.

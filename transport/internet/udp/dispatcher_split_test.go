@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol/udp"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport"
-	. "../v2fly_core/transport/internet/udp"
-	"../v2fly_core/transport/pipe"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol/udp"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport"
+	. "github.com/robovpn/v2fly_core/transport/internet/udp"
+	"github.com/robovpn/v2fly_core/transport/pipe"
 )
 
 type TestDispatcher struct {

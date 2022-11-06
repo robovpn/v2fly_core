@@ -7,11 +7,11 @@ import (
 	"context"
 	"strings"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/session"
-	"../v2fly_core/features/dns"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/dns"
 )
 
 // newFakeDNSSniffer Creates a Fake DNS metadata sniffer

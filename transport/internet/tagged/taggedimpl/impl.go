@@ -6,11 +6,11 @@ package taggedimpl
 import (
 	"context"
 
-	core "../v2fly_core"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/session"
-	"../v2fly_core/features/routing"
-	"../v2fly_core/transport/internet/tagged"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport/internet/tagged"
 )
 
 func DialTaggedOutbound(ctx context.Context, dest net.Destination, tag string) (net.Conn, error) {

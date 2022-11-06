@@ -3,8 +3,8 @@ package cfgcommon
 import (
 	"context"
 
-	"../v2fly_core/common"
-	"../v2fly_core/infra/conf/geodata"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/infra/conf/geodata"
 )
 
 type configureLoadingContext int

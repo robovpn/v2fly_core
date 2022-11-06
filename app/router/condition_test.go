@@ -11,16 +11,16 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"../v2fly_core/app/router"
-	"../v2fly_core/app/router/routercommon"
-	"../v2fly_core/common"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/platform/filesystem"
-	"../v2fly_core/common/protocol"
-	"../v2fly_core/common/protocol/http"
-	"../v2fly_core/common/session"
-	"../v2fly_core/features/routing"
-	routing_session "../v2fly_core/features/routing/session"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/protocol/http"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/routing"
+	routing_session "github.com/robovpn/v2fly_core/features/routing/session"
 )
 
 func init() {

@@ -1,19 +1,19 @@
 package router
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 
-	core "../v2fly_core"
-	"../v2fly_core/common"
-	"../v2fly_core/common/platform"
-	"../v2fly_core/features/dns"
-	"../v2fly_core/features/outbound"
-	"../v2fly_core/features/routing"
-	routing_dns "../v2fly_core/features/routing/dns"
-	"../v2fly_core/infra/conf/cfgcommon"
-	"../v2fly_core/infra/conf/geodata"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/v2fly_core/features/routing"
+	routing_dns "github.com/robovpn/v2fly_core/features/routing/dns"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/geodata"
 )
 
 // Router is an implementation of routing.Router.

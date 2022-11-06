@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "../v2fly_core/common/net"
+	. "github.com/robovpn/v2fly_core/common/net"
 )
 
 func TestAddressProperty(t *testing.T) {

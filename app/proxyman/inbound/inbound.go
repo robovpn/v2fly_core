@@ -1,17 +1,17 @@
 package inbound
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"sync"
 
-	core "../v2fly_core"
-	"../v2fly_core/app/proxyman"
-	"../v2fly_core/common"
-	"../v2fly_core/common/serial"
-	"../v2fly_core/common/session"
-	"../v2fly_core/features/inbound"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/inbound"
 )
 
 // Manager is to manage all inbound handlers.

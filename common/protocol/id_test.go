@@ -3,8 +3,8 @@ package protocol_test
 import (
 	"testing"
 
-	. "../v2fly_core/common/protocol"
-	"../v2fly_core/common/uuid"
+	. "github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/uuid"
 )
 
 func TestIdEquals(t *testing.T) {

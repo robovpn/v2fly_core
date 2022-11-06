@@ -8,9 +8,9 @@ import (
 	"encoding/gob"
 	"io"
 
-	"../v2fly_core/common/errors"
-	"../v2fly_core/common/net"
-	"../v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 // RetrieveOriginalDest from stored laddr, caddr

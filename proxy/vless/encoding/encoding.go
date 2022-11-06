@@ -1,14 +1,14 @@
 package encoding
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"io"
 
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol"
-	"../v2fly_core/proxy/vless"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/proxy/vless"
 )
 
 const (

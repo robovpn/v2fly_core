@@ -3,11 +3,11 @@ package v4_test
 import (
 	"testing"
 
-	"../v2fly_core/common/net"
-	"../v2fly_core/infra/conf/cfgcommon"
-	"../v2fly_core/infra/conf/cfgcommon/testassist"
-	v4 "../v2fly_core/infra/conf/v4"
-	"../v2fly_core/proxy/dokodemo"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
+	v4 "github.com/robovpn/v2fly_core/infra/conf/v4"
+	"github.com/robovpn/v2fly_core/proxy/dokodemo"
 )
 
 func TestDokodemoConfig(t *testing.T) {

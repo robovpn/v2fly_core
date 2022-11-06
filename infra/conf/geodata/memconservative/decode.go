@@ -7,7 +7,7 @@ import (
 
 	"google.golang.org/protobuf/encoding/protowire"
 
-	"../v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
 )
 
 var (

@@ -3,7 +3,7 @@ package udp
 import (
 	"fmt"
 
-	"../v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 type Server struct {

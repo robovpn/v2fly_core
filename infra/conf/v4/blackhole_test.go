@@ -3,11 +3,11 @@ package v4_test
 import (
 	"testing"
 
-	"../v2fly_core/common/serial"
-	"../v2fly_core/infra/conf/cfgcommon"
-	"../v2fly_core/infra/conf/cfgcommon/testassist"
-	v4 "../v2fly_core/infra/conf/v4"
-	"../v2fly_core/proxy/blackhole"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
+	v4 "github.com/robovpn/v2fly_core/infra/conf/v4"
+	"github.com/robovpn/v2fly_core/proxy/blackhole"
 )
 
 func TestHTTPResponseJSON(t *testing.T) {

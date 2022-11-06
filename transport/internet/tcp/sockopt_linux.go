@@ -6,8 +6,8 @@ package tcp
 import (
 	"syscall"
 
-	"../v2fly_core/common/net"
-	"../v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 const SO_ORIGINAL_DST = 80 // nolint: revive,stylecheck

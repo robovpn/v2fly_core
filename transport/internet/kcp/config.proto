@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.transport.internet.kcp;
 option csharp_namespace = "v2fly.Core.Transport.Internet.Kcp";
-option go_package = "../v2fly_core/transport/internet/kcp";
+option go_package = "github.com/robovpn/v2fly_core/transport/internet/kcp";
 option java_package = "com.v2fly.core.transport.internet.kcp";
 option java_multiple_files = true;
 

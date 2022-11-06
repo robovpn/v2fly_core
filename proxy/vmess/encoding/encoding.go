@@ -1,11 +1,11 @@
 package encoding
 
 import (
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
 )
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 const (
 	Version = byte(1)

@@ -1,4 +1,4 @@
-module ./
+module github.com/robovpn/v2fly_core
 
 go 1.19
 

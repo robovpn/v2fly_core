@@ -3,7 +3,7 @@ package kcp
 import (
 	"sync"
 
-	"../v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/buf"
 )
 
 type ReceivingWindow struct {

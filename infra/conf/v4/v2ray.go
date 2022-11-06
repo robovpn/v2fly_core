@@ -6,19 +6,19 @@ import (
 
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "../v2fly_core"
-	"../v2fly_core/app/dispatcher"
-	"../v2fly_core/app/proxyman"
-	"../v2fly_core/app/stats"
-	"../v2fly_core/common/serial"
-	"../v2fly_core/infra/conf/cfgcommon"
-	"../v2fly_core/infra/conf/cfgcommon/loader"
-	"../v2fly_core/infra/conf/cfgcommon/muxcfg"
-	"../v2fly_core/infra/conf/cfgcommon/proxycfg"
-	"../v2fly_core/infra/conf/cfgcommon/sniffer"
-	"../v2fly_core/infra/conf/synthetic/dns"
-	"../v2fly_core/infra/conf/synthetic/log"
-	"../v2fly_core/infra/conf/synthetic/router"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/dispatcher"
+	"github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/v2fly_core/app/stats"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/loader"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/muxcfg"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/proxycfg"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/sniffer"
+	"github.com/robovpn/v2fly_core/infra/conf/synthetic/dns"
+	"github.com/robovpn/v2fly_core/infra/conf/synthetic/log"
+	"github.com/robovpn/v2fly_core/infra/conf/synthetic/router"
 )
 
 var (

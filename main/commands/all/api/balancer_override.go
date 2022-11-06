@@ -1,8 +1,8 @@
 package api
 
 import (
-	routerService "../v2fly_core/app/router/command"
-	"../v2fly_core/main/commands/base"
+	routerService "github.com/robovpn/v2fly_core/app/router/command"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var cmdBalancerOverride = &base.Command{

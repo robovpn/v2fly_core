@@ -3,13 +3,13 @@ package internet_test
 import (
 	"testing"
 
-	"../v2fly_core/common"
-	. "../v2fly_core/transport/internet"
-	"../v2fly_core/transport/internet/headers/noop"
-	"../v2fly_core/transport/internet/headers/srtp"
-	"../v2fly_core/transport/internet/headers/utp"
-	"../v2fly_core/transport/internet/headers/wechat"
-	"../v2fly_core/transport/internet/headers/wireguard"
+	"github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/noop"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/srtp"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/utp"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/wechat"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
 )
 
 func TestAllHeadersLoadable(t *testing.T) {

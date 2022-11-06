@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/protocol/quic"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/protocol/quic"
 )
 
 func TestSniffQUIC(t *testing.T) {

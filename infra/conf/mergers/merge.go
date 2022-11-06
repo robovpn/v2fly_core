@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	core "../v2fly_core"
-	"../v2fly_core/common/cmdarg"
+	core "github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common/cmdarg"
 )
 
 // MergeAs load input and merge as specified format into m

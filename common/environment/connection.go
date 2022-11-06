@@ -1,6 +1,6 @@
 package environment
 
-import "../v2fly_core/common/log"
+import "github.com/robovpn/v2fly_core/common/log"
 
 type ConnectionCapabilitySet interface {
 	ConnectionLogCapabilitySet

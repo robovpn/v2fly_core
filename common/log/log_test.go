@@ -5,8 +5,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"../v2fly_core/common/log"
-	"../v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/log"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 type testLogger struct {

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"../v2fly_core/common/buf"
-	. "../v2fly_core/transport/internet/kcp"
+	"github.com/robovpn/v2fly_core/common/buf"
+	. "github.com/robovpn/v2fly_core/transport/internet/kcp"
 )
 
 type NoOpCloser int

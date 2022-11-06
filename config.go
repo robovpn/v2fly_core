@@ -11,9 +11,9 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/cmdarg"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/cmdarg"
 )
 
 const (

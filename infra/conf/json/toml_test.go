@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	. "../v2fly_core/infra/conf/json"
+	. "github.com/robovpn/v2fly_core/infra/conf/json"
 )
 
 func TestTOMLToJSON_V2Style(t *testing.T) {

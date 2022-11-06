@@ -3,9 +3,9 @@ package dispatcher_test
 import (
 	"testing"
 
-	. "../v2fly_core/app/dispatcher"
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
+	. "github.com/robovpn/v2fly_core/app/dispatcher"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
 )
 
 type TestCounter int64

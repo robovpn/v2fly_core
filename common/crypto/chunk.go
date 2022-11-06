@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
 )
 
 // ChunkSizeDecoder is a utility class to decode size value from bytes.

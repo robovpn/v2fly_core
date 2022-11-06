@@ -1,6 +1,6 @@
 package task
 
-import "../v2fly_core/common"
+import "github.com/robovpn/v2fly_core/common"
 
 // Close returns a func() that closes v.
 func Close(v interface{}) func() error {

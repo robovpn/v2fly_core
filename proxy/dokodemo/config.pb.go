@@ -1,8 +1,8 @@
 package dokodemo
 
 import (
-	net "../v2fly_core/common/net"
-	_ "../v2fly_core/common/protoext"
+	net "github.com/robovpn/v2fly_core/common/net"
+	_ "github.com/robovpn/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

@@ -5,4 +5,4 @@ Websocket transport implements an HTTP(S) compliable, surveillance proof transpo
 */
 package websocket
 
-//go:generate go run ../v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen

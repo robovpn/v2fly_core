@@ -8,17 +8,17 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"../v2fly_core/common"
-	"../v2fly_core/common/buf"
-	"../v2fly_core/common/net"
-	"../v2fly_core/common/protocol"
-	"../v2fly_core/common/protocol/tls/cert"
-	"../v2fly_core/common/serial"
-	"../v2fly_core/testing/servers/udp"
-	"../v2fly_core/transport/internet"
-	"../v2fly_core/transport/internet/headers/wireguard"
-	"../v2fly_core/transport/internet/quic"
-	"../v2fly_core/transport/internet/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/testing/servers/udp"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
+	"github.com/robovpn/v2fly_core/transport/internet/quic"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 func TestQuicConnection(t *testing.T) {
