@@ -6,9 +6,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/serial"
 )
 
 func TestUint16Serial(t *testing.T) {

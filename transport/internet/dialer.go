@@ -3,9 +3,9 @@ package internet
 import (
 	"context"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tagged"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/transport/internet/tagged"
 )
 
 // Dialer is the interface for dialing outbound connections.

@@ -3,9 +3,9 @@ package udp
 import (
 	"context"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 func init() {

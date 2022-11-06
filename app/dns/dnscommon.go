@@ -7,10 +7,10 @@ import (
 
 	"golang.org/x/net/dns/dnsmessage"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	dns_feature "github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/net"
+	dns_feature "github.com/robovpn/v2fly_core/features/dns"
 )
 
 // Fqdn normalizes domain make sure it ends with '.'

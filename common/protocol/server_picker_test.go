@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/net"
+	. "github.com/robovpn/v2fly_core/common/protocol"
 )
 
 func TestServerList(t *testing.T) {

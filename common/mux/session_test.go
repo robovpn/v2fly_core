@@ -3,7 +3,7 @@ package mux_test
 import (
 	"testing"
 
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/mux"
+	. "github.com/robovpn/v2fly_core/common/mux"
 )
 
 func TestSessionManagerAdd(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/srtp"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	. "github.com/robovpn/v2fly_core/transport/internet/headers/srtp"
 )
 
 func TestSRTPWrite(t *testing.T) {

@@ -1,6 +1,6 @@
 package http
 
-//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"bufio"
@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
 )
 
 const (

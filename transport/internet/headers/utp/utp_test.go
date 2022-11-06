@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/utp"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	. "github.com/robovpn/v2fly_core/transport/internet/headers/utp"
 )
 
 func TestUTPWrite(t *testing.T) {

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.app.reverse;
 option csharp_namespace = "v2fly.Core.Proxy.Reverse";
-option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/app/reverse";
+option go_package = "github.com/robovpn/v2fly_core/app/reverse";
 option java_package = "com.v2fly.core.proxy.reverse";
 option java_multiple_files = true;
 

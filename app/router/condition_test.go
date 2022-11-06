@@ -11,16 +11,16 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform/filesystem"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/http"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
-	routing_session "github.com/robovpn/github.com/robovpn/v2fly_core/features/routing/session"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/protocol/http"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/routing"
+	routing_session "github.com/robovpn/v2fly_core/features/routing/session"
 )
 
 func init() {

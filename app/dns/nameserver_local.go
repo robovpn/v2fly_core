@@ -6,9 +6,9 @@ package dns
 import (
 	"context"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns/localdns"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/dns/localdns"
 )
 
 // LocalNameServer is an wrapper over local DNS feature.

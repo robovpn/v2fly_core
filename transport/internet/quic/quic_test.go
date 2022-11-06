@@ -8,17 +8,17 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls/cert"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/udp"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/quic"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/testing/servers/udp"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
+	"github.com/robovpn/v2fly_core/transport/internet/quic"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 func TestQuicConnection(t *testing.T) {

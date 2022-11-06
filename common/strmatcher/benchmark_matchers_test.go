@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/strmatcher"
+	"github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/common/strmatcher"
 )
 
 func BenchmarkFullMatcher(b *testing.B) {

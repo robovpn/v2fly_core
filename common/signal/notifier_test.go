@@ -3,7 +3,7 @@ package signal_test
 import (
 	"testing"
 
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
+	. "github.com/robovpn/v2fly_core/common/signal"
 )
 
 func TestNotifierSignal(t *testing.T) {

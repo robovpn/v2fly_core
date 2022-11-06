@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls/cert"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/websocket"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
+	. "github.com/robovpn/v2fly_core/transport/internet/websocket"
 )
 
 func Test_listenWSAndDial(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 	"github.com/v2fly/VSign/insmgr"
 	"github.com/v2fly/VSign/signerVerify"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
 )
 
 type EmbeddedHashProtectedLoader struct {

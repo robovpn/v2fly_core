@@ -9,8 +9,8 @@ import (
 	"google.golang.org/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/cmdarg"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/base"
+	"github.com/robovpn/v2fly_core/common/cmdarg"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var (

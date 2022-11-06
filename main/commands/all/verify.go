@@ -5,7 +5,7 @@ import (
 
 	"github.com/v2fly/VSign/signerVerify"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/base"
+	"github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 var cmdVerify = &base.Command{

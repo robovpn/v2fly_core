@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common"
 )
 
 type SniffHeader struct {

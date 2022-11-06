@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/v2fly_core/common/signal/done"
 )
 
 type state byte

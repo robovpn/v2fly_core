@@ -10,14 +10,14 @@ import (
 
 	"github.com/v2fly/BrowserBridge/handler"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform/securedload"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/extension"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/platform/securedload"
+	"github.com/robovpn/v2fly_core/features/extension"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
-//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 type Forwarder struct {
 	ctx context.Context

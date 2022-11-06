@@ -1,7 +1,7 @@
 package protocol
 
 import (
-	net "github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	net "github.com/robovpn/v2fly_core/common/net"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

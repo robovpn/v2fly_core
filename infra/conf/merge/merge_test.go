@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/merge"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/serial"
+	"github.com/robovpn/v2fly_core/infra/conf/merge"
+	"github.com/robovpn/v2fly_core/infra/conf/serial"
 )
 
 func TestMergeV2Style(t *testing.T) {

@@ -9,12 +9,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/grpc/encoding"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/grpc/encoding"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 type Listener struct {

@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/proxy/blackhole"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	. "github.com/robovpn/v2fly_core/proxy/blackhole"
 )
 
 func TestHTTPResponse(t *testing.T) {

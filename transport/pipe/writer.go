@@ -1,7 +1,7 @@
 package pipe
 
 import (
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/buf"
 )
 
 // Writer is a buf.Writer that writes data into a pipe.

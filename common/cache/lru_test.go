@@ -3,7 +3,7 @@ package cache_test
 import (
 	"testing"
 
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/cache"
+	. "github.com/robovpn/v2fly_core/common/cache"
 )
 
 func TestLruReplaceValue(t *testing.T) {

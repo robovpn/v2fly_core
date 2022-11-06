@@ -3,7 +3,7 @@ package internet
 import (
 	"context"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 var transportListenerCache = make(map[string]ListenFunc)

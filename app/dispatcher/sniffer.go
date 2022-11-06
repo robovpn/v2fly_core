@@ -3,12 +3,12 @@ package dispatcher
 import (
 	"context"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/bittorrent"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/http"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/quic"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol/bittorrent"
+	"github.com/robovpn/v2fly_core/common/protocol/http"
+	"github.com/robovpn/v2fly_core/common/protocol/quic"
+	"github.com/robovpn/v2fly_core/common/protocol/tls"
 )
 
 type SniffResult interface {

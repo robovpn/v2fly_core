@@ -1,6 +1,6 @@
 package tcp
 
-import "github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+import "github.com/robovpn/v2fly_core/common/net"
 
 // PickPort returns an unused TCP port of the system.
 func PickPort() net.Port {

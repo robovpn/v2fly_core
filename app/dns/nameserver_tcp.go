@@ -14,16 +14,16 @@ import (
 
 	"golang.org/x/net/dns/dnsmessage"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/dns"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/pubsub"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
-	dns_feature "github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol/dns"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/signal/pubsub"
+	"github.com/robovpn/v2fly_core/common/task"
+	dns_feature "github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 // TCPNameServer implemented DNS over TCP (RFC7766).

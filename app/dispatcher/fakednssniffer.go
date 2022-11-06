@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/dns"
 )
 
 // newFakeDNSSniffer Creates a Fake DNS metadata sniffer

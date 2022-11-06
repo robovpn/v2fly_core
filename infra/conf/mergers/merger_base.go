@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/cmdarg"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/merge"
+	"github.com/robovpn/v2fly_core/common/cmdarg"
+	"github.com/robovpn/v2fly_core/infra/conf/merge"
 )
 
 type jsonConverter func(v []byte) ([]byte, error)

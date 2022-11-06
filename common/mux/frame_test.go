@@ -3,10 +3,10 @@ package mux_test
 import (
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/mux"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/mux"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 func BenchmarkFrameWrite(b *testing.B) {

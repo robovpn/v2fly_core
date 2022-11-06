@@ -7,11 +7,11 @@ import (
 	"github.com/golang/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/observatory"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/done"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/extension"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/v2fly_core/app/observatory"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/features/extension"
+	"github.com/robovpn/v2fly_core/features/outbound"
 )
 
 type Observer struct {

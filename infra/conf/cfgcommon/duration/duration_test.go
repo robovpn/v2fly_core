@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/duration"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/duration"
 )
 
 type testWithDuration struct {

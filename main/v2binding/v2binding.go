@@ -4,17 +4,17 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/commander"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/dispatcher"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/instman"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/instman/command"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
-	_ "github.com/robovpn/github.com/robovpn/v2fly_core/main/distro/all"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/blackhole"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/dokodemo"
+	"github.com/robovpn/v2fly_core/app/commander"
+	"github.com/robovpn/v2fly_core/app/dispatcher"
+	"github.com/robovpn/v2fly_core/app/instman"
+	"github.com/robovpn/v2fly_core/app/instman/command"
+	"github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/serial"
+	_ "github.com/robovpn/v2fly_core/main/distro/all"
+	"github.com/robovpn/v2fly_core/proxy/blackhole"
+	"github.com/robovpn/v2fly_core/proxy/dokodemo"
 )
 
 type bindingInstance struct {

@@ -5,8 +5,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/kcp"
+	"github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/transport/internet/kcp"
 )
 
 func TestSimpleAuthenticator(t *testing.T) {

@@ -1,9 +1,9 @@
 package dns
 
 import (
-	routercommon "github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
-	net "github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	_ "github.com/robovpn/github.com/robovpn/v2fly_core/common/protoext"
+	routercommon "github.com/robovpn/v2fly_core/app/router/routercommon"
+	net "github.com/robovpn/v2fly_core/common/net"
+	_ "github.com/robovpn/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

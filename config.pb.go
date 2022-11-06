@@ -7,7 +7,7 @@
 package core
 
 import (
-	transport "github.com/robovpn/github.com/robovpn/v2fly_core/transport"
+	transport "github.com/robovpn/v2fly_core/transport"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"

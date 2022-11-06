@@ -1,7 +1,7 @@
 package trojan
 
 import (
-	protocol "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
+	protocol "github.com/robovpn/v2fly_core/common/protocol"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

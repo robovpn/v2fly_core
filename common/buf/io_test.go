@@ -5,9 +5,9 @@ import (
 	"io"
 	"testing"
 
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/tcp"
+	. "github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/testing/servers/tcp"
 )
 
 func TestWriterCreation(t *testing.T) {

@@ -11,9 +11,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/tcp"
+	"github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/testing/servers/tcp"
 )
 
 func TestReadvReader(t *testing.T) {

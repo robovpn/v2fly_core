@@ -6,12 +6,12 @@ import (
 	gotls "crypto/tls"
 	"sync"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/udp"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/transport/internet/tls"
+	"github.com/robovpn/v2fly_core/transport/internet/udp"
 )
 
 type ConnectionID struct {

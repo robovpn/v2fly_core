@@ -3,11 +3,11 @@ package v5cfg
 import (
 	"encoding/json"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/muxcfg"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/proxycfg"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/sniffer"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/socketcfg"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/muxcfg"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/proxycfg"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/sniffer"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/socketcfg"
 )
 
 type RootConfig struct {

@@ -3,7 +3,7 @@ package http_test
 import (
 	"testing"
 
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/http"
+	. "github.com/robovpn/v2fly_core/common/protocol/http"
 )
 
 func TestHTTPHeaders(t *testing.T) {

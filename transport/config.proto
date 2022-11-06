@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.transport;
 option csharp_namespace = "v2fly.Core.Transport";
-option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/transport";
+option go_package = "github.com/robovpn/v2fly_core/transport";
 option java_package = "com.v2fly.core.transport";
 option java_multiple_files = true;
 

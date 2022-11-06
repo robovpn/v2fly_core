@@ -9,11 +9,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 // A timeout for reading the first payload from the client, used in 0-RTT optimizations.

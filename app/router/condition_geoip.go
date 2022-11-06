@@ -5,8 +5,8 @@ import (
 
 	"go4.org/netipx"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 type GeoIPMatcher struct {

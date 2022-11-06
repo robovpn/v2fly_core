@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.app.restfulapi;
 option csharp_namespace = "v2fly.App.Restapi";
-option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/app/restfulapi";
+option go_package = "github.com/robovpn/v2fly_core/app/restfulapi";
 option java_package = "com.v2fly.core.app.restapi";
 option java_multiple_files = true;
 

@@ -1,11 +1,11 @@
 package dns
 
 import (
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/strmatcher"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/strmatcher"
+	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/v2fly_core/features/dns"
 )
 
 // StaticHosts represents static domain-ip mapping in DNS server.

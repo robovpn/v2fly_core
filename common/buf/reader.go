@@ -3,8 +3,8 @@ package buf
 import (
 	"io"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
 )
 
 func readOneUDP(r io.Reader) (*Buffer, error) {

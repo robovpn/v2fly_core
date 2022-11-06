@@ -1,6 +1,6 @@
 package protocol
 
-import "github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+import "github.com/robovpn/v2fly_core/common/serial"
 
 func (u *User) GetTypedAccount() (Account, error) {
 	if u.GetAccount() == nil {

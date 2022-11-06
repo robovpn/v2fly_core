@@ -3,8 +3,8 @@ package internet
 import (
 	"net"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/features/stats"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/features/stats"
 )
 
 type Connection interface {

@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/tcp"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tcp"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/testing/servers/tcp"
+	"github.com/robovpn/v2fly_core/transport/internet"
+	. "github.com/robovpn/v2fly_core/transport/internet/tcp"
 )
 
 func TestGetOriginalDestination(t *testing.T) {

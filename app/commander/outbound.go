@@ -4,10 +4,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/done"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/v2fly_core/transport"
 )
 
 // OutboundListener is a net.Listener for listening gRPC connections.

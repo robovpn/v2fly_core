@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls/cert"
-	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	. "github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 func TestCertificateIssuing(t *testing.T) {

@@ -1,7 +1,7 @@
 package dokodemo
 
 import (
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/net"
 )
 
 // GetPredefinedAddress returns the defined address from proto config. Null if address is not valid.

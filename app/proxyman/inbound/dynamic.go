@@ -6,13 +6,13 @@ import (
 	"time"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/dice"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/mux"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/v2fly_core/common/mux"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/v2fly_core/proxy"
+	"github.com/robovpn/v2fly_core/transport/internet"
 )
 
 type DynamicInboundHandler struct {

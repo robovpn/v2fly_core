@@ -1,7 +1,7 @@
 package burst
 
 import (
-	_ "github.com/robovpn/github.com/robovpn/v2fly_core/common/protoext"
+	_ "github.com/robovpn/v2fly_core/common/protoext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

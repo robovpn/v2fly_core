@@ -8,14 +8,14 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
-	_ "github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/geodata/memconservative"
-	_ "github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/geodata/standard"
-	router2 "github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/synthetic/router"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
+	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/memconservative"
+	_ "github.com/robovpn/v2fly_core/infra/conf/geodata/standard"
+	router2 "github.com/robovpn/v2fly_core/infra/conf/synthetic/router"
 )
 
 func TestRouterConfig(t *testing.T) {

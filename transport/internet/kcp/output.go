@@ -4,8 +4,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/retry"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/retry"
 )
 
 type SegmentWriter interface {

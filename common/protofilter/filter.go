@@ -8,12 +8,12 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment/envctx"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment/filesystemcap"
-	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protoext"
+	"github.com/robovpn/v2fly_core/common/environment/envctx"
+	"github.com/robovpn/v2fly_core/common/environment/filesystemcap"
+	"github.com/robovpn/v2fly_core/common/protoext"
 )
 
-//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 func FilterProtoConfig(ctx context.Context, config proto.Message) error {
 	messageProtoReflect := config.ProtoReflect()
