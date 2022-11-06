@@ -2,29 +2,28 @@
 
 package dispatcher
 
-//go:generate go run v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"strings"
 	"sync"
 	"time"
-	"v2fly_core/app/dispatcher/speed"
-
-	"v2fly_core"
-	"v2fly_core/common"
-	"v2fly_core/common/buf"
-	"v2fly_core/common/log"
-	"v2fly_core/common/net"
-	"v2fly_core/common/protocol"
-	"v2fly_core/common/session"
-	"v2fly_core/features/outbound"
-	"v2fly_core/features/policy"
-	"v2fly_core/features/routing"
-	routing_session "v2fly_core/features/routing/session"
-	"v2fly_core/features/stats"
-	"v2fly_core/transport"
-	"v2fly_core/transport/pipe"
+	"github.com/robovpn/v2fly_core/app/dispatcher/speed"
+	"github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/log"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/v2fly_core/features/policy"
+	"github.com/robovpn/v2fly_core/features/routing"
+	routing_session "github.com/robovpn/v2fly_core/features/routing/session"
+	"github.com/robovpn/v2fly_core/features/stats"
+	"github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/v2fly_core/transport/pipe"
 )
 
 var (

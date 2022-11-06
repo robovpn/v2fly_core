@@ -6,8 +6,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/v2fly_core/proxy/vmess/encoding"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess/encoding"
 )
 
 func TestFnvAuth(t *testing.T) {

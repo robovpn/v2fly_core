@@ -3,7 +3,7 @@ package task
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common/signal/semaphore"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/semaphore"
 )
 
 // OnSuccess executes g() after f() returns nil.

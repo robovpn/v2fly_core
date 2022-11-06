@@ -1,7 +1,7 @@
 package transport
 
 import (
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 // Apply applies this Config.

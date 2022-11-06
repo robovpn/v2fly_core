@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"v2fly_core/common"
-	. "v2fly_core/proxy/mtproto"
+	"github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/proxy/mtproto"
 )
 
 func TestInverse(t *testing.T) {

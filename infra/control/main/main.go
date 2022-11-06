@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	commlog "v2fly_core/common/log"
-	// _ "v2fly_core/infra/conf/command"
-	"v2fly_core/infra/control"
+	commlog "github.com/robovpn/v2fly_core/common/log"
+	// _ "github.com/robovpn/v2fly_core/infra/conf/command"
+	"github.com/robovpn/v2fly_core/infra/control"
 )
 
 func getCommandName() string {

@@ -1,8 +1,8 @@
 package localdns
 
 import (
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
 )
 
 // Client is an implementation of dns.Client, which queries localhost for DNS.

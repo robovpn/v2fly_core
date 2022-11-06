@@ -1,10 +1,10 @@
 package environment
 
 import (
-	"github.com/robovpn/v2fly_core/common/environment/filesystemcap"
-	"github.com/robovpn/v2fly_core/features/extension/storage"
-	"github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/v2fly_core/transport/internet/tagged"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment/filesystemcap"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/extension/storage"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tagged"
 )
 
 type BaseEnvironmentCapabilitySet interface {

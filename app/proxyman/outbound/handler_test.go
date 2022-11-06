@@ -8,14 +8,14 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/policy"
-	. "github.com/robovpn/v2fly_core/app/proxyman/outbound"
-	"github.com/robovpn/v2fly_core/app/stats"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/features/outbound"
-	"github.com/robovpn/v2fly_core/proxy/freedom"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/policy"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/stats"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/freedom"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 func TestInterfaces(t *testing.T) {

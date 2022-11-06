@@ -7,13 +7,13 @@ import (
 	"google.golang.org/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/cmdarg"
-	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/cmdarg"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
 )
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 func loadV2JsonPb(data []byte) (*core.Config, error) {
 	coreconf := &core.Config{}

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	. "v2fly_core/app/dns"
-	"v2fly_core/common"
+	. "github.com/robovpn/v2fly_core/app/dns"
+	"github.com/robovpn/v2fly_core/common"
 )
 
 func TestLocalNameServer(t *testing.T) {

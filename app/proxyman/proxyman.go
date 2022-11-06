@@ -4,7 +4,7 @@ package proxyman
 import (
 	"context"
 
-	"v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/session"
 )
 
 // ContextWithSniffingConfig is a wrapper of session.ContextWithContent.

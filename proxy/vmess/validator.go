@@ -9,12 +9,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/dice"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/proxy/vmess/aead"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess/aead"
 )
 
 const (

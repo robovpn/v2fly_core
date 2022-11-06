@@ -12,7 +12,7 @@ import (
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
-	protocol "v2fly_core/common/protocol"
+	protocol "github.com/robovpn/v2fly_core/common/protocol"
 )
 
 const (

@@ -3,7 +3,7 @@ package tls_test
 import (
 	"testing"
 
-	. "github.com/robovpn/v2fly_core/common/protocol/tls"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls"
 )
 
 func TestTLSHeaders(t *testing.T) {

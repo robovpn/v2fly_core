@@ -8,11 +8,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/proxy/trojan"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/trojan"
 )
 
 // TrojanServerTarget is configuration of a single trojan server

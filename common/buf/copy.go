@@ -4,8 +4,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
 )
 
 type dataHandler func(MultiBuffer)

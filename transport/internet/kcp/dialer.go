@@ -5,12 +5,12 @@ import (
 	"io"
 	"sync/atomic"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/dice"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/v2fly_core/transport/internet/tls"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 var globalConv = uint32(dice.RollUint16())

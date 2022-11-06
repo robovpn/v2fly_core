@@ -4,10 +4,10 @@ import (
 	"bytes"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/infra/conf/merge"
-	"github.com/robovpn/v2fly_core/infra/conf/mergers"
-	"github.com/robovpn/v2fly_core/infra/conf/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/merge"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/mergers"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/serial"
 )
 
 func init() {

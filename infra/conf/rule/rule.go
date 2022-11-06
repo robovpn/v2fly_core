@@ -6,13 +6,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
 )
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 func parseDomainRule(ctx context.Context, domain string) ([]*routercommon.Domain, error) {
 	cfgEnv := cfgcommon.GetConfigureLoadingEnvironment(ctx)

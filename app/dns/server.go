@@ -2,7 +2,7 @@
 
 package dns
 
-//go:generate go run v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -13,17 +13,17 @@ import (
 	"sync"
 	"time"
 
-	"v2fly_core"
-	"v2fly_core/app/router"
-	"v2fly_core/common"
-	"v2fly_core/common/errors"
-	"v2fly_core/common/net"
-	"v2fly_core/common/session"
-	"v2fly_core/common/strmatcher"
-	"v2fly_core/common/uuid"
-	"v2fly_core/features"
-	"v2fly_core/features/dns"
-	"v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/v2fly_core/common/strmatcher"
+	"github.com/robovpn/v2fly_core/common/uuid"
+	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/routing"
 )
 
 // Server is a DNS rely server.

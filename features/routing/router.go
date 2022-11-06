@@ -1,8 +1,8 @@
 package routing
 
 import (
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features"
 )
 
 // Router is a feature to choose an outbound tag for the given request.

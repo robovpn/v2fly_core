@@ -13,15 +13,15 @@ import (
 	"github.com/google/go-cmp/cmp"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/freedom"
-	v2http "github.com/robovpn/v2fly_core/proxy/http"
-	v2httptest "github.com/robovpn/v2fly_core/testing/servers/http"
-	"github.com/robovpn/v2fly_core/testing/servers/tcp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/freedom"
+	v2http "github.com/robovpn/github.com/robovpn/v2fly_core/proxy/http"
+	v2httptest "github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/http"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/tcp"
 )
 
 func TestHttpConformance(t *testing.T) {

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.proxy.socks;
 option csharp_namespace = "v2fly.Core.Proxy.Socks";
-option go_package = "github.com/robovpn/v2fly_core/proxy/socks";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/proxy/socks";
 option java_package = "com.v2fly.core.proxy.socks";
 option java_multiple_files = true;
 

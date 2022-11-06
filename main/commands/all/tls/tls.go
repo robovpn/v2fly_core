@@ -1,7 +1,7 @@
 package tls
 
 import (
-	"github.com/robovpn/v2fly_core/main/commands/base"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 // CmdTLS holds all tls sub commands

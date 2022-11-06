@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 var globalSessionCache = tls.NewLRUClientSessionCache(128)

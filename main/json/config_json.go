@@ -1,15 +1,15 @@
 package json
 
-//go:generate go run v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"io"
 	"os"
 
-	"v2fly_core"
-	"v2fly_core/common"
-	"v2fly_core/common/cmdarg"
-	"v2fly_core/main/confloader"
+	"github.com/robovpn/v2fly_core"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/cmdarg"
+	"github.com/robovpn/v2fly_core/main/confloader"
 )
 
 func init() {

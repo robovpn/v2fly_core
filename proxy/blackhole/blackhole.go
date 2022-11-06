@@ -1,15 +1,15 @@
 // Package blackhole is an outbound handler that blocks all connections.
 package blackhole
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 // Handler is an outbound connection that silently swallow the entire payload.

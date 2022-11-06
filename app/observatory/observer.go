@@ -15,14 +15,14 @@ import (
 	"github.com/golang/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	v2net "github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/signal/done"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/features/extension"
-	"github.com/robovpn/v2fly_core/features/outbound"
-	"github.com/robovpn/v2fly_core/transport/internet/tagged"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	v2net "github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/extension"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tagged"
 )
 
 type Observer struct {

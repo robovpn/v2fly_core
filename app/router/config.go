@@ -9,12 +9,12 @@ import (
 
 	"github.com/golang/protobuf/jsonpb"
 
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/features/outbound"
-	"github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/v2fly_core/infra/conf/v5cfg"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/v5cfg"
 )
 
 type Rule struct {

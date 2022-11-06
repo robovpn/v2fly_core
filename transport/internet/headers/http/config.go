@@ -3,7 +3,7 @@ package http
 import (
 	"strings"
 
-	"github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/dice"
 )
 
 func pickString(arr []string) string {

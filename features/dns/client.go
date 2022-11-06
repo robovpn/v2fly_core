@@ -1,10 +1,10 @@
 package dns
 
 import (
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features"
 )
 
 // IPOption is an object for IP query options.

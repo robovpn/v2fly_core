@@ -6,11 +6,11 @@ import (
 	grpc "google.golang.org/grpc"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/features/inbound"
-	"github.com/robovpn/v2fly_core/features/outbound"
-	"github.com/robovpn/v2fly_core/proxy"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/inbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy"
 )
 
 // InboundOperation is the interface for operations that applies to inbound handlers.

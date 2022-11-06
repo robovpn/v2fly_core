@@ -5,8 +5,8 @@ import (
 	"crypto/md5"
 	"hash"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/uuid"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/uuid"
 )
 
 const (

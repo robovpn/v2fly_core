@@ -4,7 +4,7 @@
 package udp
 
 import (
-	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
 )
 
 func RetrieveOriginalDest(oob []byte) net.Destination {

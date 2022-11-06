@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/robovpn/v2fly_core/infra/conf/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/serial"
 )
 
 // JSONs merges multiple json contents into one json.

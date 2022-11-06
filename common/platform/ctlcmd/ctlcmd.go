@@ -6,11 +6,11 @@ import (
 	"os/exec"
 	"strings"
 
-	"v2fly_core/common/buf"
-	"v2fly_core/common/platform"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/platform"
 )
 
-//go:generate go run v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 func Run(args []string, input io.Reader) (buf.MultiBuffer, error) {
 	v2ctl := platform.GetToolLocation("v2ctl")

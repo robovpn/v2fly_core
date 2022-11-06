@@ -6,11 +6,11 @@ import (
 	"sync"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/features"
-	feature_stats "github.com/robovpn/v2fly_core/features/stats"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features"
+	feature_stats "github.com/robovpn/github.com/robovpn/v2fly_core/features/stats"
 )
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 type restfulService struct {
 	listener net.Listener

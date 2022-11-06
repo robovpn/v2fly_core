@@ -15,12 +15,12 @@ import (
 	"google.golang.org/grpc/credentials"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/v2fly_core/transport/internet/grpc/encoding"
-	"github.com/robovpn/v2fly_core/transport/internet/tls"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/grpc/encoding"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tls"
 )
 
 func Dial(ctx context.Context, dest net.Destination, streamSettings *internet.MemoryStreamConfig) (internet.Connection, error) {

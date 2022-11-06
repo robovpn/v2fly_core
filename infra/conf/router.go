@@ -7,9 +7,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"v2fly_core/app/router"
-	"v2fly_core/common/net"
-	"v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/common/platform/filesystem"
 )
 
 type RouterRulesConfig struct {

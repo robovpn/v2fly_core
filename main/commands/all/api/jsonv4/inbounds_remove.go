@@ -3,10 +3,10 @@ package jsonv4
 import (
 	"fmt"
 
-	handlerService "github.com/robovpn/v2fly_core/app/proxyman/command"
-	"github.com/robovpn/v2fly_core/main/commands/all/api"
-	"github.com/robovpn/v2fly_core/main/commands/base"
-	"github.com/robovpn/v2fly_core/main/commands/helpers"
+	handlerService "github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman/command"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/all/api"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/base"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/helpers"
 )
 
 var cmdRemoveInbounds = &base.Command{

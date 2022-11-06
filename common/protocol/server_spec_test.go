@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	. "github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/uuid"
-	"github.com/robovpn/v2fly_core/proxy/vmess"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/uuid"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess"
 )
 
 func TestAlwaysValidStrategy(t *testing.T) {

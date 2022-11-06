@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/robovpn/v2fly_core/common/signal"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
 )
 
 func TestActivityTimer(t *testing.T) {

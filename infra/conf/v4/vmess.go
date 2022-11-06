@@ -6,12 +6,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/protocol"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/proxy/vmess"
-	"github.com/robovpn/v2fly_core/proxy/vmess/inbound"
-	"github.com/robovpn/v2fly_core/proxy/vmess/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess/inbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess/outbound"
 )
 
 type VMessAccount struct {

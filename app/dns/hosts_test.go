@@ -5,10 +5,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/robovpn/v2fly_core/app/dns"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/features/dns"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/app/dns"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
 )
 
 func TestStaticHosts(t *testing.T) {

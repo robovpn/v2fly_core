@@ -3,7 +3,7 @@ package buf
 import (
 	"io"
 
-	"github.com/robovpn/v2fly_core/common/bytespool"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/bytespool"
 )
 
 const (

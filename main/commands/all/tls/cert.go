@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/main/commands/base"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 // cmdCert is the tls cert command

@@ -3,10 +3,10 @@ package router
 import (
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/app/observatory/burst"
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/duration"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/loader"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/observatory/burst"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/duration"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/loader"
 )
 
 const (

@@ -3,9 +3,9 @@ package pipe
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common/signal"
-	"github.com/robovpn/v2fly_core/common/signal/done"
-	"github.com/robovpn/v2fly_core/features/policy"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/done"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/policy"
 )
 
 // Option for creating new Pipes.

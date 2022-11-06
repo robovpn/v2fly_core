@@ -6,13 +6,13 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/mux"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/pipe"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/mux"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/pipe"
 )
 
 // Bridge is a component in reverse proxy, that relays connections from Portal to local address.

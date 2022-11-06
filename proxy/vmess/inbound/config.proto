@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.proxy.vmess.inbound;
 option csharp_namespace = "v2fly.Core.Proxy.Vmess.Inbound";
-option go_package = "github.com/robovpn/v2fly_core/proxy/vmess/inbound";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/proxy/vmess/inbound";
 option java_package = "com.v2fly.core.proxy.vmess.inbound";
 option java_multiple_files = true;
 

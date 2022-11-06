@@ -7,8 +7,8 @@ import (
 	"google.golang.org/grpc"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features/extension"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/extension"
 )
 
 type service struct {

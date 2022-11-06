@@ -18,20 +18,20 @@ import (
 	"github.com/xiaokangwang/VLite/transport/uni/uniclient"
 	client2 "github.com/xiaokangwang/VLite/workers/client"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/environment"
-	"github.com/robovpn/v2fly_core/common/environment/envctx"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/net/packetaddr"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/signal"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/v2fly_core/transport/internet/udp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment/envctx"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net/packetaddr"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/udp"
 )
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 func NewUDPOutboundHandler(ctx context.Context, config *UDPProtocolConfig) (*Handler, error) {
 	proxyEnvironment := envctx.EnvironmentFromContext(ctx).(environment.ProxyEnvironment)

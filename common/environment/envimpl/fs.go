@@ -1,9 +1,9 @@
 package envimpl
 
 import (
-	"github.com/robovpn/v2fly_core/common/environment"
-	"github.com/robovpn/v2fly_core/common/platform/filesystem"
-	"github.com/robovpn/v2fly_core/common/platform/filesystem/fsifce"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform/filesystem"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform/filesystem/fsifce"
 )
 
 type fileSystemDefaultImpl struct{}

@@ -12,9 +12,9 @@ import (
 	"syscall"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common/cmdarg"
-	"github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/v2fly_core/main/commands/base"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/cmdarg"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/main/commands/base"
 )
 
 // CmdRun runs v2fly with config

@@ -1,6 +1,6 @@
 package muxcfg
 
-import "github.com/robovpn/v2fly_core/app/proxyman"
+import "github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
 
 type MuxConfig struct {
 	Enabled     bool  `json:"enabled"`

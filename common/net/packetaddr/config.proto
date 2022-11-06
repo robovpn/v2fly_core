@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.net.packetaddr;
 option csharp_namespace = "v2fly.Core.Common.Net.Packetaddr";
-option go_package = "github.com/robovpn/v2fly_core/common/net/packetaddr";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/common/net/packetaddr";
 option java_package = "com.v2fly.core.common.net.packetaddr";
 option java_multiple_files = true;
 

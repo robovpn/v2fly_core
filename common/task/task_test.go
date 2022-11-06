@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/robovpn/v2fly_core/common"
-	. "github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
 )
 
 func TestExecuteParallel(t *testing.T) {

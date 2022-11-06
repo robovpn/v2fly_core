@@ -3,9 +3,9 @@ package outbound
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features"
-	"github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
 )
 
 // Handler is the interface for handlers that process outbound connections.

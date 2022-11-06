@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/robovpn/v2fly_core/app/policy"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features/policy"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/app/policy"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/policy"
 )
 
 func TestPolicy(t *testing.T) {

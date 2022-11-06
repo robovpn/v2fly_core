@@ -9,17 +9,17 @@ import (
 	"golang.org/x/net/dns/dnsmessage"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
-	dns_proto "github.com/robovpn/v2fly_core/common/protocol/dns"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/signal"
-	"github.com/robovpn/v2fly_core/common/task"
-	"github.com/robovpn/v2fly_core/features/dns"
-	"github.com/robovpn/v2fly_core/features/policy"
-	"github.com/robovpn/v2fly_core/transport"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	dns_proto "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/dns"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/policy"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 func init() {

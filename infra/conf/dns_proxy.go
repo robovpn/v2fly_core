@@ -2,8 +2,8 @@ package conf
 
 import (
 	"github.com/golang/protobuf/proto"
-	"v2fly_core/common/net"
-	"v2fly_core/proxy/dns"
+	"github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/v2fly_core/proxy/dns"
 )
 
 type DNSOutboundConfig struct {

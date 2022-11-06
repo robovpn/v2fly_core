@@ -6,9 +6,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"v2fly_core/app/router"
-	"v2fly_core/common/net"
-	. "v2fly_core/infra/conf"
+	"github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/v2fly_core/common/net"
+	. "github.com/robovpn/v2fly_core/infra/conf"
 )
 
 func TestRouterConfig(t *testing.T) {

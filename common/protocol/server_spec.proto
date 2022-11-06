@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.common.protocol;
 option csharp_namespace = "v2fly.Core.Common.Protocol";
-option go_package = "github.com/robovpn/v2fly_core/common/protocol";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol";
 option java_package = "com.v2fly.core.common.protocol";
 option java_multiple_files = true;
 

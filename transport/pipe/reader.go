@@ -3,7 +3,7 @@ package pipe
 import (
 	"time"
 
-	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
 )
 
 // Reader is a buf.Reader that reads content from a pipe.

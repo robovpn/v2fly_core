@@ -5,14 +5,14 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/http"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/noop"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/srtp"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/tls"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/utp"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/wechat"
-	"github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/http"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/noop"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/srtp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/tls"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/utp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/wechat"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/wireguard"
 )
 
 type NoOpAuthenticator struct{}

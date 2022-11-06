@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/robovpn/v2fly_core/common/registry"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/registry"
 )
 
 // ConfigCreator is a function to create an object by a config.

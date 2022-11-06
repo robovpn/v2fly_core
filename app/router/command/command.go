@@ -1,6 +1,6 @@
 package command
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/v2fly_core/features/stats"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/stats"
 )
 
 // routingServer is an implementation of RoutingService.

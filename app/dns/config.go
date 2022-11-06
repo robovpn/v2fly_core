@@ -4,9 +4,9 @@
 package dns
 
 import (
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/strmatcher"
-	"github.com/robovpn/v2fly_core/common/uuid"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/strmatcher"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/uuid"
 )
 
 var typeMap = map[DomainMatchingType]strmatcher.Type{

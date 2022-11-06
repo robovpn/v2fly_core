@@ -3,7 +3,7 @@ package json
 import (
 	"io"
 
-	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
 )
 
 // State is the internal state of parser.

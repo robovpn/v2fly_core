@@ -7,16 +7,16 @@ import (
 	"reflect"
 	"sync"
 
-	"v2fly_core/common"
-	"v2fly_core/common/serial"
-	"v2fly_core/features"
-	"v2fly_core/features/dns"
-	"v2fly_core/features/dns/localdns"
-	"v2fly_core/features/inbound"
-	"v2fly_core/features/outbound"
-	"v2fly_core/features/policy"
-	"v2fly_core/features/routing"
-	"v2fly_core/features/stats"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/features"
+	"github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/v2fly_core/features/dns/localdns"
+	"github.com/robovpn/v2fly_core/features/inbound"
+	"github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/v2fly_core/features/policy"
+	"github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/v2fly_core/features/stats"
 )
 
 // Server is an instance of v2fly. At any time, there must be at most one Server instance running.

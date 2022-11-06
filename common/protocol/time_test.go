@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/robovpn/v2fly_core/common/protocol"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol"
 )
 
 func TestGenerateRandomInt64InRange(t *testing.T) {

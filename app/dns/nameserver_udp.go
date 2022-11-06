@@ -13,16 +13,16 @@ import (
 	"golang.org/x/net/dns/dnsmessage"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/protocol/dns"
-	udp_proto "github.com/robovpn/v2fly_core/common/protocol/udp"
-	"github.com/robovpn/v2fly_core/common/session"
-	"github.com/robovpn/v2fly_core/common/signal/pubsub"
-	"github.com/robovpn/v2fly_core/common/task"
-	dns_feature "github.com/robovpn/v2fly_core/features/dns"
-	"github.com/robovpn/v2fly_core/features/routing"
-	"github.com/robovpn/v2fly_core/transport/internet/udp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/dns"
+	udp_proto "github.com/robovpn/github.com/robovpn/v2fly_core/common/protocol/udp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/session"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/pubsub"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/task"
+	dns_feature "github.com/robovpn/github.com/robovpn/v2fly_core/features/dns"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/routing"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/udp"
 )
 
 // ClassicNameServer implemented traditional UDP DNS.

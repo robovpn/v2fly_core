@@ -3,10 +3,10 @@ package v4_test
 import (
 	"testing"
 
-	"github.com/robovpn/v2fly_core/app/reverse"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
-	v4 "github.com/robovpn/v2fly_core/infra/conf/v4"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/reverse"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon/testassist"
+	v4 "github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/v4"
 )
 
 func TestReverseConfig(t *testing.T) {

@@ -1,7 +1,7 @@
 package transport
 
 import (
-	internet "github.com/robovpn/v2fly_core/transport/internet"
+	internet "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

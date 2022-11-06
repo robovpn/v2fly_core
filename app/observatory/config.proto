@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.app.observatory;
 option csharp_namespace = "v2fly.Core.App.Observatory";
-option go_package = "github.com/robovpn/v2fly_core/app/observatory";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/app/observatory";
 option java_package = "com.v2fly.core.app.observatory";
 option java_multiple_files = true;
 

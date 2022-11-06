@@ -8,13 +8,13 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/dispatcher"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/common/platform"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
-	"github.com/robovpn/v2fly_core/infra/conf/geodata"
-	"github.com/robovpn/v2fly_core/infra/conf/synthetic/log"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/dispatcher"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/geodata"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/synthetic/log"
 )
 
 func (c RootConfig) BuildV5(ctx context.Context) (proto.Message, error) {

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.proxy.dokodemo;
 option csharp_namespace = "v2fly.Core.Proxy.Dokodemo";
-option go_package = "github.com/robovpn/v2fly_core/proxy/dokodemo";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/proxy/dokodemo";
 option java_package = "com.v2fly.core.proxy.dokodemo";
 option java_multiple_files = true;
 

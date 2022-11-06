@@ -1,8 +1,8 @@
 package router
 
 import (
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/dice"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/dice"
 )
 
 // RandomStrategy represents a random balancing strategy

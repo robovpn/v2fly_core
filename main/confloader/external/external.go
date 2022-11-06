@@ -1,6 +1,6 @@
 package external
 
-//go:generate go run v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"v2fly_core/common/buf"
-	"v2fly_core/common/platform/ctlcmd"
-	"v2fly_core/main/confloader"
+	"github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/v2fly_core/common/platform/ctlcmd"
+	"github.com/robovpn/v2fly_core/main/confloader"
 )
 
 func ConfigLoader(arg string) (out io.Reader, err error) {

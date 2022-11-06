@@ -6,10 +6,10 @@ import (
 	"github.com/golang/protobuf/proto"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/dokodemo"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/dokodemo"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 func (c InboundConfig) BuildV5(ctx context.Context) (proto.Message, error) {

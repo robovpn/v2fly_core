@@ -6,9 +6,9 @@ import (
 	"io"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common/errors"
-	json_reader "github.com/robovpn/v2fly_core/infra/conf/json"
-	v4 "github.com/robovpn/v2fly_core/infra/conf/v4"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/errors"
+	json_reader "github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/json"
+	v4 "github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/v4"
 )
 
 type offset struct {

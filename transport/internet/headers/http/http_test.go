@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	"github.com/robovpn/v2fly_core/common/net"
-	. "github.com/robovpn/v2fly_core/transport/internet/headers/http"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/http"
 )
 
 func TestReaderWriter(t *testing.T) {

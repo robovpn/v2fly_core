@@ -7,7 +7,7 @@ import (
 	"io"
 	"sync"
 
-	"v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common"
 )
 
 const (

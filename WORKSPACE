@@ -1,1 +1,1 @@
-workspace(name = "v2fly_core")
+workspace(name = "github.com/robovpn/v2fly_core")

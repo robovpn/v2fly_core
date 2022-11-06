@@ -1,6 +1,6 @@
 package outbound
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 import (
 	"context"
@@ -8,10 +8,10 @@ import (
 	"sync"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/errors"
-	"github.com/robovpn/v2fly_core/features/outbound"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/errors"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/outbound"
 )
 
 // Manager is to manage all outbound handlers.

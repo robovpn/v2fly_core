@@ -1,10 +1,10 @@
 package geodata
 
 import (
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
 )
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 type LoaderImplementation interface {
 	LoadSite(filename, list string) ([]*routercommon.Domain, error)

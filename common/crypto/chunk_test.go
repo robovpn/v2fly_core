@@ -5,9 +5,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/buf"
-	. "github.com/robovpn/v2fly_core/common/crypto"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/buf"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/crypto"
 )
 
 func TestChunkStreamIO(t *testing.T) {

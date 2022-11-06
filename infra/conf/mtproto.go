@@ -6,9 +6,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"v2fly_core/common/protocol"
-	"v2fly_core/common/serial"
-	"v2fly_core/proxy/mtproto"
+	"github.com/robovpn/v2fly_core/common/protocol"
+	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/v2fly_core/proxy/mtproto"
 )
 
 type MTProtoAccount struct {

@@ -3,11 +3,11 @@ package sniffer
 import (
 	"strings"
 
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/infra/conf/cfgcommon"
 )
 
-//go:generate go run github.com/robovpn/v2fly_core/common/errors/errorgen
+//go:generate go run github.com/robovpn/github.com/robovpn/v2fly_core/common/errors/errorgen
 
 type SniffingConfig struct {
 	Enabled      bool                  `json:"enabled"`

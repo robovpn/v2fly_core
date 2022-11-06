@@ -3,10 +3,10 @@ package environment
 import (
 	"context"
 
-	"github.com/robovpn/v2fly_core/common/platform/filesystem/fsifce"
-	"github.com/robovpn/v2fly_core/features/extension/storage"
-	"github.com/robovpn/v2fly_core/transport/internet"
-	"github.com/robovpn/v2fly_core/transport/internet/tagged"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/platform/filesystem/fsifce"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/features/extension/storage"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/tagged"
 )
 
 func NewRootEnvImpl(ctx context.Context, transientStorage storage.ScopedTransientStorage) RootEnvironment {

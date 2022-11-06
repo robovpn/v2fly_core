@@ -3,7 +3,7 @@ package v4
 import (
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/app/reverse"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/reverse"
 )
 
 type BridgeConfig struct {

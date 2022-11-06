@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.app.dns;
 option csharp_namespace = "v2fly.Core.App.Dns";
-option go_package = "github.com/robovpn/v2fly_core/app/dns";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/app/dns";
 option java_package = "com.v2fly.core.app.dns";
 option java_multiple_files = true;
 

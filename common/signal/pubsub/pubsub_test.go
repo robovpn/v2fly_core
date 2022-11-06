@@ -3,7 +3,7 @@ package pubsub_test
 import (
 	"testing"
 
-	. "github.com/robovpn/v2fly_core/common/signal/pubsub"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/signal/pubsub"
 )
 
 func TestPubsub(t *testing.T) {

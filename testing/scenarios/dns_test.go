@@ -9,17 +9,17 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/app/dns"
-	"github.com/robovpn/v2fly_core/app/proxyman"
-	"github.com/robovpn/v2fly_core/app/router"
-	"github.com/robovpn/v2fly_core/app/router/routercommon"
-	"github.com/robovpn/v2fly_core/common"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/common/serial"
-	"github.com/robovpn/v2fly_core/proxy/blackhole"
-	"github.com/robovpn/v2fly_core/proxy/freedom"
-	"github.com/robovpn/v2fly_core/proxy/socks"
-	"github.com/robovpn/v2fly_core/testing/servers/tcp"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/dns"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/proxyman"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/app/router/routercommon"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/blackhole"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/freedom"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/proxy/socks"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/testing/servers/tcp"
 )
 
 func TestResolveIP(t *testing.T) {

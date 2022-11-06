@@ -6,9 +6,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/robovpn/v2fly_core/common/environment/envctx"
-	"github.com/robovpn/v2fly_core/common/environment/envimpl"
-	"github.com/robovpn/v2fly_core/common/registry"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment/envctx"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/environment/envimpl"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/registry"
 )
 
 func loadHeterogeneousConfigFromRawJSON(interfaceType, name string, rawJSON json.RawMessage) (proto.Message, error) {

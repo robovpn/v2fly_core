@@ -1,8 +1,8 @@
 package proxyman
 
 import (
-	net "github.com/robovpn/v2fly_core/common/net"
-	internet "github.com/robovpn/v2fly_core/transport/internet"
+	net "github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	internet "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"

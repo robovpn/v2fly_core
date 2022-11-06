@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/robovpn/v2fly_core/common/log"
-	"github.com/robovpn/v2fly_core/common/serial"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/log"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
 )
 
 type hasInnerError interface {
@@ -39,7 +39,7 @@ func (err *Error) pkgPath() string {
 	}
 	path := reflect.TypeOf(err.pathObj).PkgPath()
 	// TODO update required on release
-	path = strings.TrimPrefix(path, "github.com/robovpn/v2fly_core/")
+	path = strings.TrimPrefix(path, "github.com/robovpn/github.com/robovpn/v2fly_core/")
 	path = strings.TrimPrefix(path, "github.com/robovpn/v2fly_core")
 	return path
 }

@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	. "github.com/robovpn/v2fly_core/common/serial"
+	. "github.com/robovpn/github.com/robovpn/v2fly_core/common/serial"
 )
 
 func TestToString(t *testing.T) {

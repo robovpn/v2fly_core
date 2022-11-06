@@ -7,9 +7,9 @@ import (
 
 	xtls "github.com/xtls/go"
 
-	"v2fly_core/common"
-	"v2fly_core/common/protocol/tls/cert"
-	. "v2fly_core/transport/internet/xtls"
+	"github.com/robovpn/v2fly_core/common"
+	"github.com/robovpn/v2fly_core/common/protocol/tls/cert"
+	. "github.com/robovpn/v2fly_core/transport/internet/xtls"
 )
 
 func TestCertificateIssuing(t *testing.T) {

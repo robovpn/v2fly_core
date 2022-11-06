@@ -10,8 +10,8 @@ import (
 	"github.com/go-playground/validator/v10"
 
 	core "github.com/robovpn/v2fly_core"
-	"github.com/robovpn/v2fly_core/common/net"
-	"github.com/robovpn/v2fly_core/transport/internet"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/common/net"
+	"github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet"
 )
 
 var validate *validator.Validate

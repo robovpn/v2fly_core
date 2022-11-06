@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v2fly.core.transport.internet.headers.utp;
 option csharp_namespace = "v2fly.Core.Transport.Internet.Headers.Utp";
-option go_package = "github.com/robovpn/v2fly_core/transport/internet/headers/utp";
+option go_package = "github.com/robovpn/github.com/robovpn/v2fly_core/transport/internet/headers/utp";
 option java_package = "com.v2fly.core.transport.internet.headers.utp";
 option java_multiple_files = true;
 
