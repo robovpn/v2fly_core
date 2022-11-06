@@ -1,4 +1,4 @@
-module ./v2fly_core
+module ./
 
 go 1.19
 
